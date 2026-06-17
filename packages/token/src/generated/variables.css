@@ -345,6 +345,16 @@
   --component/chip/padding/y-3: 10px;
   --component/chip/padding/y-4: 12px;
 
+  /* CarouselItem */
+  --component/carouselitem/padding/1: 4px;
+  --component/carouselitem/padding/2: 8px;
+
+  /* TextProductGroup */
+  --component/textproductgroup/gap/1: 2px;
+  --component/textproductgroup/gap/2: 4px;
+  --component/textproductgroup/gap/3: 6px;
+  --component/textproductgroup/padding/y-1: 12px;
+
   /* ════════════════════════════════════════════════
      LEGACY ALIASES  (--skt-*)
      Deprecated — migrate component CSS to new tokens.

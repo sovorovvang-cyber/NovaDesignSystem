@@ -4,9 +4,9 @@
 .root {
   display: flex;
   flex-direction: column;
-  gap: var(--semantic/space-4, 8px);
+  gap: var(--component/textproductgroup/gap/3, 6px);
   align-items: flex-start;
-  padding-top: var(--semantic/space-6, 12px);
+  padding-top: var(--component/textproductgroup/padding/y-1, 12px);
   width: 100%;
   font-family: var(--typography/font-family/base, "Pretendard Variable", -apple-system, sans-serif);
   box-sizing: border-box;
@@ -16,7 +16,7 @@
 .textInfoGroup {
   display: flex;
   flex-direction: column;
-  gap: var(--semantic/space-2, 4px);
+  gap: var(--component/textproductgroup/gap/2, 4px);
   align-items: flex-start;
   width: 100%;
 }
@@ -25,16 +25,16 @@
 .textNameGroup {
   display: flex;
   flex-direction: column;
-  gap: var(--semantic/space-1, 2px);
+  gap: var(--component/textproductgroup/gap/1, 2px);
   align-items: flex-start;
   width: 100%;
 }
 
 .title {
-  font-size: var(--typography/style/13semi/font-size, var(--typography/font-size/13, 13px));
-  font-weight: var(--typography/style/13semi/font-weight, var(--typography/font-weight/semibold, 600));
-  line-height: var(--typography/style/13semi/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/13semi/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
+  font-size: var(--typography/font-size/16, 16px);
+  font-weight: var(--typography/font-weight/semibold, 600);
+  line-height: var(--typography/line-height/130, 130%);
+  letter-spacing: -0.04em;
   color: var(--text/neutral/primary, #060c1f);
   width: 100%;
   overflow: hidden;
@@ -45,11 +45,11 @@
 }
 
 .subText {
-  font-size: var(--typography/style/12med/font-size, var(--typography/font-size/12, 12px));
-  font-weight: var(--typography/style/12med/font-weight, var(--typography/font-weight/medium, 500));
-  line-height: var(--typography/style/12med/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/12med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
-  color: var(--text/neutral/tertiary, rgba(6, 12, 31, 0.4));
+  font-size: var(--typography/font-size/14, 14px);
+  font-weight: var(--typography/font-weight/medium, 500);
+  line-height: var(--typography/line-height/130, 130%);
+  letter-spacing: -0.04em;
+  color: var(--text/neutral/secondary, rgba(12, 27, 65, 0.67));
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -60,17 +60,17 @@
 /* ── TextSubGroup ── */
 .textSubGroup {
   display: flex;
-  gap: var(--semantic/space-2, 4px);
+  gap: var(--component/textproductgroup/gap/2, 4px);
   align-items: center;
   width: 100%;
 }
 
 .subGroupText {
-  font-size: var(--typography/style/12med/font-size, var(--typography/font-size/12, 12px));
-  font-weight: var(--typography/style/12med/font-weight, var(--typography/font-weight/medium, 500));
-  line-height: var(--typography/style/12med/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/12med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography/font-size/13, 13px);
+  font-weight: var(--typography/font-weight/medium, 500);
+  line-height: var(--typography/line-height/130, 130%);
+  letter-spacing: -0.04em;
+  color: var(--text/neutral/tertiary, rgba(12, 34, 91, 0.42));
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -79,7 +79,7 @@
 .divider {
   width: 1px;
   height: 8px;
-  background-color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  background-color: var(--border/neutral/primary, rgba(5, 42, 142, 0.08));
   flex-shrink: 0;
 }
 
@@ -87,44 +87,44 @@
 .textPriceGroup {
   display: flex;
   flex-direction: column;
-  gap: var(--semantic/space-2, 4px);
+  gap: var(--component/textproductgroup/gap/1, 2px);
   align-items: flex-start;
   width: 100%;
 }
 
 .textPrice {
   display: flex;
-  gap: var(--semantic/space-1, 2px);
+  gap: var(--component/textproductgroup/gap/1, 2px);
   align-items: flex-end;
   white-space: nowrap;
 }
 
 .discount {
-  font-size: var(--typography/style/14semi/font-size, var(--typography/font-size/14, 14px));
-  font-weight: var(--typography/style/14semi/font-weight, var(--typography/font-weight/semibold, 600));
-  line-height: var(--typography/style/14semi/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/14semi/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
+  font-size: var(--typography/font-size/16, 16px);
+  font-weight: var(--typography/font-weight/semibold, 600);
+  line-height: var(--typography/line-height/130, 130%);
+  letter-spacing: -0.04em;
   color: var(--text/brand/primary, #3617ce);
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .price {
-  font-size: var(--typography/style/14semi/font-size, var(--typography/font-size/14, 14px));
-  font-weight: var(--typography/style/14semi/font-weight, var(--typography/font-weight/semibold, 600));
-  line-height: var(--typography/style/14semi/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/14semi/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
+  font-size: var(--typography/font-size/16, 16px);
+  font-weight: var(--typography/font-weight/semibold, 600);
+  line-height: var(--typography/line-height/130, 130%);
+  letter-spacing: -0.04em;
   color: var(--text/neutral/primary, #060c1f);
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .period {
-  font-size: var(--typography/style/11reg/font-size, var(--typography/font-size/11, 11px));
-  font-weight: var(--typography/style/11reg/font-weight, var(--typography/font-weight/regular, 400));
-  line-height: var(--typography/style/11reg/line-height, var(--typography/line-height/150, 150%));
-  letter-spacing: var(--typography/style/11reg/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
-  color: var(--text/neutral/tertiary, rgba(6, 12, 31, 0.4));
+  font-size: var(--typography/font-size/14, 14px);
+  font-weight: var(--typography/font-weight/medium, 500);
+  line-height: var(--typography/line-height/130, 130%);
+  letter-spacing: -0.04em;
+  color: var(--text/neutral/primary, #060c1f);
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -139,11 +139,11 @@
 
 .priceConditionLabel,
 .priceConditionValue {
-  font-size: var(--typography/style/12reg/font-size, var(--typography/font-size/12, 12px));
-  font-weight: var(--typography/style/12reg/font-weight, var(--typography/font-weight/regular, 400));
-  line-height: var(--typography/style/12reg/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/12reg/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
-  color: var(--text/neutral/tertiary, rgba(6, 12, 31, 0.4));
+  font-size: var(--typography/font-size/13, 13px);
+  font-weight: var(--typography/font-weight/semibold, 600);
+  line-height: var(--typography/line-height/130, 130%);
+  letter-spacing: -0.04em;
+  color: var(--text/neutral/secondary, rgba(12, 27, 65, 0.67));
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -155,7 +155,7 @@
 .badgeGroup {
   display: flex;
   flex-wrap: wrap;
-  gap: 3px;
+  gap: var(--component/textproductgroup/gap/2, 4px);
   align-items: flex-start;
   width: 100%;
 }
@@ -164,20 +164,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 17px;
-  padding: var(--semantic/space-1, 2px) var(--semantic/space-3, 6px);
-  background-color: var(--fill/neutral/secondary, rgba(6, 12, 31, 0.1));
+  padding: var(--component/badge/padding/y-1, 2px) var(--component/badge/padding/x-1, 6px);
+  background-color: var(--fill/neutral/secondary, rgba(5, 42, 142, 0.08));
   border-radius: var(--radius-1, 4px);
   mix-blend-mode: multiply;
   flex-shrink: 0;
 }
 
 .badgeText {
-  font-size: var(--typography/style/10med/font-size, var(--typography/font-size/10, 10px));
-  font-weight: var(--typography/style/10med/font-weight, var(--typography/font-weight/medium, 500));
-  line-height: var(--typography/style/10med/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/10med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography/font-size/10, 10px);
+  font-weight: var(--typography/font-weight/medium, 500);
+  line-height: var(--typography/line-height/130, 130%);
+  letter-spacing: -0.04em;
+  color: var(--text/neutral/secondary, rgba(12, 27, 65, 0.67));
   white-space: nowrap;
   text-align: center;
 }
