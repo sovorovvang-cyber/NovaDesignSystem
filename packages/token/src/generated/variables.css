@@ -28,6 +28,7 @@
   --bg/layer/secondary:      #f4f5fa;
   --bg/layer/floating:       #ffffff;
   --bg/overlay/default:      rgba(6, 12, 31, 0.5);
+  --bg/overlay/default:      rgba(6, 12, 31, 0.5);
 
   /* ════════════════════════════════════════════════
      TEXT
@@ -74,6 +75,8 @@
   --gray-alpha/gray-alpha-50:  rgba(35, 55, 155, 0.05);
   --gray-alpha/gray-alpha-100: rgba(5, 42, 142, 0.08);
   --gray-alpha/gray-alpha-200: rgba(5, 42, 142, 0.16);
+
+  --gray/gray-100: #ebeef6;
 
   --white-alpha/50:  rgba(255, 255, 255, 0.05);
   --white-alpha/100: rgba(255, 255, 255, 0.1);
@@ -301,6 +304,11 @@
 
   --component/titlegroup/gap/1: 2px;
   --component/titlegroup/gap/2: 4px;
+  --component/titlegroup/gap/4: 16px;
+
+  --component/select/gap/1:       0px;
+  --component/select/padding/x-1: 24px;
+  --component/select/padding/y-1: 20px;
 
   --component/button/height/small:  32px;
   --component/button/height/medium: 40px;
