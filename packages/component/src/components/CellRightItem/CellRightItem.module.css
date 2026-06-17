@@ -63,7 +63,7 @@
   font-weight: var(--typography/style/14med/font-weight, var(--typography/font-weight/medium, 500));
   line-height: var(--typography/style/14med/line-height, var(--typography/line-height/130, 130%));
   letter-spacing: var(--typography/style/14med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  color: var(--text/neutral/secondary, rgba(12, 27, 65, 0.67));
   text-align: right;
   white-space: nowrap;
 }
@@ -84,7 +84,7 @@
   font-weight: var(--typography/style/13reg/font-weight, var(--typography/font-weight/regular, 400));
   line-height: var(--typography/style/13reg/line-height, var(--typography/line-height/130, 130%));
   letter-spacing: var(--typography/style/13reg/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  color: var(--text/neutral/secondary, rgba(12, 27, 65, 0.67));
   text-decoration: underline;
   text-decoration-skip-ink: none;
   text-underline-position: from-font;
@@ -111,7 +111,7 @@
   font-weight: var(--typography/style/16reg/font-weight, var(--typography/font-weight/regular, 400));
   line-height: var(--typography/style/16reg/line-height, var(--typography/line-height/130, 130%));
   letter-spacing: var(--typography/style/16reg/letter-spacing, -0.04em);
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  color: var(--text/neutral/secondary, rgba(12, 27, 65, 0.67));
   white-space: nowrap;
 }
 
@@ -142,7 +142,7 @@
   font-weight: var(--typography/style/12semi/font-weight, var(--typography/font-weight/semibold, 600));
   line-height: var(--typography/style/12semi/line-height, var(--typography/line-height/130, 130%));
   letter-spacing: var(--typography/style/12semi/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  color: var(--text/neutral/secondary, rgba(12, 27, 65, 0.67));
   text-align: center;
   white-space: nowrap;
 }

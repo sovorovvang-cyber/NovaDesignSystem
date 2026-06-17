@@ -1,8 +1,9 @@
 import React from "react";
 import { CellRightItem, type CellRightItemVariant } from "../CellRightItem/CellRightItem";
 import styles from "./CellTextItem.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .CellTextItem (node 50985:75650)
-// anatomy: root[ textGroup[ title ], rightItem?[ icon | textInfo | textButton | textIcon | levelBadge | toggle ] ]
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .CellTextItem (node 55181:49768/49769)
+// anatomy: root[ textGroup[ label ], rightItem? ]
+// textVariant: Title (16px SemiBold) | Text (16px Regular)
 
 export type CellTextItemRightItem =
   | "None"
@@ -14,10 +15,13 @@ export type CellTextItemRightItem =
   | "TextIcon";
 
 export type CellTextItemVariant = "Default" | "Bullet";
+export type CellTextItemTextVariant = "Title" | "Text";
 
 interface Props {
   /** Main label text */
   label?: string;
+  /** Typography variant: Title (SemiBold) | Text (Regular) */
+  textVariant?: CellTextItemTextVariant;
   /** Right-side slot content type */
   rightItem?: CellTextItemRightItem;
   /** Layout variant — Default or Bullet list style */
@@ -35,6 +39,7 @@ interface Props {
 
 export function CellTextItem({
   label = "리스트 텍스트",
+  textVariant = "Text",
   rightItem = "None",
   variant = "Default",
   rightText = "텍스트",
@@ -71,7 +76,7 @@ export function CellTextItem({
       {/* Left text group */}
       <div className={styles.textGroup}>
         {isBullet && <span className={styles.bulletDot} aria-hidden="true">•</span>}
-        <p className={styles.label}>{label}</p>
+        <p className={[styles.label, textVariant === "Title" ? styles.labelTitle : ""].filter(Boolean).join(" ")}>{label}</p>
       </div>
 
       {rightItemVariant && (

@@ -1,12 +1,13 @@
-/* CellTextItem — Figma node 50985:75650
+/* CellTextItem — Figma node 55181:49768/49769 (3.3)
    anatomy: root[ textGroup[ bulletDot?, label ], rightItem? ]
-   variants: Default | Bullet  ×  rightItem: None | Icon | Toggle | TextInfo | TextButton | LevelBadge | TextIcon
+   variant: Title (16px SemiBold) | Text (16px Regular)
+   rightItem: None | Icon | Toggle | TextInfo | TextButton | LevelBadge | TextIcon
 */
 
 .root {
   display: flex;
   align-items: center;
-  gap: var(--semantic/space-10, 20px);
+  gap: 16px;
   padding-top: var(--semantic/space-2, 4px);
   padding-bottom: var(--semantic/space-2, 4px);
   width: 100%;
@@ -41,11 +42,11 @@
 
 .bulletDot {
   flex-shrink: 0;
-  font-size: var(--typography/style/14reg/font-size, var(--typography/font-size/14, 14px));
-  font-weight: var(--typography/style/14reg/font-weight, var(--typography/font-weight/regular, 400));
+  font-size: var(--typography/font-size/16, 16px);
+  font-weight: var(--typography/font-weight/regular, 400);
   color: var(--text/neutral/primary, #060c1f);
-  line-height: var(--typography/style/14reg/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/14reg/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
+  line-height: var(--typography/line-height/130, 130%);
+  letter-spacing: -0.04em;
   user-select: none;
 }
 
@@ -53,14 +54,19 @@
   flex: 1 0 0;
   min-width: 0;
   margin: 0;
-  font-size: var(--typography/style/14reg/font-size, var(--typography/font-size/14, 14px));
-  font-weight: var(--typography/style/14reg/font-weight, var(--typography/font-weight/regular, 400));
-  line-height: var(--typography/style/14reg/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/14reg/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
+  font-size: var(--typography/font-size/16, 16px);
+  font-weight: var(--typography/font-weight/regular, 400);
+  line-height: var(--typography/line-height/130, 130%);
+  letter-spacing: -0.04em;
   color: var(--text/neutral/primary, #060c1f);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* Title variant — SemiBold */
+.labelTitle {
+  font-weight: var(--typography/font-weight/semibold, 600);
 }
 
 /* When Toggle is active the label should render in white */
@@ -95,8 +101,8 @@
   font-size: var(--typography/style/14med/font-size, var(--typography/font-size/14, 14px));
   font-weight: var(--typography/style/14med/font-weight, var(--typography/font-weight/medium, 500));
   line-height: var(--typography/style/14med/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/14med/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  letter-spacing: -0.04em;
+  color: var(--text/neutral/secondary, rgba(12, 27, 65, 0.67));
   text-align: right;
   white-space: nowrap;
 }
@@ -116,7 +122,7 @@
   font-weight: var(--typography/style/13reg/font-weight, var(--typography/font-weight/regular, 400));
   line-height: var(--typography/style/13reg/line-height, var(--typography/line-height/130, 130%));
   letter-spacing: var(--typography/style/13reg/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  color: var(--text/neutral/secondary, rgba(12, 27, 65, 0.67));
   text-decoration: underline;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -136,8 +142,8 @@
   font-size: var(--typography/style/16reg/font-size, var(--typography/font-size/16, 16px));
   font-weight: var(--typography/style/16reg/font-weight, var(--typography/font-weight/regular, 400));
   line-height: var(--typography/style/16reg/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/16reg/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  letter-spacing: -0.04em;
+  color: var(--text/neutral/secondary, rgba(12, 27, 65, 0.67));
   white-space: nowrap;
 }
 
