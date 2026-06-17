@@ -39,6 +39,8 @@ export { ChipItem } from "./components/ChipItem";
 export { ChipItemAIItem } from "./components/ChipItemAIItem";
 export { ChipItemQuicklinkItem } from "./components/ChipItemQuicklinkItem";
 export { DialogActionButtonItem } from "./components/DialogActionButtonItem";
+export { DimItem } from "./components/DimItem";
+export type { DimItemProps } from "./components/DimItem";
 export { IndicatorDotItem } from "./components/IndicatorDotItem";
 export { IndicatorItem } from "./components/IndicatorItem";
 export { InputItem } from "./components/InputItem";

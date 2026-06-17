@@ -1,0 +1,10 @@
+/* DimItem — Figma node 51715:81707
+   Full-viewport dim overlay, positioned absolutely over its parent.
+*/
+
+.root {
+  position: absolute;
+  inset: 0;
+  background-color: var(--bg\/overlay\/default, rgba(6, 12, 31, 0.5));
+  pointer-events: none;
+}
