@@ -7,7 +7,7 @@
   align-items: center;
   position: relative;
   width: 100%;
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", sans-serif);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
 }
 
 .rootFluid {
@@ -19,12 +19,12 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: var(--skt-spacing-2, 2px);
+  gap: var(--semantic/space-1, 2px);
 }
 
 /* Special case: optionText + textLeft without subText uses tighter gap */
 .rootGap2 {
-  gap: var(--skt-spacing-2, 2px);
+  gap: var(--semantic/space-1, 2px);
 }
 
 /* ─── Option text row ─────────────────────────────────── */
@@ -42,14 +42,14 @@
 }
 
 .optionTextItem p {
-  color: var(--skt-color-text-neutral-secondary, rgba(12, 27, 65, 0.67));
+  color: var(--text/neutral/secondary, rgba(12, 27, 65, 0.67));
 }
 
 /* ─── Text group (title row with optional badges) ─────── */
 .textGroup {
   display: flex;
   align-items: center;
-  gap: var(--skt-spacing-2, 2px);
+  gap: var(--semantic/space-1, 2px);
   flex-shrink: 0;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .textLeftBadge p {
-  color: var(--skt-color-text-brand-primary, #3617ce);
+  color: var(--text/brand/primary, #3617ce);
 }
 
 /* ─── Sub-text row ────────────────────────────────────── */
@@ -79,7 +79,7 @@
 }
 
 .subTextItem p {
-  color: var(--skt-color-text-neutral-secondary, rgba(12, 27, 65, 0.67));
+  color: var(--text/neutral/secondary, rgba(12, 27, 65, 0.67));
 }
 
 /* ─── Right badge (tertiary small number) ─────────────── */

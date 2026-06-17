@@ -10,27 +10,27 @@
   justify-content: center;
   width: 100%;
   height: fit-content;
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", sans-serif);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
 }
 
 /* ── Info area card ── */
 .infoArea {
   display: flex;
   flex-direction: column;
-  gap: var(--skt-spacing-20, 20px);
+  gap: var(--semantic/space-10, 20px);
   align-items: flex-start;
   justify-content: center;
-  padding: var(--skt-spacing-24, 24px);
+  padding: var(--semantic/space-12, 24px);
   width: 100%;
-  background-color: var(--skt-color-bg-layer-basement, #f4f5fa);
-  border-radius: var(--skt-radius-20, 20px);
+  background-color: var(--bg/layer/secondary, #f4f5fa);
+  border-radius: var(--radius-8, 20px);
   box-sizing: border-box;
 }
 
 /* ── Text + thumbnail row ── */
 .textGroupImage {
   display: flex;
-  gap: var(--skt-spacing-32, 32px);
+  gap: var(--semantic/space-16, 32px);
   align-items: flex-start;
   width: 100%;
 }
@@ -38,7 +38,7 @@
 .textGroup {
   display: flex;
   flex-direction: column;
-  gap: var(--skt-spacing-4, 4px);
+  gap: var(--semantic/space-2, 4px);
   align-items: flex-start;
   flex: 1 0 0;
   min-width: 0;
@@ -54,11 +54,11 @@
 
 .category {
   margin: 0;
-  font-size: var(--skt-typography-style-12med-font-size, var(--skt-typography-font-size-300, 12px));
-  font-weight: var(--skt-typography-style-12med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-12med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-12med-letter-spacing, -0.48px);
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/12med/font-size, var(--typography/font-size/12, 12px));
+  font-weight: var(--typography/style/12med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/12med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/12med/letter-spacing, -0.48px);
+  color: var(--text/neutral/primary, #060c1f);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -67,11 +67,11 @@
 
 .name {
   margin: 0;
-  font-size: var(--skt-typography-style-16med-font-size, var(--skt-typography-font-size-700, 16px));
-  font-weight: var(--skt-typography-style-16med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-16med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-16med-letter-spacing, -0.64px);
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/16med/font-size, var(--typography/font-size/16, 16px));
+  font-weight: var(--typography/style/16med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/16med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/16med/letter-spacing, -0.64px);
+  color: var(--text/neutral/primary, #060c1f);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -80,11 +80,11 @@
 
 .benefit {
   margin: 0;
-  font-size: var(--skt-typography-style-12med-font-size, var(--skt-typography-font-size-300, 12px));
-  font-weight: var(--skt-typography-style-12med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-12med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-12med-letter-spacing, -0.48px);
-  color: var(--skt-color-text-neutral-tertiary, rgba(6, 12, 31, 0.4));
+  font-size: var(--typography/style/12med/font-size, var(--typography/font-size/12, 12px));
+  font-weight: var(--typography/style/12med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/12med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/12med/letter-spacing, -0.48px);
+  color: var(--text/neutral/tertiary, rgba(6, 12, 31, 0.4));
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -95,7 +95,7 @@
 .thumbnail {
   width: 64px;
   height: 64px;
-  border-radius: var(--skt-radius-12, 12px);
+  border-radius: var(--radius-5, 12px);
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -110,14 +110,14 @@
 .thumbnailPlaceholder {
   width: 100%;
   height: 100%;
-  background-color: var(--skt-color-fill-neutral-secondary, rgba(6, 12, 31, 0.1));
+  background-color: var(--fill/neutral/secondary, rgba(6, 12, 31, 0.1));
 }
 
 /* ── Sub info area ── */
 .infoSub {
   display: flex;
   flex-direction: column;
-  gap: var(--skt-spacing-10, 10px);
+  gap: var(--semantic/space-5, 10px);
   align-items: flex-start;
   width: 100%;
 }
@@ -126,7 +126,7 @@
 .tagBadgeList {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--skt-spacing-4, 4px);
+  gap: var(--semantic/space-2, 4px);
   align-items: flex-start;
   width: 100%;
 }
@@ -135,15 +135,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2px var(--skt-spacing-6, 6px);
+  padding: 2px var(--semantic/space-3, 6px);
   height: 17px;
-  background-color: var(--skt-color-fill-neutral-secondary, rgba(6, 12, 31, 0.1));
-  border-radius: var(--skt-radius-4, 4px);
-  font-size: var(--skt-typography-style-10med-font-size, var(--skt-typography-font-size-100, 10px));
-  font-weight: var(--skt-typography-style-10med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-10med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-10med-letter-spacing, -0.4px);
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  background-color: var(--fill/neutral/secondary, rgba(6, 12, 31, 0.1));
+  border-radius: var(--radius-1, 4px);
+  font-size: var(--typography/style/10med/font-size, var(--typography/font-size/10, 10px));
+  font-weight: var(--typography/style/10med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/10med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/10med/letter-spacing, -0.4px);
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   white-space: nowrap;
   mix-blend-mode: multiply;
   box-sizing: border-box;
@@ -153,7 +153,7 @@
 .iconBadgeList {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--skt-spacing-4, 4px);
+  gap: var(--semantic/space-2, 4px);
   align-items: flex-start;
   width: 100%;
 }
@@ -161,10 +161,10 @@
 .iconBadgeItem {
   display: flex;
   align-items: center;
-  gap: var(--skt-spacing-4, 4px);
-  padding: var(--skt-spacing-6, 6px) 10px var(--skt-spacing-6, 6px) var(--skt-spacing-8, 8px);
-  background-color: var(--skt-color-bg-layer-default, #ffffff);
-  border-radius: var(--skt-radius-10, 10px);
+  gap: var(--semantic/space-2, 4px);
+  padding: var(--semantic/space-3, 6px) 10px var(--semantic/space-3, 6px) var(--semantic/space-4, 8px);
+  background-color: var(--bg/layer/primary, #ffffff);
+  border-radius: var(--radius-4, 10px);
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -190,16 +190,16 @@
   display: block;
   width: 14px;
   height: 14px;
-  border-radius: var(--skt-radius-4, 4px);
-  background-color: var(--skt-color-fill-brand-primary, #3617ce);
+  border-radius: var(--radius-1, 4px);
+  background-color: var(--fill/brand/default, #3617ce);
 }
 
 .iconBadgeText {
-  font-size: var(--skt-typography-style-12med-font-size, var(--skt-typography-font-size-300, 12px));
-  font-weight: var(--skt-typography-style-12med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-12med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-12med-letter-spacing, -0.48px);
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography/style/12med/font-size, var(--typography/font-size/12, 12px));
+  font-weight: var(--typography/style/12med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/12med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/12med/letter-spacing, -0.48px);
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

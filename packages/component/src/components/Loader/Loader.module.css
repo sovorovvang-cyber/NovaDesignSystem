@@ -23,7 +23,7 @@
 /* ── Dots ───────────────────────────────────────────── */
 .dot {
   display: inline-block;
-  border-radius: var(--skt-radius-full, 9999px);
+  border-radius: var(--radius-r-full, 9999px);
   animation: loaderBounce 1.2s ease-in-out infinite;
 }
 
@@ -42,13 +42,13 @@
 
 /* ── Color variants ─────────────────────────────────── */
 .color--brand .dot {
-  background-color: var(--skt-color-fill-brand-primary, #3617ce);
+  background-color: var(--fill/brand/default, #3617ce);
 }
 
 .color--neutral .dot {
-  background-color: var(--skt-color-fill-neutral-strong, #060c1f);
+  background-color: var(--fill/neutral/strong, #060c1f);
 }
 
 .color--inverse .dot {
-  background-color: var(--skt-color-icon-inverse-primary, #ffffff);
+  background-color: var(--icon/inverse/primary, #ffffff);
 }

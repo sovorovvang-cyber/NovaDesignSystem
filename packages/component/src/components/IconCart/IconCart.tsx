@@ -1,5 +1,5 @@
 import styles from "./IconCart.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .IconItem/Nomal/Cart (node 51578:64735)
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .IconItem/Nomal/Cart (node 51578:64735)
 // anatomy: root<svg>[ g > path(Union) ] — two fill variants: line (outline cart) | fill (solid cart)
 
 interface Props {

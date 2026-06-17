@@ -1,0 +1,1 @@
+export { IconFaceID } from "./IconFaceID";

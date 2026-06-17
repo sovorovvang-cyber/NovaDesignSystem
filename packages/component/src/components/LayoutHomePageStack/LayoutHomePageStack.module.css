@@ -11,25 +11,25 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 var(--skt-spacing-20, 20px);
+  padding: 0 var(--semantic/space-10, 20px);
   width: 393px;
   position: relative;
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", sans-serif);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
 }
 
 /* ══════════════════════════════════════════════════════════════
    Task variant
 ══════════════════════════════════════════════════════════════ */
 .taskCard {
-  background-color: var(--skt-color-palette-white-alpha-400, rgba(255, 255, 255, 0.4));
-  border: 1px solid var(--skt-color-palette-white-alpha-300, rgba(255, 255, 255, 0.3));
-  border-radius: var(--skt-radius-28, 28px);
+  background-color: var(--white-alpha/400, rgba(255, 255, 255, 0.4));
+  border: 1px solid var(--white-alpha/300, rgba(255, 255, 255, 0.3));
+  border-radius: var(--radius-10, 28px);
   display: flex;
   align-items: center;
   justify-content: flex-start;
   height: 152px;
   overflow: hidden;
-  padding: var(--skt-spacing-28, 28px);
+  padding: var(--semantic/space-14, 28px);
   position: relative;
   width: 353px;
   flex-shrink: 0;
@@ -41,8 +41,8 @@
   inset: 0;
   background: radial-gradient(
     ellipse at 80% 15%,
-    color-mix(in srgb, var(--skt-color-palette-blue-300, #bfcbff) 70%, transparent) 0%,
-    color-mix(in srgb, var(--skt-color-palette-blue-300, #bfcbff) 0%, transparent) 55%
+    color-mix(in srgb, var(--fill/brand/secondary, #bfcbff) 70%, transparent) 0%,
+    color-mix(in srgb, var(--fill/brand/secondary, #bfcbff) 0%, transparent) 55%
   );
   pointer-events: none;
 }
@@ -50,7 +50,7 @@
 .taskTextArea {
   display: flex;
   flex-direction: column;
-  gap: var(--skt-spacing-20, 20px);
+  gap: var(--semantic/space-10, 20px);
   align-items: flex-start;
   position: relative;
   z-index: 1;
@@ -59,11 +59,11 @@
 }
 
 .taskTitle {
-  font-size: var(--skt-typography-style-16med-font-size, var(--skt-typography-font-size-700, 16px));
-  font-weight: var(--skt-typography-style-16med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-16med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-16med-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/16med/font-size, var(--typography/font-size/16, 16px));
+  font-weight: var(--typography/style/16med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/16med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/16med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/primary, #060c1f);
   margin: 0;
   /* Allow up to 2 lines */
   display: -webkit-box;
@@ -76,36 +76,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--skt-color-palette-white-alpha-500, rgba(255, 255, 255, 0.5));
+  background-color: var(--white-alpha/500, rgba(255, 255, 255, 0.5));
   border: none;
-  border-radius: var(--skt-radius-full, 9999px);
-  padding: var(--skt-spacing-8, 8px) var(--skt-spacing-12, 12px);
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", sans-serif);
-  font-size: var(--skt-typography-style-14semi-font-size, var(--skt-typography-font-size-500, 14px));
-  font-weight: var(--skt-typography-style-14semi-font-weight, var(--skt-typography-font-weight-semibold, 600));
-  line-height: var(--skt-typography-style-14semi-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-14semi-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-brand-primary, #3617ce);
+  border-radius: var(--radius-r-full, 9999px);
+  padding: var(--semantic/space-4, 8px) var(--semantic/space-6, 12px);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
+  font-size: var(--typography/style/14semi/font-size, var(--typography/font-size/14, 14px));
+  font-weight: var(--typography/style/14semi/font-weight, var(--typography/font-weight/semibold, 600));
+  line-height: var(--typography/style/14semi/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/14semi/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/brand/primary, #3617ce);
   cursor: pointer;
   white-space: nowrap;
   flex-shrink: 0;
 }
 
 .ctaButton:hover {
-  background-color: var(--skt-color-palette-white-alpha-600, rgba(255, 255, 255, 0.6));
+  background-color: var(--white-alpha/600, rgba(255, 255, 255, 0.6));
 }
 
 /* ══════════════════════════════════════════════════════════════
    My variant
 ══════════════════════════════════════════════════════════════ */
 .myCard {
-  background-color: var(--skt-color-palette-white-alpha-900, rgba(255, 255, 255, 0.9));
-  border-radius: var(--skt-radius-28, 28px);
+  background-color: var(--white-alpha/900, rgba(255, 255, 255, 0.9));
+  border-radius: var(--radius-10, 28px);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  padding: var(--skt-spacing-28, 28px);
+  padding: var(--semantic/space-14, 28px);
   position: relative;
   width: 353px;
   flex-shrink: 0;
@@ -121,7 +121,7 @@
 .myLeftArea {
   display: flex;
   flex-direction: column;
-  gap: var(--skt-spacing-4, 4px);
+  gap: var(--semantic/space-2, 4px);
   align-items: flex-start;
   flex: 1 0 0;
   min-width: 0;
@@ -130,16 +130,16 @@
 .myTitleRow {
   display: flex;
   align-items: center;
-  gap: var(--skt-spacing-6, 6px);
+  gap: var(--semantic/space-3, 6px);
   flex-shrink: 0;
 }
 
 .myTitle {
-  font-size: var(--skt-typography-style-18med-font-size, var(--skt-typography-font-size-800, 18px));
-  font-weight: var(--skt-typography-style-18med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-18med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-18med-letter-spacing, var(--skt-typography-letter-spacing-dense, -0.05em));
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/18med/font-size, var(--typography/font-size/18, 18px));
+  font-weight: var(--typography/style/18med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/18med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/18med/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
+  color: var(--text/neutral/primary, #060c1f);
   white-space: nowrap;
 }
 
@@ -147,25 +147,25 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--skt-color-fill-neutral-secondary, rgba(6, 12, 31, 0.1));
-  border-radius: var(--skt-radius-6, 6px);
-  padding: 4px var(--skt-spacing-6, 6px);
-  font-size: var(--skt-typography-style-11med-font-size, var(--skt-typography-font-size-200, 11px));
-  font-weight: var(--skt-typography-style-11med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-11med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-11med-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  background-color: var(--fill/neutral/secondary, rgba(6, 12, 31, 0.1));
+  border-radius: var(--radius-2, 6px);
+  padding: 4px var(--semantic/space-3, 6px);
+  font-size: var(--typography/style/11med/font-size, var(--typography/font-size/11, 11px));
+  font-weight: var(--typography/style/11med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/11med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/11med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   white-space: nowrap;
   height: 22px;
   mix-blend-mode: multiply;
 }
 
 .mySubtitle {
-  font-size: var(--skt-typography-style-12med-font-size, var(--skt-typography-font-size-300, 12px));
-  font-weight: var(--skt-typography-style-12med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-12med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-12med-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography/style/12med/font-size, var(--typography/font-size/12, 12px));
+  font-weight: var(--typography/style/12med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/12med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/12med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   white-space: nowrap;
 }
 
@@ -176,7 +176,7 @@
   flex-shrink: 0;
   overflow: hidden;
   border-radius: 50%;
-  background-color: var(--skt-color-fill-neutral-tertiary, rgba(6, 12, 31, 0.05));
+  background-color: var(--fill/neutral/tertiary, rgba(6, 12, 31, 0.05));
 }
 
 /* ══════════════════════════════════════════════════════════════
@@ -193,18 +193,18 @@
 .contentsTitleText {
   display: flex;
   flex-direction: column;
-  gap: var(--skt-spacing-4, 4px);
+  gap: var(--semantic/space-2, 4px);
   align-items: flex-start;
   flex: 1 0 0;
   min-width: 0;
 }
 
 .contentTitle {
-  font-size: var(--skt-typography-style-18med-font-size, var(--skt-typography-font-size-800, 18px));
-  font-weight: var(--skt-typography-style-18med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-18med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-18med-letter-spacing, var(--skt-typography-letter-spacing-dense, -0.05em));
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/18med/font-size, var(--typography/font-size/18, 18px));
+  font-weight: var(--typography/style/18med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/18med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/18med/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
+  color: var(--text/neutral/primary, #060c1f);
   /* max 2 lines */
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -223,18 +223,18 @@
 }
 
 .contentsSubText {
-  font-size: var(--skt-typography-style-12med-font-size, var(--skt-typography-font-size-300, 12px));
-  font-weight: var(--skt-typography-style-12med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-12med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-12med-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography/style/12med/font-size, var(--typography/font-size/12, 12px));
+  font-weight: var(--typography/style/12med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/12med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/12med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   white-space: nowrap;
 }
 
 .arrowIcon {
-  font-size: var(--skt-typography-font-size-300, 12px);
+  font-size: var(--typography/font-size/12, 12px);
   line-height: 1;
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   transform: scaleX(-1) rotate(90deg);
   display: inline-block;
 }
@@ -243,14 +243,14 @@
    Contents variant
 ══════════════════════════════════════════════════════════════ */
 .contentsCard {
-  background-color: var(--skt-color-palette-white-alpha-900, rgba(255, 255, 255, 0.9));
-  border-radius: var(--skt-radius-28, 28px);
+  background-color: var(--white-alpha/900, rgba(255, 255, 255, 0.9));
+  border-radius: var(--radius-10, 28px);
   display: flex;
   flex-direction: column;
-  gap: var(--skt-spacing-28, 28px);
+  gap: var(--semantic/space-14, 28px);
   align-items: flex-start;
   overflow: hidden;
-  padding: var(--skt-spacing-28, 28px);
+  padding: var(--semantic/space-14, 28px);
   position: relative;
   width: 353px;
   flex-shrink: 0;
@@ -274,8 +274,8 @@
    ContentWithBanner variant
 ══════════════════════════════════════════════════════════════ */
 .contentWithBannerCard {
-  background-color: var(--skt-color-palette-white-alpha-900, rgba(255, 255, 255, 0.9));
-  border-radius: var(--skt-radius-28, 28px);
+  background-color: var(--white-alpha/900, rgba(255, 255, 255, 0.9));
+  border-radius: var(--radius-10, 28px);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -289,8 +289,8 @@
 .banner {
   width: 100%;
   aspect-ratio: 353 / 172;
-  border-radius: var(--skt-radius-20, 20px) var(--skt-radius-20, 20px) 0 0;
-  background-color: var(--skt-color-fill-neutral-tertiary, rgba(6, 12, 31, 0.05));
+  border-radius: var(--radius-8, 20px) var(--radius-8, 20px) 0 0;
+  background-color: var(--fill/neutral/tertiary, rgba(6, 12, 31, 0.05));
   flex-shrink: 0;
   overflow: hidden;
   object-fit: cover;
@@ -299,9 +299,9 @@
 .contentWithBannerBody {
   display: flex;
   flex-direction: column;
-  gap: var(--skt-spacing-28, 28px);
+  gap: var(--semantic/space-14, 28px);
   align-items: flex-start;
-  padding: 0 var(--skt-spacing-28, 28px) var(--skt-spacing-28, 28px);
+  padding: 0 var(--semantic/space-14, 28px) var(--semantic/space-14, 28px);
   width: 100%;
   flex-shrink: 0;
 }

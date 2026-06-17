@@ -1,22 +1,22 @@
 /* ChipItem — Figma node 50943:28335
    anatomy: root[ label ]
    variants: size(large|small) × selected(true|false) = 4 combos
-   large selected   → dark fill (var(--skt-color-text-neutral-primary, #060c1f)), white text,  py-10 px-12 radius-full
-   large unselected → neutral fill (var(--skt-color-bg-layer-basement, #f4f5fa)), secondary text, py-10 px-12 radius-full
-   small selected   → dark fill (var(--skt-color-text-neutral-primary, #060c1f)), white text,  py-8  px-12 radius-full
-   small unselected → neutral fill (var(--skt-color-bg-layer-basement, #f4f5fa)), secondary text, py-8  px-12 radius-full
+   large selected   → dark fill (var(--text/neutral/primary, #060c1f)), white text,  py-10 px-12 radius-full
+   large unselected → neutral fill (var(--bg/layer/secondary, #f4f5fa)), secondary text, py-10 px-12 radius-full
+   small selected   → dark fill (var(--text/neutral/primary, #060c1f)), white text,  py-8  px-12 radius-full
+   small unselected → neutral fill (var(--bg/layer/secondary, #f4f5fa)), secondary text, py-8  px-12 radius-full
 */
 
 .chip {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding-left: var(--skt-spacing-12, 12px);
-  padding-right: var(--skt-spacing-12, 12px);
-  border-radius: var(--skt-radius-full, 9999px);
+  padding-left: var(--semantic/space-6, 12px);
+  padding-right: var(--semantic/space-6, 12px);
+  border-radius: var(--radius-r-full, 9999px);
   cursor: pointer;
   user-select: none;
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", sans-serif);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
   white-space: nowrap;
   transition: background-color 0.15s ease;
   box-sizing: border-box;
@@ -24,22 +24,22 @@
 
 /* ── Size ── */
 .large {
-  padding-top: var(--skt-spacing-10, 10px);
-  padding-bottom: var(--skt-spacing-10, 10px);
+  padding-top: var(--semantic/space-5, 10px);
+  padding-bottom: var(--semantic/space-5, 10px);
 }
 
 .small {
-  padding-top: var(--skt-spacing-8, 8px);
-  padding-bottom: var(--skt-spacing-8, 8px);
+  padding-top: var(--semantic/space-4, 8px);
+  padding-bottom: var(--semantic/space-4, 8px);
 }
 
 /* ── Selection state ── */
 .selected {
-  background-color: var(--skt-color-fill-neutral-strong, #060c1f);
+  background-color: var(--fill/neutral/strong, #060c1f);
 }
 
 .unselected {
-  background-color: var(--skt-color-fill-neutral-primary, #f4f5fa);
+  background-color: var(--fill/neutral/primary, #f4f5fa);
 }
 
 /* ── Label ── */
@@ -52,31 +52,31 @@
 
 /* Large label */
 .large .label {
-  font-size: var(--skt-typography-font-size-400, 13px);
+  font-size: var(--typography/font-size/13, 13px);
 }
 
 .large.selected .label {
-  font-weight: var(--skt-typography-font-weight-semibold, 600);
-  color: var(--skt-color-text-inverse-primary, #ffffff);
+  font-weight: var(--typography/font-weight/semibold, 600);
+  color: var(--text/inverse/primary, #ffffff);
 }
 
 .large.unselected .label {
-  font-weight: var(--skt-typography-font-weight-medium, 500);
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  font-weight: var(--typography/font-weight/medium, 500);
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
 }
 
 /* Small label */
 .small .label {
-  font-size: var(--skt-typography-font-size-300, 12px);
+  font-size: var(--typography/font-size/12, 12px);
   text-align: center;
 }
 
 .small.selected .label {
-  font-weight: var(--skt-typography-font-weight-semibold, 600);
-  color: var(--skt-color-text-inverse-primary, #ffffff);
+  font-weight: var(--typography/font-weight/semibold, 600);
+  color: var(--text/inverse/primary, #ffffff);
 }
 
 .small.unselected .label {
-  font-weight: var(--skt-typography-font-weight-medium, 500);
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  font-weight: var(--typography/font-weight/medium, 500);
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
 }

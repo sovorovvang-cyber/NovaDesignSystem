@@ -1,29 +1,19 @@
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .IconItem/Nomal/MapDotNumber (node 51693:75652)
-// Anatomy: map pin (teardrop) filled with a dark body and a white numeral (1–5) centered inside
-
+import React from "react";
 import styles from "./IconMapDotNumber.module.css";
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .IconItem/Nomal/MapDotNumber (node 51693:75652)
 
 export type IconMapDotNumberVariant = "1" | "2" | "3" | "4" | "5";
 
 export interface IconMapDotNumberProps {
-  /** Icon size in px. Defaults to 24 (natural Figma size). */
   size?: number;
-  /**
-   * Pin body fill color; defaults to --skt-color-palette-gray-1000 (var(--skt-color-text-neutral-primary, #060c1f)).
-   * The numeral inside is always white.
-   */
   color?: string;
-  /** Additional class names. */
   className?: string;
-  /** Which numeral (1–5) to display inside the map pin. Defaults to "1". */
   variant?: IconMapDotNumberVariant;
 }
 
-// Shared map-pin (teardrop) path — same across all variants
 const PIN_PATH =
   "M7.74504 0C12.0225 0 15.4901 3.4415 15.4901 7.6868C15.4901 14.8495 7.74504 19.5664 7.74504 19.5664C7.74504 19.5664 0 14.5001 0 7.6868C0 3.494 3.46757 0 7.74504 0Z";
 
-// Numeral paths extracted from Figma — viewBox 0 0 15.4901 19.5664
 const NUMERAL: Record<IconMapDotNumberVariant, string> = {
   "1": "M8.87891 4.08573V10.449H7.55176V5.34256H7.5166L6.05762 6.25663V5.08768L7.63086 4.08573H8.87891Z",
   "2": "M5.49909 10.4492L5.4903 9.49121L7.77545 7.39062C8.37311 6.81934 8.68952 6.46777 8.68952 5.9668C8.68952 5.4043 8.25885 5.05273 7.67877 5.05273C7.08112 5.05273 6.6944 5.43066 6.6944 6.03711H5.43756C5.42877 4.78906 6.35162 3.99805 7.69635 3.99805C9.05866 3.99805 9.96393 4.77148 9.96393 5.87891C9.96393 6.59961 9.61237 7.19727 8.3028 8.38379L7.336 9.32422V9.35938H10.0518V10.4492H5.49909Z",
@@ -39,22 +29,22 @@ export function IconMapDotNumber({
   variant = "1",
 }: IconMapDotNumberProps) {
   const rootClass = [styles.root, className].filter(Boolean).join(" ");
-
   return (
     <svg
       data-cx-component="IconMapDotNumber"
       className={rootClass}
       width={size}
       height={size}
-      viewBox="0 0 15.4901 19.5664"
+      viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
+      focusable="false"
     >
-      {/* Pin body */}
-      <path d={PIN_PATH} fill={color} />
-      {/* Numeral — always white so it contrasts against the dark pin */}
-      <path d={NUMERAL[variant]} fill="white" />
+      <g transform="translate(4.26 2.22)">
+        <path d={PIN_PATH} fill={color} />
+        <path d={NUMERAL[variant]} fill="white" />
+      </g>
     </svg>
   );
 }

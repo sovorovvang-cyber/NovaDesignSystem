@@ -6,10 +6,10 @@
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  border-radius: var(--skt-radius-20, 20px);
+  border-radius: var(--radius-8, 20px);
   width: 100%;
   height: fit-content;
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", -apple-system, sans-serif);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", -apple-system, sans-serif);
   box-sizing: border-box;
 }
 
@@ -17,9 +17,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: var(--skt-color-bg-layer-basement, #f4f5fa);
-  border-radius: var(--skt-radius-20, 20px);
-  padding: var(--skt-spacing-24, 24px);
+  background-color: var(--bg/layer/secondary, #f4f5fa);
+  border-radius: var(--radius-8, 20px);
+  padding: var(--semantic/space-12, 24px);
   width: 100%;
   box-sizing: border-box;
   flex-shrink: 0;
@@ -27,7 +27,7 @@
 
 .slot {
   width: 100%;
-  border-radius: var(--skt-radius-12, 12px);
+  border-radius: var(--radius-5, 12px);
   position: relative;
   flex-shrink: 0;
   overflow: hidden;

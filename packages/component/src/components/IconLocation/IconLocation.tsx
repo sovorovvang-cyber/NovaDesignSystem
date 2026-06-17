@@ -1,20 +1,18 @@
 import React from "react";
 import styles from "./IconLocation.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .IconItem/Nomal/Location (node 51578:64788)
-// anatomy: root(svg) [ pin-body(teardrop path) + center-dot(circle) ] — single-color location pin glyph
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .IconItem/Nomal/Location (node 51578:64788)
 
 interface Props {
-  /** Natural icon size from Figma (24px grid) */
   size?: number;
-  /** Icon color — defaults to currentColor so it inherits text color */
   color?: string;
-  /** Additional class names */
   className?: string;
 }
 
+const LOCATION_PATH =
+  "M6.59961 0C8.34996 0 10.0289 0.718277 11.2666 1.99707C12.5043 3.27586 13.1992 5.01086 13.1992 6.81934C13.1989 10.7336 8.47661 16.2162 7.02148 17.8125C6.79308 18.0631 6.40614 18.0631 6.17773 17.8125C4.7225 16.216 0.000345605 10.7335 0 6.81934C0 5.01091 0.695006 3.27585 1.93262 1.99707C3.17028 0.718303 4.84929 2.83431e-05 6.59961 0ZM6.60059 4.19922C5.2751 4.19922 4.2002 5.27413 4.2002 6.59961C4.20041 7.92491 5.27523 8.99902 6.60059 8.99902C7.92576 8.99881 8.99979 7.92478 9 6.59961C9 5.27426 7.92589 4.19943 6.60059 4.19922Z";
+
 export function IconLocation({ size = 24, color = "currentColor", className }: Props) {
   const rootClass = [styles.root, className].filter(Boolean).join(" ");
-
   return (
     <svg
       data-cx-component="IconLocation"
@@ -27,15 +25,13 @@ export function IconLocation({ size = 24, color = "currentColor", className }: P
       aria-hidden="true"
       focusable="false"
     >
-      {/* Pin body — teardrop shape: circular head tapering to a bottom point */}
       <path
-        d="M12 2C8.686 2 6 4.686 6 8c0 5.25 6 12 6 12s6-6.75 6-12c0-3.314-2.686-6-6-6z"
+        d={LOCATION_PATH}
+        transform="translate(5.4 3)"
         fill={color}
         fillRule="evenodd"
         clipRule="evenodd"
       />
-      {/* Center dot — inner cutout to indicate the pin focus point */}
-      <circle cx="12" cy="8" r="2" fill="white" />
     </svg>
   );
 }

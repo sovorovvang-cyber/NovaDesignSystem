@@ -8,18 +8,18 @@
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", sans-serif);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
 }
 
 /* ── Text variant ────────────────────────────────────────────── */
 .textValue {
   display: block;
   width: 20px;
-  font-size: var(--skt-typography-style-16semi-font-size, var(--skt-typography-font-size-700, 16px));
-  font-weight: var(--skt-typography-style-16semi-font-weight, var(--skt-typography-font-weight-semibold, 600));
-  line-height: var(--skt-typography-style-16semi-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-16semi-letter-spacing, -0.04em);
-  color: var(--skt-color-text-neutral-tertiary, rgba(6, 12, 31, 0.4));
+  font-size: var(--typography/style/16semi/font-size, var(--typography/font-size/16, 16px));
+  font-weight: var(--typography/style/16semi/font-weight, var(--typography/font-weight/semibold, 600));
+  line-height: var(--typography/style/16semi/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/16semi/letter-spacing, -0.04em);
+  color: var(--text/neutral/tertiary, rgba(6, 12, 31, 0.4));
   word-break: break-word;
 }
 
@@ -58,7 +58,7 @@
   height: 100%;
   max-width: none;
   /* tint to neutral/secondary */
-  color: var(--skt-color-icon-neutral-secondary, rgba(6, 12, 31, 0.6));
+  color: var(--icon/neutral/secondary, rgba(6, 12, 31, 0.6));
 }
 
 /* ── Badge variant ───────────────────────────────────────────── */
@@ -67,18 +67,18 @@
   align-items: center;
   justify-content: center;
   height: 17px;
-  padding: var(--skt-spacing-2, 2px) var(--skt-spacing-6, 6px);
-  background-color: var(--skt-color-fill-neutral-secondary, #ebeef6);
-  border-radius: var(--skt-radius-4, 4px);
+  padding: var(--semantic/space-1, 2px) var(--semantic/space-3, 6px);
+  background-color: var(--fill/neutral/secondary, #ebeef6);
+  border-radius: var(--radius-1, 4px);
   mix-blend-mode: multiply;
   flex-shrink: 0;
 }
 
 .badgeLabel {
-  font-size: var(--skt-typography-style-10med-font-size, var(--skt-typography-font-size-100, 10px));
-  font-weight: var(--skt-typography-style-10med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-10med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-10med-letter-spacing, -0.04em);
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography/style/10med/font-size, var(--typography/font-size/10, 10px));
+  font-weight: var(--typography/style/10med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/10med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/10med/letter-spacing, -0.04em);
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   white-space: nowrap;
 }

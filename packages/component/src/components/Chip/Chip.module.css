@@ -2,23 +2,23 @@
    anatomy: wrap[ ChipItem*[ label ] ]
    wrap: horizontal scroll row with left padding, 6px gap
    item: pill-shaped button, px-12 py-10, radius-full
-   item selected: dark fill (var(--skt-color-text-neutral-primary, #060c1f)), white text semibold 13px
-   item unselected: light fill (var(--skt-color-bg-layer-basement, #f4f5fa)), secondary text medium 13px
+   item selected: dark fill (var(--text/neutral/primary, #060c1f)), white text semibold 13px
+   item unselected: light fill (var(--bg/layer/secondary, #f4f5fa)), secondary text medium 13px
 */
 
 .wrap {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: var(--skt-spacing-6, 6px);
-  padding-left: var(--skt-spacing-20, 20px);
-  padding-top: var(--skt-spacing-10, 10px);
-  padding-bottom: var(--skt-spacing-10, 10px);
+  gap: var(--semantic/space-3, 6px);
+  padding-left: var(--semantic/space-10, 20px);
+  padding-top: var(--semantic/space-5, 10px);
+  padding-bottom: var(--semantic/space-5, 10px);
   overflow-x: auto;
   overflow-y: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", -apple-system, sans-serif);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", -apple-system, sans-serif);
   width: 100%;
   box-sizing: border-box;
 }
@@ -29,7 +29,7 @@
 
 /* Size variants */
 .large .item {
-  padding: var(--skt-spacing-10, 10px) var(--skt-spacing-12, 12px);
+  padding: var(--semantic/space-5, 10px) var(--semantic/space-6, 12px);
 }
 
 /* Individual chip item */
@@ -38,8 +38,8 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  padding: var(--skt-spacing-10, 10px) var(--skt-spacing-12, 12px);
-  border-radius: var(--skt-radius-full, 9999px);
+  padding: var(--semantic/space-5, 10px) var(--semantic/space-6, 12px);
+  border-radius: var(--radius-r-full, 9999px);
   border: none;
   cursor: pointer;
   white-space: nowrap;
@@ -47,32 +47,32 @@
 }
 
 .itemSelected {
-  background-color: var(--skt-color-fill-neutral-strong, #060c1f);
+  background-color: var(--fill/neutral/strong, #060c1f);
 }
 
 .itemUnselected {
-  background-color: var(--skt-color-palette-gray-50, #f4f5fa);
+  background-color: var(--bg/layer/secondary, #f4f5fa);
 }
 
 .itemUnselected:hover {
-  background-color: var(--skt-color-palette-gray-100, #ebeef6);
+  background-color: var(--border/neutral/secondary, #ebeef6);
 }
 
 /* Label text */
 .label {
-  font-size: var(--skt-typography-font-size-400, 13px);
-  line-height: var(--skt-typography-line-height-200, 130%);
-  letter-spacing: var(--skt-typography-letter-spacing-dense, -0.05em);
+  font-size: var(--typography/font-size/13, 13px);
+  line-height: var(--typography/line-height/130, 130%);
+  letter-spacing: var(--typography/letter-spacing/dense, -0.05em);
   white-space: nowrap;
   word-break: keep-all;
 }
 
 .labelSelected {
-  font-weight: var(--skt-typography-font-weight-semibold, 600);
-  color: var(--skt-color-text-inverse-primary, #ffffff);
+  font-weight: var(--typography/font-weight/semibold, 600);
+  color: var(--text/inverse/primary, #ffffff);
 }
 
 .labelUnselected {
-  font-weight: var(--skt-typography-font-weight-medium, 500);
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  font-weight: var(--typography/font-weight/medium, 500);
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
 }

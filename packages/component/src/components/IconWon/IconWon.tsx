@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./IconWon.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .IconItem/Nomal/Won (node 51578:64865)
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .IconItem/Nomal/Won (node 51578:64865)
 // anatomy: root(svg) [ won-path ] — Korean Won currency symbol (₩)
 
 /**

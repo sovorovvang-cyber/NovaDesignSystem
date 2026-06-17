@@ -8,10 +8,10 @@
   align-items: flex-start;
   justify-content: center;
   overflow: hidden;
-  padding: var(--skt-spacing-12, 12px) var(--skt-spacing-16, 16px);
-  border-radius: var(--skt-radius-16, 16px);
-  background-color: var(--skt-color-bg-layer-basement, #f4f5fa);
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", sans-serif);
+  padding: var(--semantic/space-6, 12px) var(--semantic/space-8, 16px);
+  border-radius: var(--radius-7, 16px);
+  background-color: var(--bg/layer/secondary, #f4f5fa);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
   width: 100%;
   box-sizing: border-box;
 }

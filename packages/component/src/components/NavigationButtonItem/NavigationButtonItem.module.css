@@ -8,9 +8,9 @@
   align-items: center;
   overflow: hidden;
   position: relative;
-  background-color: var(--skt-color-palette-white-alpha-500, rgba(255, 255, 255, 0.5));
-  box-shadow: 0px 0px 20px 0px var(--skt-color-palette-gray-alpha-50, rgba(6, 12, 31, 0.05));
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", sans-serif);
+  background-color: var(--white-alpha/500, rgba(255, 255, 255, 0.5));
+  box-shadow: 0px 0px 20px 0px var(--fill/neutral/tertiary, rgba(6, 12, 31, 0.05));
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
   cursor: pointer;
   user-select: none;
 }
@@ -19,9 +19,9 @@
 .aiCollapsed {
   width: 52px;
   height: 52px;
-  border-radius: var(--skt-radius-full, 9999px);
+  border-radius: var(--radius-r-full, 9999px);
   justify-content: center;
-  gap: var(--skt-spacing-8, 8px);
+  gap: var(--semantic/space-4, 8px);
 }
 
 /* ── AI variant: expanded bar (309×52, pill-ish corners) ── */
@@ -29,8 +29,8 @@
   width: 309px;
   height: 52px;
   border-radius: 26px;
-  padding-left: var(--skt-spacing-20, 20px);
-  padding-right: var(--skt-spacing-12, 12px);
+  padding-left: var(--semantic/space-10, 20px);
+  padding-right: var(--semantic/space-6, 12px);
   gap: 0;
 }
 
@@ -38,26 +38,26 @@
 .menuDefault {
   width: 52px;
   height: 52px;
-  border-radius: var(--skt-radius-full, 9999px);
+  border-radius: var(--radius-r-full, 9999px);
   justify-content: center;
-  padding: var(--skt-spacing-4, 4px);
+  padding: var(--semantic/space-2, 4px);
 }
 
 /* ── Menu variant: On — single tab pill 52×52 ── */
 .menuOn {
   width: 52px;
   height: 52px;
-  border-radius: var(--skt-radius-full, 9999px);
+  border-radius: var(--radius-r-full, 9999px);
   justify-content: center;
-  padding: var(--skt-spacing-4, 4px);
+  padding: var(--semantic/space-2, 4px);
 }
 
 /* ── Menu variant: Off — two-tab row 294px ── */
 .menuOff {
   width: 294px;
-  border-radius: var(--skt-radius-full, 9999px);
-  gap: var(--skt-spacing-2, 2px);
-  padding: var(--skt-spacing-4, 4px);
+  border-radius: var(--radius-r-full, 9999px);
+  gap: var(--semantic/space-1, 2px);
+  padding: var(--semantic/space-2, 4px);
 }
 
 /* ── AI expanded: input row ── */
@@ -65,7 +65,7 @@
   display: flex;
   flex: 1 0 0;
   align-items: center;
-  gap: var(--skt-spacing-8, 8px);
+  gap: var(--semantic/space-4, 8px);
   min-width: 0;
 }
 
@@ -90,11 +90,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  font-size: var(--skt-typography-style-16med-font-size, var(--skt-typography-font-size-700, 16px));
-  font-weight: var(--skt-typography-style-16med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-16med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-16med-letter-spacing, -0.04em);
-  color: var(--skt-color-text-brand-primary, #3617ce);
+  font-size: var(--typography/style/16med/font-size, var(--typography/font-size/16, 16px));
+  font-weight: var(--typography/style/16med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/16med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/16med/letter-spacing, -0.04em);
+  color: var(--text/brand/primary, #3617ce);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -109,7 +109,7 @@
   flex-shrink: 0;
   width: 32px;
   height: 32px;
-  border-radius: var(--skt-radius-full, 9999px);
+  border-radius: var(--radius-r-full, 9999px);
   background: transparent;
   border: none;
   padding: 0;
@@ -118,7 +118,7 @@
 }
 
 .voiceBtn:focus-visible {
-  outline: 2px solid var(--skt-color-text-brand-primary, #3617ce);
+  outline: 2px solid var(--text/brand/primary, #3617ce);
   outline-offset: 2px;
 }
 
@@ -139,9 +139,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--skt-spacing-2, 2px);
+  gap: var(--semantic/space-1, 2px);
   overflow: hidden;
-  border-radius: var(--skt-radius-full, 9999px);
+  border-radius: var(--radius-r-full, 9999px);
   flex-shrink: 0;
   /* Default/On: icon-only with tight padding */
   padding: 5px;
@@ -150,7 +150,7 @@
 /* Selected pill background (Menu Default & Off selected-tab) */
 .tabItem.menuDefault,
 .menuDefault .tabItem {
-  background-color: var(--skt-color-palette-gray-200, #e2e6f1);
+  background-color: var(--border/neutral/primary, #e2e6f1);
   width: 44px;
   height: 44px;
 }
@@ -173,11 +173,11 @@
 /* Tab label text */
 .tabLabel {
   display: block;
-  font-size: var(--skt-typography-style-12med-font-size, var(--skt-typography-font-size-300, 12px));
-  font-weight: var(--skt-typography-style-12med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-12med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-12med-letter-spacing, var(--skt-typography-letter-spacing-dense, -0.05em));
-  color: var(--skt-color-text-neutral-tertiary, rgba(6, 12, 31, 0.4));
+  font-size: var(--typography/style/12med/font-size, var(--typography/font-size/12, 12px));
+  font-weight: var(--typography/style/12med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/12med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/12med/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
+  color: var(--text/neutral/tertiary, rgba(6, 12, 31, 0.4));
   text-align: center;
   white-space: nowrap;
   flex-shrink: 0;

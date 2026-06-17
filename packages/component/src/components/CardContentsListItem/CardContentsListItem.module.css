@@ -5,7 +5,7 @@
 
 /* ─── shared ─────────────────────────────────────────────────────────────── */
 .root {
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", -apple-system, sans-serif);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", -apple-system, sans-serif);
   box-sizing: border-box;
   position: relative;
   width: 100%;
@@ -17,23 +17,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--skt-spacing-4, 4px);
-  padding: var(--skt-spacing-8, 8px) 0;
+  gap: var(--semantic/space-2, 4px);
+  padding: var(--semantic/space-4, 8px) 0;
 }
 
 .profileLeft {
   display: flex;
   align-items: center;
-  gap: var(--skt-spacing-4, 4px);
+  gap: var(--semantic/space-2, 4px);
   flex-shrink: 0;
 }
 
 .profileAvatar {
   width: 24px;
   height: 24px;
-  border-radius: var(--skt-radius-full, 9999px);
+  border-radius: var(--radius-r-full, 9999px);
   overflow: hidden;
-  background-color: var(--skt-color-palette-gray-50, #f4f5fa);
+  background-color: var(--bg/layer/secondary, #f4f5fa);
   flex-shrink: 0;
 }
 
@@ -47,24 +47,24 @@
 .avatarPlaceholder {
   width: 100%;
   height: 100%;
-  background-color: var(--skt-color-palette-gray-50, #f4f5fa);
+  background-color: var(--bg/layer/secondary, #f4f5fa);
 }
 
 .profileName {
-  font-size: var(--skt-typography-style-16med-font-size, var(--skt-typography-font-size-700, 16px));
-  font-weight: var(--skt-typography-style-16med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-16med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-16med-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/16med/font-size, var(--typography/font-size/16, 16px));
+  font-weight: var(--typography/style/16med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/16med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/16med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/primary, #060c1f);
   white-space: nowrap;
 }
 
 .profilePhone {
-  font-size: var(--skt-typography-style-12med-font-size, var(--skt-typography-font-size-300, 12px));
-  font-weight: var(--skt-typography-style-12med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-12med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-12med-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography/style/12med/font-size, var(--typography/font-size/12, 12px));
+  font-weight: var(--typography/style/12med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/12med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/12med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   white-space: nowrap;
 }
 
@@ -73,22 +73,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--skt-spacing-6, 6px) var(--skt-spacing-12, 12px);
-  background-color: var(--skt-color-palette-gray-200, #e2e6f1);
+  padding: var(--semantic/space-3, 6px) var(--semantic/space-6, 12px);
+  background-color: var(--border/neutral/primary, #e2e6f1);
   border: none;
-  border-radius: var(--skt-radius-full, 9999px);
+  border-radius: var(--radius-r-full, 9999px);
   cursor: pointer;
   font-family: inherit;
-  font-size: var(--skt-typography-style-12semi-font-size, var(--skt-typography-font-size-300, 12px));
-  font-weight: var(--skt-typography-style-12semi-font-weight, var(--skt-typography-font-weight-semibold, 600));
-  line-height: var(--skt-typography-style-12semi-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-12semi-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography/style/12semi/font-size, var(--typography/font-size/12, 12px));
+  font-weight: var(--typography/style/12semi/font-weight, var(--typography/font-weight/semibold, 600));
+  line-height: var(--typography/style/12semi/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/12semi/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   white-space: nowrap;
 }
 
 .actionBtn:hover {
-  background-color: var(--skt-color-palette-gray-300, #d2d9eb);
+  background-color: var(--border/neutral/strong, #d2d9eb);
 }
 
 /* ─── Data ───────────────────────────────────────────────────────────────── */
@@ -96,13 +96,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--skt-spacing-8, 8px);
+  gap: var(--semantic/space-4, 8px);
 }
 
 .dataLeft {
   display: flex;
   flex-direction: column;
-  gap: var(--skt-spacing-4, 4px);
+  gap: var(--semantic/space-2, 4px);
   flex: 1 0 0;
   min-width: 0;
 }
@@ -110,16 +110,16 @@
 .dataTitleRow {
   display: flex;
   align-items: center;
-  gap: var(--skt-spacing-6, 6px);
+  gap: var(--semantic/space-3, 6px);
   flex-shrink: 0;
 }
 
 .dataTitle {
-  font-size: var(--skt-typography-style-18med-font-size, var(--skt-typography-font-size-800, 18px));
-  font-weight: var(--skt-typography-style-18med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-18med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-18med-letter-spacing, var(--skt-typography-letter-spacing-dense, -0.05em));
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/18med/font-size, var(--typography/font-size/18, 18px));
+  font-weight: var(--typography/style/18med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/18med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/18med/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
+  color: var(--text/neutral/primary, #060c1f);
   white-space: nowrap;
 }
 
@@ -128,25 +128,25 @@
   align-items: center;
   justify-content: center;
   height: 22px;
-  padding: 4px var(--skt-spacing-6, 6px);
-  background-color: var(--skt-color-palette-gray-100, #ebeef6);
-  border-radius: var(--skt-radius-6, 6px);
-  font-size: var(--skt-typography-style-11med-font-size, var(--skt-typography-font-size-200, 11px));
-  font-weight: var(--skt-typography-style-11med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-11med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-11med-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  padding: 4px var(--semantic/space-3, 6px);
+  background-color: var(--border/neutral/secondary, #ebeef6);
+  border-radius: var(--radius-2, 6px);
+  font-size: var(--typography/style/11med/font-size, var(--typography/font-size/11, 11px));
+  font-weight: var(--typography/style/11med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/11med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/11med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   white-space: nowrap;
   mix-blend-mode: multiply;
   flex-shrink: 0;
 }
 
 .dataSubTitle {
-  font-size: var(--skt-typography-style-12med-font-size, var(--skt-typography-font-size-300, 12px));
-  font-weight: var(--skt-typography-style-12med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-12med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-12med-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography/style/12med/font-size, var(--typography/font-size/12, 12px));
+  font-weight: var(--typography/style/12med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/12med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/12med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   white-space: nowrap;
 }
 
@@ -157,7 +157,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  color: var(--text/neutral/primary, #060c1f);
 }
 
 .dataIcon {
@@ -175,7 +175,7 @@
 .barcodeArea {
   display: flex;
   flex-direction: column;
-  gap: var(--skt-spacing-4, 4px);
+  gap: var(--semantic/space-2, 4px);
   width: 100%;
 }
 
@@ -196,17 +196,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: var(--skt-typography-style-11med-font-size, var(--skt-typography-font-size-200, 11px));
-  font-weight: var(--skt-typography-style-11med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-11med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-11med-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
+  font-size: var(--typography/style/11med/font-size, var(--typography/font-size/11, 11px));
+  font-weight: var(--typography/style/11med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/11med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/11med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
   white-space: nowrap;
 }
 
 .barcodeNums {
   display: flex;
-  gap: var(--skt-spacing-8, 8px);
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  gap: var(--semantic/space-4, 8px);
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   opacity: 0.5;
 }
 
@@ -215,24 +215,24 @@
 }
 
 .barcodeTime {
-  color: var(--skt-color-text-brand-primary, #3617ce);
+  color: var(--text/brand/primary, #3617ce);
 }
 
 /* ─── Product ────────────────────────────────────────────────────────────── */
 .variant-Product {
   display: flex;
   align-items: center;
-  gap: var(--skt-spacing-16, 16px);
-  padding: var(--skt-spacing-8, 8px) 0;
+  gap: var(--semantic/space-8, 16px);
+  padding: var(--semantic/space-4, 8px) 0;
 }
 
 .productThumb {
   width: 48px;
   height: 48px;
-  border-radius: var(--skt-radius-10, 10px);
+  border-radius: var(--radius-4, 10px);
   overflow: hidden;
   flex-shrink: 0;
-  background-color: var(--skt-color-palette-gray-50, #f4f5fa);
+  background-color: var(--bg/layer/secondary, #f4f5fa);
 }
 
 .thumbImg {
@@ -245,42 +245,42 @@
 .thumbPlaceholder {
   width: 100%;
   height: 100%;
-  background-color: var(--skt-color-palette-gray-100, #ebeef6);
+  background-color: var(--border/neutral/secondary, #ebeef6);
 }
 
 .productTextGroup {
   display: flex;
   flex-direction: column;
-  gap: var(--skt-spacing-4, 4px);
+  gap: var(--semantic/space-2, 4px);
   flex: 1 0 0;
   min-width: 0;
 }
 
 .productMainText {
-  font-size: var(--skt-typography-style-16med-font-size, var(--skt-typography-font-size-700, 16px));
-  font-weight: var(--skt-typography-style-16med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-16med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-16med-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/16med/font-size, var(--typography/font-size/16, 16px));
+  font-weight: var(--typography/style/16med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/16med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/16med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/primary, #060c1f);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .productPrice {
-  font-size: var(--skt-typography-style-14semi-font-size, var(--skt-typography-font-size-500, 14px));
-  font-weight: var(--skt-typography-style-14semi-font-weight, var(--skt-typography-font-weight-semibold, 600));
-  line-height: var(--skt-typography-style-14semi-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-14semi-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/14semi/font-size, var(--typography/font-size/14, 14px));
+  font-weight: var(--typography/style/14semi/font-weight, var(--typography/font-weight/semibold, 600));
+  line-height: var(--typography/style/14semi/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/14semi/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/primary, #060c1f);
 }
 
 /* ─── Benefit ────────────────────────────────────────────────────────────── */
 .variant-Benefit {
   display: flex;
   align-items: center;
-  gap: var(--skt-spacing-16, 16px);
-  padding: var(--skt-spacing-8, 8px) 0;
+  gap: var(--semantic/space-8, 16px);
+  padding: var(--semantic/space-4, 8px) 0;
 }
 
 .benefitThumbWrap {
@@ -293,31 +293,31 @@
 .benefitThumb {
   width: 48px;
   height: 48px;
-  border-radius: var(--skt-radius-full, 9999px);
+  border-radius: var(--radius-r-full, 9999px);
   overflow: hidden;
-  background-color: var(--skt-color-palette-gray-00, #ffffff);
+  background-color: var(--bg/layer/primary, #ffffff);
 }
 
 .benefitThumbPlaceholder {
   width: 100%;
   height: 100%;
-  background-color: var(--skt-color-palette-gray-50, #f4f5fa);
+  background-color: var(--bg/layer/secondary, #f4f5fa);
 }
 
 .benefitTextGroup {
   display: flex;
   flex-direction: column;
-  gap: var(--skt-spacing-4, 4px);
+  gap: var(--semantic/space-2, 4px);
   flex: 1 0 0;
   min-width: 0;
 }
 
 .benefitMainText {
-  font-size: var(--skt-typography-style-16med-font-size, var(--skt-typography-font-size-700, 16px));
-  font-weight: var(--skt-typography-style-16med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-16med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-16med-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/16med/font-size, var(--typography/font-size/16, 16px));
+  font-weight: var(--typography/style/16med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/16med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/16med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/primary, #060c1f);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -326,15 +326,15 @@
 .benefitSubTexts {
   display: flex;
   align-items: center;
-  gap: var(--skt-spacing-4, 4px);
+  gap: var(--semantic/space-2, 4px);
 }
 
 .benefitSubText {
-  font-size: var(--skt-typography-style-12med-font-size, var(--skt-typography-font-size-300, 12px));
-  font-weight: var(--skt-typography-style-12med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-12med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-12med-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography/style/12med/font-size, var(--typography/font-size/12, 12px));
+  font-weight: var(--typography/style/12med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/12med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/12med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   white-space: nowrap;
 }
 
@@ -342,7 +342,7 @@
   display: inline-block;
   width: 1px;
   height: 8px;
-  background-color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  background-color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   flex-shrink: 0;
 }
 
@@ -357,14 +357,14 @@
   align-items: center;
   justify-content: center;
   height: 17px;
-  padding: 2px var(--skt-spacing-6, 6px);
-  background-color: var(--skt-color-palette-gray-100, #ebeef6);
-  border-radius: var(--skt-radius-4, 4px);
-  font-size: var(--skt-typography-style-10med-font-size, var(--skt-typography-font-size-100, 10px));
-  font-weight: var(--skt-typography-style-10med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-10med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-10med-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  padding: 2px var(--semantic/space-3, 6px);
+  background-color: var(--border/neutral/secondary, #ebeef6);
+  border-radius: var(--radius-1, 4px);
+  font-size: var(--typography/style/10med/font-size, var(--typography/font-size/10, 10px));
+  font-weight: var(--typography/style/10med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/10med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/10med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   white-space: nowrap;
   mix-blend-mode: multiply;
 }
@@ -374,11 +374,11 @@
   width: 100%;
   height: 152px;
   overflow: hidden;
-  border-radius: var(--skt-radius-16, 16px);
+  border-radius: var(--radius-7, 16px);
   background: linear-gradient(
     135deg,
-    color-mix(in srgb, var(--skt-color-palette-blue-300, #bfcbff) 70%, transparent) 0%,
-    color-mix(in srgb, var(--skt-color-palette-blue-300, #bfcbff) 0%, transparent) 60%
+    color-mix(in srgb, var(--fill/brand/secondary, #bfcbff) 70%, transparent) 0%,
+    color-mix(in srgb, var(--fill/brand/secondary, #bfcbff) 0%, transparent) 60%
   );
 }
 
@@ -393,26 +393,26 @@
 .taskTextArea {
   display: flex;
   flex-direction: column;
-  gap: var(--skt-spacing-4, 4px);
-  padding: var(--skt-spacing-20, 20px) var(--skt-spacing-16, 16px);
+  gap: var(--semantic/space-2, 4px);
+  padding: var(--semantic/space-10, 20px) var(--semantic/space-8, 16px);
   flex: 1 0 0;
   min-width: 0;
 }
 
 .taskTitle {
-  font-size: var(--skt-typography-style-16semi-font-size, var(--skt-typography-font-size-700, 16px));
-  font-weight: var(--skt-typography-style-16semi-font-weight, var(--skt-typography-font-weight-semibold, 600));
-  line-height: var(--skt-typography-style-16semi-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-16semi-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/16semi/font-size, var(--typography/font-size/16, 16px));
+  font-weight: var(--typography/style/16semi/font-weight, var(--typography/font-weight/semibold, 600));
+  line-height: var(--typography/style/16semi/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/16semi/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/primary, #060c1f);
 }
 
 .taskBody {
-  font-size: var(--skt-typography-style-12med-font-size, var(--skt-typography-font-size-300, 12px));
-  font-weight: var(--skt-typography-style-12med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-12med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-12med-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography/style/12med/font-size, var(--typography/font-size/12, 12px));
+  font-weight: var(--typography/style/12med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/12med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/12med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
 }
 
 .taskImageArea {

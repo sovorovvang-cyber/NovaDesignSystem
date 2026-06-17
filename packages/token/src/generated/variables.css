@@ -1,295 +1,661 @@
 /**
- * Do not edit directly, this file was auto-generated.
+ * NovaDS 3.3 — Design Tokens
+ * Figma: SKT-Next_UI-Draft_3.3 (E7GfqKJ0fSCwiix1XffIe6)
+ * Do not edit directly — rerun Figma sync to regenerate.
  */
 
 :root {
-	--skt-color-palette-gray-50: #f4f5fa;
-	--skt-color-palette-gray-100: #ebeef6;
-	--skt-color-palette-gray-200: #e2e6f1;
-	--skt-color-palette-gray-300: #d2d9eb;
-	--skt-color-palette-gray-400: #b4c0de;
-	--skt-color-palette-gray-500: #97a2bf;
-	--skt-color-palette-gray-600: #75809b;
-	--skt-color-palette-gray-700: #5c6680;
-	--skt-color-palette-gray-800: #454e67;
-	--skt-color-palette-gray-900: #283047;
-	--skt-color-palette-gray-1000: #060c1f;
-	--skt-color-palette-gray-00: #ffffff;
-	--skt-color-palette-blue-50: #f3f5fc;
-	--skt-color-palette-blue-100: #e9eeff;
-	--skt-color-palette-blue-200: #d2dbfe;
-	--skt-color-palette-blue-300: #bfcbff;
-	--skt-color-palette-blue-400: #abbafd;
-	--skt-color-palette-blue-500: #7f90fb;
-	--skt-color-palette-blue-600: #5f6afd;
-	--skt-color-palette-blue-700: #4a3dfe;
-	--skt-color-palette-blue-800: #3617ce;
-	--skt-color-palette-blue-900: #20028b;
-	--skt-color-palette-blue-1000: #08013c;
-	--skt-color-palette-red-50: #fff2f0;
-	--skt-color-palette-red-100: #ffe8e7;
-	--skt-color-palette-red-200: #ffd4d0;
-	--skt-color-palette-red-300: #ffbcb7;
-	--skt-color-palette-red-400: #f99c96;
-	--skt-color-palette-red-500: #f36c69;
-	--skt-color-palette-red-600: #e7313d;
-	--skt-color-palette-red-700: #bb0223;
-	--skt-color-palette-red-800: #8e0419;
-	--skt-color-palette-red-900: #5c010c;
-	--skt-color-palette-red-1000: #250103;
-	--skt-color-palette-gray-alpha-50: rgba(6, 12, 31, 0.05);
-	--skt-color-palette-gray-alpha-100: rgba(6, 12, 31, 0.1);
-	--skt-color-palette-gray-alpha-150: rgba(6, 12, 31, 0.15);
-	--skt-color-palette-gray-alpha-200: rgba(6, 12, 31, 0.2);
-	--skt-color-palette-gray-alpha-300: rgba(6, 12, 31, 0.3);
-	--skt-color-palette-gray-alpha-400: rgba(6, 12, 31, 0.4);
-	--skt-color-palette-gray-alpha-500: rgba(6, 12, 31, 0.5);
-	--skt-color-palette-gray-alpha-600: rgba(6, 12, 31, 0.6);
-	--skt-color-palette-gray-alpha-700: rgba(6, 12, 31, 0.7);
-	--skt-color-palette-gray-alpha-800: rgba(6, 12, 31, 0.8);
-	--skt-color-palette-gray-alpha-900: rgba(6, 12, 31, 0.9);
-	--skt-color-palette-gray-alpha-950: rgba(6, 12, 31, 0.95);
-	--skt-color-palette-white-alpha-50: rgba(255, 255, 255, 0.05);
-	--skt-color-palette-white-alpha-100: rgba(255, 255, 255, 0.1);
-	--skt-color-palette-white-alpha-150: rgba(255, 255, 255, 0.15);
-	--skt-color-palette-white-alpha-200: rgba(255, 255, 255, 0.2);
-	--skt-color-palette-white-alpha-300: rgba(255, 255, 255, 0.3);
-	--skt-color-palette-white-alpha-400: rgba(255, 255, 255, 0.4);
-	--skt-color-palette-white-alpha-500: rgba(255, 255, 255, 0.5);
-	--skt-color-palette-white-alpha-600: rgba(255, 255, 255, 0.6);
-	--skt-color-palette-white-alpha-700: rgba(255, 255, 255, 0.7);
-	--skt-color-palette-white-alpha-800: rgba(255, 255, 255, 0.8);
-	--skt-color-palette-white-alpha-900: rgba(255, 255, 255, 0.9);
-	--skt-color-palette-white-alpha-950: rgba(255, 255, 255, 0.95);
-	--skt-radius-4: 4px;
-	--skt-radius-6: 6px;
-	--skt-radius-10: 10px;
-	--skt-radius-12: 12px;
-	--skt-radius-16: 16px;
-	--skt-radius-20: 20px;
-	--skt-radius-24: 24px;
-	--skt-radius-28: 28px;
-	--skt-radius-none: 0px;
-	--skt-radius-full: 9999px;
-	--skt-spacing-2: 2px;
-	--skt-spacing-4: 4px;
-	--skt-spacing-6: 6px;
-	--skt-spacing-8: 8px;
-	--skt-spacing-10: 10px;
-	--skt-spacing-12: 12px;
-	--skt-spacing-14: 14px;
-	--skt-spacing-16: 16px;
-	--skt-spacing-18: 18px;
-	--skt-spacing-20: 20px;
-	--skt-spacing-22: 22px;
-	--skt-spacing-24: 24px;
-	--skt-spacing-28: 28px;
-	--skt-spacing-32: 32px;
-	--skt-spacing-36: 36px;
-	--skt-spacing-40: 40px;
-	--skt-spacing-none: 0px;
-	--skt-typography-font-family-base: "Pretendard Variable", -apple-system, sans-serif;
-	--skt-typography-font-size-100: 10px;
-	--skt-typography-font-size-200: 11px;
-	--skt-typography-font-size-300: 12px;
-	--skt-typography-font-size-400: 13px;
-	--skt-typography-font-size-500: 14px;
-	--skt-typography-font-size-600: 15px;
-	--skt-typography-font-size-700: 16px;
-	--skt-typography-font-size-800: 18px;
-	--skt-typography-font-size-900: 20px;
-	--skt-typography-font-size-1000: 24px;
-	--skt-typography-font-size-1100: 26px;
-	--skt-typography-font-weight-regular: 400;
-	--skt-typography-font-weight-medium: 500;
-	--skt-typography-font-weight-semibold: 600;
-	--skt-typography-font-weight-bold: 700;
-	--skt-typography-line-height-100: 120%;
-	--skt-typography-line-height-200: 130%;
-	--skt-typography-line-height-300: 140%;
-	--skt-typography-line-height-400: 150%;
-	--skt-typography-line-height-500: 140%;
-	--skt-typography-line-height-700: 160%;
-	--skt-typography-line-height-350: 125%;
-	--skt-typography-line-height-14: 14px;
-	--skt-typography-line-height-18: 18px;
-	--skt-typography-line-height-24: 24px;
-	--skt-typography-letter-spacing-normal: -0.04em;
-	--skt-typography-letter-spacing-dense: -0.05em;
-	--skt-typography-letter-spacing-tight: -0.06em;
-	--skt-typography-letter-spacing-none: 0;
-	--skt-typography-style-28reg-font-size: var(--skt-typography-font-size-1100);
-	--skt-typography-style-28reg-line-height: var(--skt-typography-line-height-350);
-	--skt-typography-style-28reg-font-weight: var(--skt-typography-font-weight-regular);
-	--skt-typography-style-28reg-letter-spacing: var(--skt-typography-letter-spacing-tight);
-	--skt-typography-style-24med-font-size: var(--skt-typography-font-size-1000);
-	--skt-typography-style-24med-line-height: var(--skt-typography-line-height-100);
-	--skt-typography-style-24med-font-weight: var(--skt-typography-font-weight-medium);
-	--skt-typography-style-24med-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-20med-font-size: var(--skt-typography-font-size-900);
-	--skt-typography-style-20med-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-20med-font-weight: var(--skt-typography-font-weight-medium);
-	--skt-typography-style-20med-letter-spacing: var(--skt-typography-letter-spacing-dense);
-	--skt-typography-style-18bold-font-size: var(--skt-typography-font-size-800);
-	--skt-typography-style-18bold-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-18bold-font-weight: var(--skt-typography-font-weight-bold);
-	--skt-typography-style-18bold-letter-spacing: var(--skt-typography-letter-spacing-dense);
-	--skt-typography-style-18semi-font-size: var(--skt-typography-font-size-800);
-	--skt-typography-style-18semi-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-18semi-font-weight: var(--skt-typography-font-weight-semibold);
-	--skt-typography-style-18semi-letter-spacing: var(--skt-typography-letter-spacing-dense);
-	--skt-typography-style-18med-font-size: var(--skt-typography-font-size-800);
-	--skt-typography-style-18med-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-18med-font-weight: var(--skt-typography-font-weight-medium);
-	--skt-typography-style-18med-letter-spacing: var(--skt-typography-letter-spacing-dense);
-	--skt-typography-style-16semi-font-size: var(--skt-typography-font-size-700);
-	--skt-typography-style-16semi-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-16semi-font-weight: var(--skt-typography-font-weight-semibold);
-	--skt-typography-style-16semi-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-16med-font-size: var(--skt-typography-font-size-700);
-	--skt-typography-style-16med-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-16med-font-weight: var(--skt-typography-font-weight-medium);
-	--skt-typography-style-16med-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-16reg-font-size: var(--skt-typography-font-size-700);
-	--skt-typography-style-16reg-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-16reg-font-weight: var(--skt-typography-font-weight-regular);
-	--skt-typography-style-16reg-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-15bold-font-size: var(--skt-typography-font-size-600);
-	--skt-typography-style-15bold-line-height: var(--skt-typography-line-height-300);
-	--skt-typography-style-15bold-font-weight: var(--skt-typography-font-weight-bold);
-	--skt-typography-style-15bold-letter-spacing: var(--skt-typography-letter-spacing-dense);
-	--skt-typography-style-15med-font-size: var(--skt-typography-font-size-600);
-	--skt-typography-style-15med-line-height: var(--skt-typography-line-height-700);
-	--skt-typography-style-15med-font-weight: var(--skt-typography-font-weight-medium);
-	--skt-typography-style-15med-letter-spacing: var(--skt-typography-letter-spacing-dense);
-	--skt-typography-style-14bold-font-size: var(--skt-typography-font-size-500);
-	--skt-typography-style-14bold-line-height: var(--skt-typography-line-height-700);
-	--skt-typography-style-14bold-font-weight: var(--skt-typography-font-weight-bold);
-	--skt-typography-style-14bold-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-14semi-font-size: var(--skt-typography-font-size-500);
-	--skt-typography-style-14semi-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-14semi-font-weight: var(--skt-typography-font-weight-semibold);
-	--skt-typography-style-14semi-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-14med-font-size: var(--skt-typography-font-size-500);
-	--skt-typography-style-14med-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-14med-font-weight: var(--skt-typography-font-weight-medium);
-	--skt-typography-style-14med-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-14reg-font-size: var(--skt-typography-font-size-500);
-	--skt-typography-style-14reg-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-14reg-font-weight: var(--skt-typography-font-weight-regular);
-	--skt-typography-style-14reg-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-13bold-font-size: var(--skt-typography-font-size-400);
-	--skt-typography-style-13bold-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-13bold-font-weight: var(--skt-typography-font-weight-bold);
-	--skt-typography-style-13bold-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-13semi-font-size: var(--skt-typography-font-size-400);
-	--skt-typography-style-13semi-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-13semi-font-weight: var(--skt-typography-font-weight-semibold);
-	--skt-typography-style-13semi-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-13med-font-size: var(--skt-typography-font-size-400);
-	--skt-typography-style-13med-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-13med-font-weight: var(--skt-typography-font-weight-medium);
-	--skt-typography-style-13med-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-13reg-font-size: var(--skt-typography-font-size-400);
-	--skt-typography-style-13reg-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-13reg-font-weight: var(--skt-typography-font-weight-regular);
-	--skt-typography-style-13reg-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-12semi-font-size: var(--skt-typography-font-size-300);
-	--skt-typography-style-12semi-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-12semi-font-weight: var(--skt-typography-font-weight-semibold);
-	--skt-typography-style-12semi-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-12med-font-size: var(--skt-typography-font-size-300);
-	--skt-typography-style-12med-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-12med-font-weight: var(--skt-typography-font-weight-medium);
-	--skt-typography-style-12med-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-12reg-font-size: var(--skt-typography-font-size-300);
-	--skt-typography-style-12reg-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-12reg-font-weight: var(--skt-typography-font-weight-regular);
-	--skt-typography-style-12reg-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-11semi-font-size: var(--skt-typography-font-size-200);
-	--skt-typography-style-11semi-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-11semi-font-weight: var(--skt-typography-font-weight-semibold);
-	--skt-typography-style-11semi-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-11med-font-size: var(--skt-typography-font-size-200);
-	--skt-typography-style-11med-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-11med-font-weight: var(--skt-typography-font-weight-medium);
-	--skt-typography-style-11med-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-11reg-font-size: var(--skt-typography-font-size-200);
-	--skt-typography-style-11reg-line-height: var(--skt-typography-line-height-400);
-	--skt-typography-style-11reg-font-weight: var(--skt-typography-font-weight-regular);
-	--skt-typography-style-11reg-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-10semi-font-size: var(--skt-typography-font-size-100);
-	--skt-typography-style-10semi-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-10semi-font-weight: var(--skt-typography-font-weight-semibold);
-	--skt-typography-style-10semi-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-10med-font-size: var(--skt-typography-font-size-100);
-	--skt-typography-style-10med-line-height: var(--skt-typography-line-height-200);
-	--skt-typography-style-10med-font-weight: var(--skt-typography-font-weight-medium);
-	--skt-typography-style-10med-letter-spacing: var(--skt-typography-letter-spacing-normal);
-	--skt-typography-style-11reg-underlined-font-size: var(--skt-typography-font-size-200);
-	--skt-typography-style-11reg-underlined-line-height: var(--skt-typography-line-height-14);
-	--skt-typography-style-11reg-underlined-font-weight: var(--skt-typography-font-weight-regular);
-	--skt-typography-style-11reg-underlined-letter-spacing: var(--skt-typography-letter-spacing-none);
-	--skt-typography-style-11reg-underlined-text-decoration: underline;
-	--skt-typography-style-11semi-underlined-font-size: var(--skt-typography-font-size-200);
-	--skt-typography-style-11semi-underlined-line-height: var(--skt-typography-line-height-14);
-	--skt-typography-style-11semi-underlined-font-weight: var(--skt-typography-font-weight-semibold);
-	--skt-typography-style-11semi-underlined-letter-spacing: var(--skt-typography-letter-spacing-none);
-	--skt-typography-style-11semi-underlined-text-decoration: underline;
-	--skt-typography-style-13reg-underlined-font-size: var(--skt-typography-font-size-400);
-	--skt-typography-style-13reg-underlined-line-height: var(--skt-typography-line-height-18);
-	--skt-typography-style-13reg-underlined-font-weight: var(--skt-typography-font-weight-regular);
-	--skt-typography-style-13reg-underlined-letter-spacing: var(--skt-typography-letter-spacing-none);
-	--skt-typography-style-13reg-underlined-text-decoration: underline;
-	--skt-typography-style-13med-underlined-font-size: var(--skt-typography-font-size-400);
-	--skt-typography-style-13med-underlined-line-height: var(--skt-typography-line-height-18);
-	--skt-typography-style-13med-underlined-font-weight: var(--skt-typography-font-weight-medium);
-	--skt-typography-style-13med-underlined-letter-spacing: var(--skt-typography-letter-spacing-none);
-	--skt-typography-style-13med-underlined-text-decoration: underline;
-	--skt-typography-style-18med-underlined-font-size: var(--skt-typography-font-size-800);
-	--skt-typography-style-18med-underlined-line-height: var(--skt-typography-line-height-24);
-	--skt-typography-style-18med-underlined-font-weight: var(--skt-typography-font-weight-medium);
-	--skt-typography-style-18med-underlined-letter-spacing: var(--skt-typography-letter-spacing-none);
-	--skt-typography-style-18med-underlined-text-decoration: underline;
-	--skt-component-button-height-small: 32px;
-	--skt-component-button-height-medium: 40px;
-	--skt-component-button-height-large: 48px;
-	--skt-component-input-height: 48px;
-	--skt-color-bg-layer-basement: var(--skt-color-palette-gray-50);
-	--skt-color-bg-layer-default: var(--skt-color-palette-gray-00);
-	--skt-color-bg-layer-floating: var(--skt-color-palette-gray-00);
-	--skt-color-bg-layer-navigation: var(--skt-color-palette-gray-00);
-	--skt-color-bg-overlay-default: var(--skt-color-palette-gray-alpha-500);
-	--skt-color-fill-neutral-strong: var(--skt-color-palette-gray-1000);
-	--skt-color-fill-neutral-primary: var(--skt-color-palette-gray-alpha-200);
-	--skt-color-fill-neutral-secondary: var(--skt-color-palette-gray-alpha-100);
-	--skt-color-fill-neutral-tertiary: var(--skt-color-palette-gray-alpha-50);
-	--skt-color-fill-inverse-primary: var(--skt-color-palette-white-alpha-200);
-	--skt-color-fill-brand-primary: var(--skt-color-palette-blue-800);
-	--skt-color-fill-brand-secondary: var(--skt-color-palette-blue-100);
-	--skt-color-fill-danger-primary: var(--skt-color-palette-red-600);
-	--skt-color-fill-danger-secondary: var(--skt-color-palette-red-50);
-	--skt-color-fill-disabled-default: var(--skt-color-palette-gray-alpha-100);
-	--skt-color-text-neutral-primary: var(--skt-color-palette-gray-1000);
-	--skt-color-text-neutral-secondary: var(--skt-color-palette-gray-alpha-600);
-	--skt-color-text-neutral-tertiary: var(--skt-color-palette-gray-alpha-400);
-	--skt-color-text-neutral-quaternary: var(--skt-color-palette-gray-alpha-200);
-	--skt-color-text-brand-primary: var(--skt-color-palette-blue-800);
-	--skt-color-text-brand-secondary: var(--skt-color-palette-blue-700);
-	--skt-color-text-danger-primary: var(--skt-color-palette-red-600);
-	--skt-color-text-danger-secondary: var(--skt-color-palette-red-500);
-	--skt-color-text-inverse-primary: var(--skt-color-palette-gray-00);
-	--skt-color-text-disabled-default: var(--skt-color-palette-gray-alpha-200);
-	--skt-color-border-neutral-strong: var(--skt-color-palette-gray-300);
-	--skt-color-border-neutral-primary: var(--skt-color-palette-gray-200);
-	--skt-color-border-neutral-secondary: var(--skt-color-palette-gray-100);
-	--skt-color-border-inverse-primary: var(--skt-color-palette-white-alpha-200);
-	--skt-color-border-inverse-secondary: var(--skt-color-palette-white-alpha-100);
-	--skt-color-border-brand-primary: var(--skt-color-palette-blue-800);
-	--skt-color-icon-neutral-primary: var(--skt-color-palette-gray-1000);
-	--skt-color-icon-neutral-secondary: var(--skt-color-palette-gray-alpha-600);
-	--skt-color-icon-neutral-tertiary: var(--skt-color-palette-gray-alpha-400);
-	--skt-color-icon-inverse-primary: var(--skt-color-palette-gray-00);
-	--skt-color-icon-brand-primary: var(--skt-color-palette-blue-800);
-	--skt-color-shadow-default: var(--skt-color-palette-gray-alpha-200);
+
+  /* ════════════════════════════════════════════════
+     FILL
+  ════════════════════════════════════════════════ */
+  --fill/neutral/strong:     #060c1f;
+  --fill/neutral/primary:    rgba(5, 42, 142, 0.16);
+  --fill/neutral/secondary:  rgba(5, 42, 142, 0.08);
+  --fill/neutral/tertiary:   rgba(5, 42, 142, 0.04);
+  --fill/inverse/primary:    #ffffff;
+  --fill/inverse/secondary:  rgba(255, 255, 255, 0.1);
+  --fill/brand/default:      #3617ce;
+  --fill/brand/secondary:    #e9eeff;
+  --fill/danger/primary:     #e7313d;
+  --fill/danger/secondary:   #fff2f0;
+  --fill/disabled/default:   rgba(5, 42, 142, 0.08);
+
+  /* ════════════════════════════════════════════════
+     BG (Layer)
+  ════════════════════════════════════════════════ */
+  --bg/layer/primary:        #ffffff;
+  --bg/layer/secondary:      #f4f5fa;
+  --bg/layer/floating:       #ffffff;
+  --bg/overlay/default:      rgba(6, 12, 31, 0.5);
+
+  /* ════════════════════════════════════════════════
+     TEXT
+  ════════════════════════════════════════════════ */
+  --text/neutral/primary:    #060c1f;
+  --text/neutral/secondary:  rgba(12, 27, 65, 0.67);
+  --text/neutral/tertiary:   rgba(12, 27, 65, 0.4);
+  --text/neutral/quaternary: rgba(12, 27, 65, 0.2);
+  --text/inverse/primary:    #ffffff;
+  --text/brand/primary:      #3617ce;
+  --text/brand/secondary:    #4a3dfe;
+  --text/danger/primary:     #e7313d;
+  --text/disabled/default:   rgba(5, 42, 142, 0.2);
+
+  /* ════════════════════════════════════════════════
+     BORDER
+  ════════════════════════════════════════════════ */
+  --border/neutral/strong:    #d2d9eb;
+  --border/neutral/primary:   rgba(5, 42, 142, 0.08);
+  --border/neutral/secondary: rgba(35, 55, 155, 0.05);
+  --border/inverse/primary:   rgba(255, 255, 255, 0.2);
+  --border/inverse/secondary: rgba(255, 255, 255, 0.1);
+  --border/brand/primary:     #3617ce;
+  --border/danger/primary:    #e7313d;
+
+  /* ════════════════════════════════════════════════
+     ICON
+  ════════════════════════════════════════════════ */
+  --icon/neutral/primary:   #060c1f;
+  --icon/neutral/secondary: rgba(12, 27, 65, 0.67);
+  --icon/neutral/tertiary:  rgba(12, 27, 65, 0.4);
+  --icon/inverse/primary:   #ffffff;
+  --icon/brand/primary:     #3617ce;
+  --icon/disabled/default:  rgba(5, 42, 142, 0.2);
+
+  /* ════════════════════════════════════════════════
+     SHADOW
+  ════════════════════════════════════════════════ */
+  --shadow/default: rgba(6, 12, 31, 0.2);
+
+  /* ════════════════════════════════════════════════
+     ALPHA PALETTE (overlay / dim use only)
+  ════════════════════════════════════════════════ */
+  --gray-alpha/gray-alpha-50:  rgba(35, 55, 155, 0.05);
+  --gray-alpha/gray-alpha-100: rgba(5, 42, 142, 0.08);
+  --gray-alpha/gray-alpha-200: rgba(5, 42, 142, 0.16);
+
+  --white-alpha/50:  rgba(255, 255, 255, 0.05);
+  --white-alpha/100: rgba(255, 255, 255, 0.1);
+  --white-alpha/150: rgba(255, 255, 255, 0.15);
+  --white-alpha/200: rgba(255, 255, 255, 0.2);
+  --white-alpha/300: rgba(255, 255, 255, 0.3);
+  --white-alpha/400: rgba(255, 255, 255, 0.4);
+  --white-alpha/500: rgba(255, 255, 255, 0.5);
+  --white-alpha/600: rgba(255, 255, 255, 0.6);
+  --white-alpha/800: rgba(255, 255, 255, 0.8);
+  --white-alpha/900: rgba(255, 255, 255, 0.9);
+
+  /* ════════════════════════════════════════════════
+     RADIUS  (1 = 4px, step ≈ +2px; 8 = 20px confirmed)
+  ════════════════════════════════════════════════ */
+  --radius-none:   0px;
+  --radius-1:      4px;
+  --radius-2:      6px;
+  --radius-3:      8px;
+  --radius-4:      10px;
+  --radius-5:      12px;
+  --radius-6:      14px;
+  --radius-7:      16px;
+  --radius-8:      20px;
+  --radius-9:      24px;
+  --radius-10:     28px;
+  --radius-r-full: 9999px;
+
+  /* ════════════════════════════════════════════════
+     SPACING  (space-N = N × 2px)
+  ════════════════════════════════════════════════ */
+  --semantic/space-1:  2px;
+  --semantic/space-2:  4px;
+  --semantic/space-3:  6px;
+  --semantic/space-4:  8px;
+  --semantic/space-5:  10px;
+  --semantic/space-6:  12px;
+  --semantic/space-7:  14px;
+  --semantic/space-8:  16px;
+  --semantic/space-9:  18px;
+  --semantic/space-10: 20px;
+  --semantic/space-11: 22px;
+  --semantic/space-12: 24px;
+  --semantic/space-14: 28px;
+  --semantic/space-16: 32px;
+  --semantic/space-18: 36px;
+  --semantic/space-20: 40px;
+
+  /* ════════════════════════════════════════════════
+     TYPOGRAPHY
+  ════════════════════════════════════════════════ */
+  --typography/font-family/base: "Pretendard Variable", -apple-system, sans-serif;
+
+  --typography/font-size/10: 10px;
+  --typography/font-size/11: 11px;
+  --typography/font-size/12: 12px;
+  --typography/font-size/13: 13px;
+  --typography/font-size/14: 14px;
+  --typography/font-size/15: 15px;
+  --typography/font-size/16: 16px;
+  --typography/font-size/18: 18px;
+  --typography/font-size/20: 20px;
+  --typography/font-size/24: 24px;
+  --typography/font-size/26: 26px;
+
+  --typography/font-weight/regular:  400;
+  --typography/font-weight/medium:   500;
+  --typography/font-weight/semibold: 600;
+  --typography/font-weight/bold:     700;
+
+  --typography/line-height/120: 120%;
+  --typography/line-height/130: 130%;
+  --typography/line-height/140: 140%;
+  --typography/line-height/150: 150%;
+  --typography/line-height/160: 160%;
+
+  --typography/letter-spacing/normal: -0.04em;
+  --typography/letter-spacing/dense:  -0.05em;
+  --typography/letter-spacing/tight:  -0.06em;
+  --typography/letter-spacing/none:   0;
+
+  /* composite styles */
+  --typography/style/28reg/font-size:      var(--typography/font-size/26);
+  --typography/style/28reg/line-height:    125%;
+  --typography/style/28reg/font-weight:    var(--typography/font-weight/regular);
+  --typography/style/28reg/letter-spacing: var(--typography/letter-spacing/tight);
+
+  --typography/style/24med/font-size:      var(--typography/font-size/24);
+  --typography/style/24med/line-height:    var(--typography/line-height/120);
+  --typography/style/24med/font-weight:    var(--typography/font-weight/medium);
+  --typography/style/24med/letter-spacing: var(--typography/letter-spacing/normal);
+
+  --typography/style/20med/font-size:      var(--typography/font-size/20);
+  --typography/style/20med/line-height:    var(--typography/line-height/130);
+  --typography/style/20med/font-weight:    var(--typography/font-weight/medium);
+  --typography/style/20med/letter-spacing: var(--typography/letter-spacing/dense);
+
+  --typography/style/18semi/font-size:      var(--typography/font-size/18);
+  --typography/style/18semi/line-height:    var(--typography/line-height/130);
+  --typography/style/18semi/font-weight:    var(--typography/font-weight/semibold);
+  --typography/style/18semi/letter-spacing: var(--typography/letter-spacing/dense);
+
+  --typography/style/18med/font-size:      var(--typography/font-size/18);
+  --typography/style/18med/line-height:    var(--typography/line-height/130);
+  --typography/style/18med/font-weight:    var(--typography/font-weight/medium);
+  --typography/style/18med/letter-spacing: var(--typography/letter-spacing/dense);
+
+  --typography/style/16semi/font-size:      var(--typography/font-size/16);
+  --typography/style/16semi/line-height:    var(--typography/line-height/130);
+  --typography/style/16semi/font-weight:    var(--typography/font-weight/semibold);
+  --typography/style/16semi/letter-spacing: var(--typography/letter-spacing/normal);
+
+  --typography/style/16med/font-size:      var(--typography/font-size/16);
+  --typography/style/16med/line-height:    var(--typography/line-height/130);
+  --typography/style/16med/font-weight:    var(--typography/font-weight/medium);
+  --typography/style/16med/letter-spacing: var(--typography/letter-spacing/normal);
+
+  --typography/style/16reg/font-size:      var(--typography/font-size/16);
+  --typography/style/16reg/line-height:    var(--typography/line-height/130);
+  --typography/style/16reg/font-weight:    var(--typography/font-weight/regular);
+  --typography/style/16reg/letter-spacing: var(--typography/letter-spacing/normal);
+
+  --typography/style/15med/font-size:      var(--typography/font-size/15);
+  --typography/style/15med/line-height:    var(--typography/line-height/160);
+  --typography/style/15med/font-weight:    var(--typography/font-weight/medium);
+  --typography/style/15med/letter-spacing: var(--typography/letter-spacing/dense);
+
+  --typography/style/14semi/font-size:      var(--typography/font-size/14);
+  --typography/style/14semi/line-height:    var(--typography/line-height/130);
+  --typography/style/14semi/font-weight:    var(--typography/font-weight/semibold);
+  --typography/style/14semi/letter-spacing: var(--typography/letter-spacing/normal);
+
+  --typography/style/14med/font-size:      var(--typography/font-size/14);
+  --typography/style/14med/line-height:    var(--typography/line-height/130);
+  --typography/style/14med/font-weight:    var(--typography/font-weight/medium);
+  --typography/style/14med/letter-spacing: var(--typography/letter-spacing/normal);
+
+  --typography/style/14reg/font-size:      var(--typography/font-size/14);
+  --typography/style/14reg/line-height:    var(--typography/line-height/130);
+  --typography/style/14reg/font-weight:    var(--typography/font-weight/regular);
+  --typography/style/14reg/letter-spacing: var(--typography/letter-spacing/normal);
+
+  --typography/style/13semi/font-size:      var(--typography/font-size/13);
+  --typography/style/13semi/line-height:    var(--typography/line-height/130);
+  --typography/style/13semi/font-weight:    var(--typography/font-weight/semibold);
+  --typography/style/13semi/letter-spacing: var(--typography/letter-spacing/normal);
+
+  --typography/style/13med/font-size:      var(--typography/font-size/13);
+  --typography/style/13med/line-height:    var(--typography/line-height/130);
+  --typography/style/13med/font-weight:    var(--typography/font-weight/medium);
+  --typography/style/13med/letter-spacing: var(--typography/letter-spacing/normal);
+
+  --typography/style/13reg/font-size:      var(--typography/font-size/13);
+  --typography/style/13reg/line-height:    var(--typography/line-height/130);
+  --typography/style/13reg/font-weight:    var(--typography/font-weight/regular);
+  --typography/style/13reg/letter-spacing: var(--typography/letter-spacing/normal);
+
+  --typography/style/12semi/font-size:      var(--typography/font-size/12);
+  --typography/style/12semi/line-height:    var(--typography/line-height/130);
+  --typography/style/12semi/font-weight:    var(--typography/font-weight/semibold);
+  --typography/style/12semi/letter-spacing: var(--typography/letter-spacing/normal);
+
+  --typography/style/12med/font-size:      var(--typography/font-size/12);
+  --typography/style/12med/line-height:    var(--typography/line-height/130);
+  --typography/style/12med/font-weight:    var(--typography/font-weight/medium);
+  --typography/style/12med/letter-spacing: var(--typography/letter-spacing/normal);
+
+  --typography/style/12reg/font-size:      var(--typography/font-size/12);
+  --typography/style/12reg/line-height:    var(--typography/line-height/130);
+  --typography/style/12reg/font-weight:    var(--typography/font-weight/regular);
+  --typography/style/12reg/letter-spacing: var(--typography/letter-spacing/normal);
+
+  --typography/style/11semi/font-size:      var(--typography/font-size/11);
+  --typography/style/11semi/line-height:    var(--typography/line-height/130);
+  --typography/style/11semi/font-weight:    var(--typography/font-weight/semibold);
+  --typography/style/11semi/letter-spacing: var(--typography/letter-spacing/normal);
+
+  --typography/style/11med/font-size:      var(--typography/font-size/11);
+  --typography/style/11med/line-height:    var(--typography/line-height/130);
+  --typography/style/11med/font-weight:    var(--typography/font-weight/medium);
+  --typography/style/11med/letter-spacing: var(--typography/letter-spacing/normal);
+
+  --typography/style/11reg/font-size:      var(--typography/font-size/11);
+  --typography/style/11reg/line-height:    var(--typography/line-height/150);
+  --typography/style/11reg/font-weight:    var(--typography/font-weight/regular);
+  --typography/style/11reg/letter-spacing: var(--typography/letter-spacing/normal);
+
+  --typography/style/10semi/font-size:      var(--typography/font-size/10);
+  --typography/style/10semi/line-height:    var(--typography/line-height/130);
+  --typography/style/10semi/font-weight:    var(--typography/font-weight/semibold);
+  --typography/style/10semi/letter-spacing: var(--typography/letter-spacing/normal);
+
+  --typography/style/10med/font-size:      var(--typography/font-size/10);
+  --typography/style/10med/line-height:    var(--typography/line-height/130);
+  --typography/style/10med/font-weight:    var(--typography/font-weight/medium);
+  --typography/style/10med/letter-spacing: var(--typography/letter-spacing/normal);
+
+  /* ════════════════════════════════════════════════
+     COMPONENT TOKENS
+  ════════════════════════════════════════════════ */
+  --component/badge/padding/x-1: 6px;
+  --component/badge/padding/x-2: 8px;
+  --component/badge/padding/x-3: 10px;
+  --component/badge/padding/y-1: 2px;
+  --component/badge/padding/y-2: 4px;
+  --component/badge/padding/y-3: 6px;
+  --component/badge/gap/1:       4px;
+
+  --component/banner/gap/1:          4px;   /* textGroup internal gap */
+  --component/banner/gap/2:          12px;  /* card-to-indicator gap */
+  --component/banner/padding/x-1:    27px;  /* textGroup left offset */
+  --component/banner/image/size/medium: 80px;
+  --component/banner/image/size/small:  58px;
+  --component/banner/image/height/small: 40px;
+
+  --component/indicator/gap/1:       8px;
+  --component/indicator/padding/x-1: 2px;
+  --component/indicator/dot/size:    4px;
+
+  --component/accordion/gap/1:       8px;
+  --component/accordion/gap/2:       16px;
+  --component/accordion/padding/x-1: 24px;
+  --component/accordion/padding/y-1: 16px;
+  --component/accordion/padding/y-2: 24px;
+
+  --component/titlegroup/gap/1: 2px;
+  --component/titlegroup/gap/2: 4px;
+
+  --component/button/height/small:  32px;
+  --component/button/height/medium: 40px;
+  --component/button/height/large:  48px;
+  --component/button/gap/default:   4px;
+  --component/button/padding/x-1:   12px;
+  --component/button/padding/x-2:   16px;
+  --component/button/padding/x-3:   20px;
+  --component/button/padding/y-1:   8px;
+  --component/button/padding/y-2:   12px;
+
+  --component/input/height:      48px;
+  --component/input/gap/1:       4px;
+  --component/input/gap/2:       8px;
+  --component/input/padding/x-1: 16px;
+  --component/input/padding/y-1: 12px;
+
+  --component/bottomgroup/gap/2:       8px;
+  --component/bottomgroup/gap/4:       16px;
+  --component/bottomgroup/padding/x-1: 20px;
+  --component/bottomgroup/padding/y-1: 16px;
+  --component/bottomgroup/padding/y-2: 32px;
+
+  /* ════════════════════════════════════════════════
+     LEGACY ALIASES  (--skt-*)
+     Deprecated — migrate component CSS to new tokens.
+     Kept for backward compatibility during transition.
+  ════════════════════════════════════════════════ */
+
+  /* palette shims (raw values unchanged) */
+  --skt-color-palette-gray-50:    #f4f5fa;
+  --skt-color-palette-gray-100:   #ebeef6;
+  --skt-color-palette-gray-200:   #e2e6f1;
+  --skt-color-palette-gray-300:   #d2d9eb;
+  --skt-color-palette-gray-400:   #b4c0de;
+  --skt-color-palette-gray-500:   #97a2bf;
+  --skt-color-palette-gray-600:   #75809b;
+  --skt-color-palette-gray-700:   #5c6680;
+  --skt-color-palette-gray-800:   #454e67;
+  --skt-color-palette-gray-900:   #283047;
+  --skt-color-palette-gray-1000:  #060c1f;
+  --skt-color-palette-gray-00:    #ffffff;
+  --skt-color-palette-blue-50:    #f3f5fc;
+  --skt-color-palette-blue-100:   #e9eeff;
+  --skt-color-palette-blue-200:   #d2dbfe;
+  --skt-color-palette-blue-300:   #bfcbff;
+  --skt-color-palette-blue-400:   #abbafd;
+  --skt-color-palette-blue-500:   #7f90fb;
+  --skt-color-palette-blue-600:   #5f6afd;
+  --skt-color-palette-blue-700:   #4a3dfe;
+  --skt-color-palette-blue-800:   #3617ce;
+  --skt-color-palette-blue-900:   #20028b;
+  --skt-color-palette-blue-1000:  #08013c;
+  --skt-color-palette-red-50:     #fff2f0;
+  --skt-color-palette-red-100:    #ffe8e7;
+  --skt-color-palette-red-200:    #ffd4d0;
+  --skt-color-palette-red-300:    #ffbcb7;
+  --skt-color-palette-red-400:    #f99c96;
+  --skt-color-palette-red-500:    #f36c69;
+  --skt-color-palette-red-600:    #e7313d;
+  --skt-color-palette-red-700:    #bb0223;
+  --skt-color-palette-red-800:    #8e0419;
+  --skt-color-palette-red-900:    #5c010c;
+  --skt-color-palette-red-1000:   #250103;
+  --skt-color-palette-gray-alpha-50:  rgba(6, 12, 31, 0.05);
+  --skt-color-palette-gray-alpha-100: rgba(6, 12, 31, 0.1);
+  --skt-color-palette-gray-alpha-150: rgba(6, 12, 31, 0.15);
+  --skt-color-palette-gray-alpha-200: rgba(6, 12, 31, 0.2);
+  --skt-color-palette-gray-alpha-300: rgba(6, 12, 31, 0.3);
+  --skt-color-palette-gray-alpha-400: rgba(6, 12, 31, 0.4);
+  --skt-color-palette-gray-alpha-500: rgba(6, 12, 31, 0.5);
+  --skt-color-palette-gray-alpha-600: rgba(6, 12, 31, 0.6);
+  --skt-color-palette-gray-alpha-700: rgba(6, 12, 31, 0.7);
+  --skt-color-palette-gray-alpha-800: rgba(6, 12, 31, 0.8);
+  --skt-color-palette-gray-alpha-900: rgba(6, 12, 31, 0.9);
+  --skt-color-palette-gray-alpha-950: rgba(6, 12, 31, 0.95);
+  --skt-color-palette-white-alpha-50:  rgba(255, 255, 255, 0.05);
+  --skt-color-palette-white-alpha-100: rgba(255, 255, 255, 0.1);
+  --skt-color-palette-white-alpha-150: rgba(255, 255, 255, 0.15);
+  --skt-color-palette-white-alpha-200: rgba(255, 255, 255, 0.2);
+  --skt-color-palette-white-alpha-300: rgba(255, 255, 255, 0.3);
+  --skt-color-palette-white-alpha-400: rgba(255, 255, 255, 0.4);
+  --skt-color-palette-white-alpha-500: rgba(255, 255, 255, 0.5);
+  --skt-color-palette-white-alpha-600: rgba(255, 255, 255, 0.6);
+  --skt-color-palette-white-alpha-800: rgba(255, 255, 255, 0.8);
+  --skt-color-palette-white-alpha-900: rgba(255, 255, 255, 0.9);
+
+  /* fill shims */
+  --skt-color-fill-neutral-strong:    var(--fill\/neutral\/strong);
+  --skt-color-fill-neutral-primary:   var(--fill\/neutral\/primary);
+  --skt-color-fill-neutral-secondary: var(--fill\/neutral\/secondary);
+  --skt-color-fill-neutral-tertiary:  var(--fill\/neutral\/tertiary);
+  --skt-color-fill-inverse-primary:   var(--fill\/inverse\/primary);
+  --skt-color-fill-inverse-secondary: var(--fill\/inverse\/secondary);
+  --skt-color-fill-brand-primary:     var(--fill\/brand\/default);
+  --skt-color-fill-brand-default:     var(--fill\/brand\/default);
+  --skt-color-fill-brand-secondary:   var(--fill\/brand\/secondary);
+  --skt-color-fill-danger-primary:    var(--fill\/danger\/primary);
+  --skt-color-fill-danger-secondary:  var(--fill\/danger\/secondary);
+  --skt-color-fill-disabled-default:  var(--fill\/disabled\/default);
+
+  /* bg shims */
+  --skt-color-bg-layer-basement:   var(--bg\/layer\/secondary);
+  --skt-color-bg-layer-default:    var(--bg\/layer\/primary);
+  --skt-color-bg-layer-floating:   var(--bg\/layer\/primary);
+  --skt-color-bg-layer-navigation: var(--bg\/layer\/primary);
+  --skt-color-bg-layer-primary:    var(--bg\/layer\/primary);
+  --skt-color-bg-layer-secondary:  var(--bg\/layer\/secondary);
+  --skt-color-bg-overlay-default:  var(--bg\/overlay\/default);
+
+  /* text shims */
+  --skt-color-text-neutral-primary:    var(--text\/neutral\/primary);
+  --skt-color-text-neutral-secondary:  var(--text\/neutral\/secondary);
+  --skt-color-text-neutral-tertiary:   var(--text\/neutral\/tertiary);
+  --skt-color-text-neutral-quaternary: var(--text\/neutral\/quaternary);
+  --skt-color-text-inverse-primary:    var(--text\/inverse\/primary);
+  --skt-color-text-brand-primary:      var(--text\/brand\/primary);
+  --skt-color-text-brand-secondary:    var(--text\/brand\/secondary);
+  --skt-color-text-danger-primary:     var(--text\/danger\/primary);
+  --skt-color-text-disabled-default:   var(--text\/disabled\/default);
+
+  /* border shims */
+  --skt-color-border-neutral-strong:    var(--border\/neutral\/strong);
+  --skt-color-border-neutral-primary:   var(--border\/neutral\/primary);
+  --skt-color-border-neutral-secondary: var(--border\/neutral\/secondary);
+  --skt-color-border-inverse-primary:   var(--border\/inverse\/primary);
+  --skt-color-border-inverse-secondary: var(--border\/inverse\/secondary);
+  --skt-color-border-brand-primary:     var(--border\/brand\/primary);
+  --skt-color-border-danger-primary:    var(--border\/danger\/primary);
+
+  /* icon shims */
+  --skt-color-icon-neutral-primary:   var(--icon\/neutral\/primary);
+  --skt-color-icon-neutral-secondary: var(--icon\/neutral\/secondary);
+  --skt-color-icon-neutral-tertiary:  var(--icon\/neutral\/tertiary);
+  --skt-color-icon-inverse-primary:   var(--icon\/inverse\/primary);
+  --skt-color-icon-brand-primary:     var(--icon\/brand\/primary);
+  --skt-color-icon-disabled-default:  var(--icon\/disabled\/default);
+
+  /* shadow shim */
+  --skt-color-shadow-default: var(--shadow\/default);
+
+  /* radius shims */
+  --skt-radius-none: var(--radius-none);
+  --skt-radius-4:    var(--radius-1);
+  --skt-radius-6:    var(--radius-2);
+  --skt-radius-8:    var(--radius-3);
+  --skt-radius-10:   var(--radius-4);
+  --skt-radius-12:   var(--radius-5);
+  --skt-radius-14:   var(--radius-6);
+  --skt-radius-16:   var(--radius-7);
+  --skt-radius-20:   var(--radius-8);
+  --skt-radius-24:   var(--radius-9);
+  --skt-radius-28:   var(--radius-10);
+  --skt-radius-full: var(--radius-r-full);
+  --skt-radius-r-4:  var(--radius-1);
+  --skt-radius-r-6:  var(--radius-2);
+  --skt-radius-r-9:  var(--radius-9);
+  --skt-radius-r-full: var(--radius-r-full);
+
+  /* spacing shims */
+  --skt-spacing-2:  var(--semantic\/space-1);
+  --skt-spacing-4:  var(--semantic\/space-2);
+  --skt-spacing-6:  var(--semantic\/space-3);
+  --skt-spacing-8:  var(--semantic\/space-4);
+  --skt-spacing-10: var(--semantic\/space-5);
+  --skt-spacing-12: var(--semantic\/space-6);
+  --skt-spacing-14: var(--semantic\/space-7);
+  --skt-spacing-16: var(--semantic\/space-8);
+  --skt-spacing-18: var(--semantic\/space-9);
+  --skt-spacing-20: var(--semantic\/space-10);
+  --skt-spacing-22: var(--semantic\/space-11);
+  --skt-spacing-24: var(--semantic\/space-12);
+  --skt-spacing-28: var(--semantic\/space-14);
+  --skt-spacing-32: var(--semantic\/space-16);
+  --skt-spacing-36: var(--semantic\/space-18);
+  --skt-spacing-40: var(--semantic\/space-20);
+  --skt-spacing-none: 0px;
+
+  /* typography shims */
+  --skt-typography-font-family-base:         var(--typography\/font-family\/base);
+  --skt-typography-font-size-100:            var(--typography\/font-size\/10);
+  --skt-typography-font-size-200:            var(--typography\/font-size\/11);
+  --skt-typography-font-size-300:            var(--typography\/font-size\/12);
+  --skt-typography-font-size-400:            var(--typography\/font-size\/13);
+  --skt-typography-font-size-500:            var(--typography\/font-size\/14);
+  --skt-typography-font-size-600:            var(--typography\/font-size\/15);
+  --skt-typography-font-size-700:            var(--typography\/font-size\/16);
+  --skt-typography-font-size-800:            var(--typography\/font-size\/18);
+  --skt-typography-font-size-900:            var(--typography\/font-size\/20);
+  --skt-typography-font-size-1000:           var(--typography\/font-size\/24);
+  --skt-typography-font-size-1100:           var(--typography\/font-size\/26);
+  --skt-typography-font-weight-regular:      var(--typography\/font-weight\/regular);
+  --skt-typography-font-weight-medium:       var(--typography\/font-weight\/medium);
+  --skt-typography-font-weight-semibold:     var(--typography\/font-weight\/semibold);
+  --skt-typography-font-weight-bold:         var(--typography\/font-weight\/bold);
+  --skt-typography-line-height-100:          var(--typography\/line-height\/120);
+  --skt-typography-line-height-200:          var(--typography\/line-height\/130);
+  --skt-typography-line-height-300:          var(--typography\/line-height\/140);
+  --skt-typography-line-height-400:          var(--typography\/line-height\/150);
+  --skt-typography-line-height-500:          var(--typography\/line-height\/140);
+  --skt-typography-line-height-700:          var(--typography\/line-height\/160);
+  --skt-typography-line-height-350:          125%;
+  --skt-typography-line-height-14:           14px;
+  --skt-typography-line-height-18:           18px;
+  --skt-typography-line-height-24:           24px;
+  --skt-typography-letter-spacing-normal:    var(--typography\/letter-spacing\/normal);
+  --skt-typography-letter-spacing-dense:     var(--typography\/letter-spacing\/dense);
+  --skt-typography-letter-spacing-tight:     var(--typography\/letter-spacing\/tight);
+  --skt-typography-letter-spacing-none:      var(--typography\/letter-spacing\/none);
+
+  --skt-typography-style-28reg-font-size:      var(--typography\/style\/28reg\/font-size);
+  --skt-typography-style-28reg-line-height:    var(--typography\/style\/28reg\/line-height);
+  --skt-typography-style-28reg-font-weight:    var(--typography\/style\/28reg\/font-weight);
+  --skt-typography-style-28reg-letter-spacing: var(--typography\/style\/28reg\/letter-spacing);
+  --skt-typography-style-24med-font-size:      var(--typography\/style\/24med\/font-size);
+  --skt-typography-style-24med-line-height:    var(--typography\/style\/24med\/line-height);
+  --skt-typography-style-24med-font-weight:    var(--typography\/style\/24med\/font-weight);
+  --skt-typography-style-24med-letter-spacing: var(--typography\/style\/24med\/letter-spacing);
+  --skt-typography-style-20med-font-size:      var(--typography\/style\/20med\/font-size);
+  --skt-typography-style-20med-line-height:    var(--typography\/style\/20med\/line-height);
+  --skt-typography-style-20med-font-weight:    var(--typography\/style\/20med\/font-weight);
+  --skt-typography-style-20med-letter-spacing: var(--typography\/style\/20med\/letter-spacing);
+  --skt-typography-style-18semi-font-size:      var(--typography\/style\/18semi\/font-size);
+  --skt-typography-style-18semi-line-height:    var(--typography\/style\/18semi\/line-height);
+  --skt-typography-style-18semi-font-weight:    var(--typography\/style\/18semi\/font-weight);
+  --skt-typography-style-18semi-letter-spacing: var(--typography\/style\/18semi\/letter-spacing);
+  --skt-typography-style-18med-font-size:      var(--typography\/style\/18med\/font-size);
+  --skt-typography-style-18med-line-height:    var(--typography\/style\/18med\/line-height);
+  --skt-typography-style-18med-font-weight:    var(--typography\/style\/18med\/font-weight);
+  --skt-typography-style-18med-letter-spacing: var(--typography\/style\/18med\/letter-spacing);
+  --skt-typography-style-16semi-font-size:      var(--typography\/style\/16semi\/font-size);
+  --skt-typography-style-16semi-line-height:    var(--typography\/style\/16semi\/line-height);
+  --skt-typography-style-16semi-font-weight:    var(--typography\/style\/16semi\/font-weight);
+  --skt-typography-style-16semi-letter-spacing: var(--typography\/style\/16semi\/letter-spacing);
+  --skt-typography-style-16med-font-size:      var(--typography\/style\/16med\/font-size);
+  --skt-typography-style-16med-line-height:    var(--typography\/style\/16med\/line-height);
+  --skt-typography-style-16med-font-weight:    var(--typography\/style\/16med\/font-weight);
+  --skt-typography-style-16med-letter-spacing: var(--typography\/style\/16med\/letter-spacing);
+  --skt-typography-style-16reg-font-size:      var(--typography\/style\/16reg\/font-size);
+  --skt-typography-style-16reg-line-height:    var(--typography\/style\/16reg\/line-height);
+  --skt-typography-style-16reg-font-weight:    var(--typography\/style\/16reg\/font-weight);
+  --skt-typography-style-16reg-letter-spacing: var(--typography\/style\/16reg\/letter-spacing);
+  --skt-typography-style-15bold-font-size:      var(--typography\/font-size\/15);
+  --skt-typography-style-15bold-line-height:    140%;
+  --skt-typography-style-15bold-font-weight:    var(--typography\/font-weight\/bold);
+  --skt-typography-style-15bold-letter-spacing: var(--typography\/letter-spacing\/dense);
+  --skt-typography-style-15med-font-size:      var(--typography\/style\/15med\/font-size);
+  --skt-typography-style-15med-line-height:    var(--typography\/style\/15med\/line-height);
+  --skt-typography-style-15med-font-weight:    var(--typography\/style\/15med\/font-weight);
+  --skt-typography-style-15med-letter-spacing: var(--typography\/style\/15med\/letter-spacing);
+  --skt-typography-style-14semi-font-size:      var(--typography\/style\/14semi\/font-size);
+  --skt-typography-style-14semi-line-height:    var(--typography\/style\/14semi\/line-height);
+  --skt-typography-style-14semi-font-weight:    var(--typography\/style\/14semi\/font-weight);
+  --skt-typography-style-14semi-letter-spacing: var(--typography\/style\/14semi\/letter-spacing);
+  --skt-typography-style-14bold-font-size:      var(--typography\/font-size\/14);
+  --skt-typography-style-14bold-line-height:    var(--typography\/line-height\/160);
+  --skt-typography-style-14bold-font-weight:    var(--typography\/font-weight\/bold);
+  --skt-typography-style-14bold-letter-spacing: var(--typography\/letter-spacing\/normal);
+  --skt-typography-style-14med-font-size:      var(--typography\/style\/14med\/font-size);
+  --skt-typography-style-14med-line-height:    var(--typography\/style\/14med\/line-height);
+  --skt-typography-style-14med-font-weight:    var(--typography\/style\/14med\/font-weight);
+  --skt-typography-style-14med-letter-spacing: var(--typography\/style\/14med\/letter-spacing);
+  --skt-typography-style-14reg-font-size:      var(--typography\/style\/14reg\/font-size);
+  --skt-typography-style-14reg-line-height:    var(--typography\/style\/14reg\/line-height);
+  --skt-typography-style-14reg-font-weight:    var(--typography\/style\/14reg\/font-weight);
+  --skt-typography-style-14reg-letter-spacing: var(--typography\/style\/14reg\/letter-spacing);
+  --skt-typography-style-13semi-font-size:      var(--typography\/style\/13semi\/font-size);
+  --skt-typography-style-13semi-line-height:    var(--typography\/style\/13semi\/line-height);
+  --skt-typography-style-13semi-font-weight:    var(--typography\/style\/13semi\/font-weight);
+  --skt-typography-style-13semi-letter-spacing: var(--typography\/style\/13semi\/letter-spacing);
+  --skt-typography-style-13bold-font-size:      var(--typography\/font-size\/13);
+  --skt-typography-style-13bold-line-height:    var(--typography\/line-height\/130);
+  --skt-typography-style-13bold-font-weight:    var(--typography\/font-weight\/bold);
+  --skt-typography-style-13bold-letter-spacing: var(--typography\/letter-spacing\/normal);
+  --skt-typography-style-13med-font-size:      var(--typography\/style\/13med\/font-size);
+  --skt-typography-style-13med-line-height:    var(--typography\/style\/13med\/line-height);
+  --skt-typography-style-13med-font-weight:    var(--typography\/style\/13med\/font-weight);
+  --skt-typography-style-13med-letter-spacing: var(--typography\/style\/13med\/letter-spacing);
+  --skt-typography-style-13reg-font-size:      var(--typography\/style\/13reg\/font-size);
+  --skt-typography-style-13reg-line-height:    var(--typography\/style\/13reg\/line-height);
+  --skt-typography-style-13reg-font-weight:    var(--typography\/style\/13reg\/font-weight);
+  --skt-typography-style-13reg-letter-spacing: var(--typography\/style\/13reg\/letter-spacing);
+  --skt-typography-style-12semi-font-size:      var(--typography\/style\/12semi\/font-size);
+  --skt-typography-style-12semi-line-height:    var(--typography\/style\/12semi\/line-height);
+  --skt-typography-style-12semi-font-weight:    var(--typography\/style\/12semi\/font-weight);
+  --skt-typography-style-12semi-letter-spacing: var(--typography\/style\/12semi\/letter-spacing);
+  --skt-typography-style-12med-font-size:      var(--typography\/style\/12med\/font-size);
+  --skt-typography-style-12med-line-height:    var(--typography\/style\/12med\/line-height);
+  --skt-typography-style-12med-font-weight:    var(--typography\/style\/12med\/font-weight);
+  --skt-typography-style-12med-letter-spacing: var(--typography\/style\/12med\/letter-spacing);
+  --skt-typography-style-12reg-font-size:      var(--typography\/style\/12reg\/font-size);
+  --skt-typography-style-12reg-line-height:    var(--typography\/style\/12reg\/line-height);
+  --skt-typography-style-12reg-font-weight:    var(--typography\/style\/12reg\/font-weight);
+  --skt-typography-style-12reg-letter-spacing: var(--typography\/style\/12reg\/letter-spacing);
+  --skt-typography-style-11semi-font-size:      var(--typography\/style\/11semi\/font-size);
+  --skt-typography-style-11semi-line-height:    var(--typography\/style\/11semi\/line-height);
+  --skt-typography-style-11semi-font-weight:    var(--typography\/style\/11semi\/font-weight);
+  --skt-typography-style-11semi-letter-spacing: var(--typography\/style\/11semi\/letter-spacing);
+  --skt-typography-style-11med-font-size:      var(--typography\/style\/11med\/font-size);
+  --skt-typography-style-11med-line-height:    var(--typography\/style\/11med\/line-height);
+  --skt-typography-style-11med-font-weight:    var(--typography\/style\/11med\/font-weight);
+  --skt-typography-style-11med-letter-spacing: var(--typography\/style\/11med\/letter-spacing);
+  --skt-typography-style-11reg-font-size:      var(--typography\/style\/11reg\/font-size);
+  --skt-typography-style-11reg-line-height:    var(--typography\/style\/11reg\/line-height);
+  --skt-typography-style-11reg-font-weight:    var(--typography\/style\/11reg\/font-weight);
+  --skt-typography-style-11reg-letter-spacing: var(--typography\/style\/11reg\/letter-spacing);
+  --skt-typography-style-11reg-underlined-font-size:      var(--typography\/font-size\/11);
+  --skt-typography-style-11reg-underlined-line-height:    14px;
+  --skt-typography-style-11reg-underlined-font-weight:    var(--typography\/font-weight\/regular);
+  --skt-typography-style-11reg-underlined-letter-spacing: 0;
+  --skt-typography-style-11reg-underlined-text-decoration: underline;
+  --skt-typography-style-11semi-underlined-font-size:      var(--typography\/font-size\/11);
+  --skt-typography-style-11semi-underlined-line-height:    14px;
+  --skt-typography-style-11semi-underlined-font-weight:    var(--typography\/font-weight\/semibold);
+  --skt-typography-style-11semi-underlined-letter-spacing: 0;
+  --skt-typography-style-11semi-underlined-text-decoration: underline;
+  --skt-typography-style-13reg-underlined-font-size:      var(--typography\/font-size\/13);
+  --skt-typography-style-13reg-underlined-line-height:    18px;
+  --skt-typography-style-13reg-underlined-font-weight:    var(--typography\/font-weight\/regular);
+  --skt-typography-style-13reg-underlined-letter-spacing: 0;
+  --skt-typography-style-13reg-underlined-text-decoration: underline;
+  --skt-typography-style-13med-underlined-font-size:      var(--typography\/font-size\/13);
+  --skt-typography-style-13med-underlined-line-height:    18px;
+  --skt-typography-style-13med-underlined-font-weight:    var(--typography\/font-weight\/medium);
+  --skt-typography-style-13med-underlined-letter-spacing: 0;
+  --skt-typography-style-13med-underlined-text-decoration: underline;
+  --skt-typography-style-18med-underlined-font-size:      var(--typography\/font-size\/18);
+  --skt-typography-style-18med-underlined-line-height:    24px;
+  --skt-typography-style-18med-underlined-font-weight:    var(--typography\/font-weight\/medium);
+  --skt-typography-style-18med-underlined-letter-spacing: 0;
+  --skt-typography-style-18med-underlined-text-decoration: underline;
+  --skt-typography-style-10semi-font-size:      var(--typography\/style\/10semi\/font-size);
+  --skt-typography-style-10semi-line-height:    var(--typography\/style\/10semi\/line-height);
+  --skt-typography-style-10semi-font-weight:    var(--typography\/style\/10semi\/font-weight);
+  --skt-typography-style-10semi-letter-spacing: var(--typography\/style\/10semi\/letter-spacing);
+  --skt-typography-style-10med-font-size:      var(--typography\/style\/10med\/font-size);
+  --skt-typography-style-10med-line-height:    var(--typography\/style\/10med\/line-height);
+  --skt-typography-style-10med-font-weight:    var(--typography\/style\/10med\/font-weight);
+  --skt-typography-style-10med-letter-spacing: var(--typography\/style\/10med\/letter-spacing);
+
+  /* component shims */
+  --skt-component-button-height-small:  var(--component\/button\/height\/small);
+  --skt-component-button-height-medium: var(--component\/button\/height\/medium);
+  --skt-component-button-height-large:  var(--component\/button\/height\/large);
+  --skt-component-button-gap-default:   var(--component\/button\/gap\/default);
+  --skt-component-button-padding-x-1:   var(--component\/button\/padding\/x-1);
+  --skt-component-button-padding-x-2:   var(--component\/button\/padding\/x-2);
+  --skt-component-button-padding-x-3:   var(--component\/button\/padding\/x-3);
+  --skt-component-button-padding-y-1:   var(--component\/button\/padding\/y-1);
+  --skt-component-button-padding-y-2:   var(--component\/button\/padding\/y-2);
+  --skt-component-input-height:         var(--component\/input\/height);
+  --skt-component-input-gap-1:          var(--component\/input\/gap\/1);
+  --skt-component-input-gap-2:          var(--component\/input\/gap\/2);
+  --skt-component-input-padding-x-1:    var(--component\/input\/padding\/x-1);
+  --skt-component-input-padding-y-1:    var(--component\/input\/padding\/y-1);
+  --skt-component-bottomgroup-gap-2:       var(--component\/bottomgroup\/gap\/2);
+  --skt-component-bottomgroup-padding-x-1: var(--component\/bottomgroup\/padding\/x-1);
 }

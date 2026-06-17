@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./IconArrow.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .IconItem/Nomal/Arrow (node 51578:64737)
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .IconItem/Nomal/Arrow (node 51578:64737)
 // anatomy: root(svg) [ chevron-path ] — four directional chevron variants rendered via transform
 
 /**

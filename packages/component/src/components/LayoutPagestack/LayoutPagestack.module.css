@@ -9,12 +9,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--skt-spacing-16, 16px);
-  padding: var(--skt-spacing-24, 24px) var(--skt-spacing-20, 20px);
+  gap: var(--semantic/space-8, 16px);
+  padding: var(--semantic/space-12, 24px) var(--semantic/space-10, 20px);
   width: 393px;
   overflow: hidden;
   position: relative;
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", sans-serif);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
   box-sizing: border-box;
 }
 
@@ -22,7 +22,7 @@
 .titleRow {
   display: flex;
   align-items: center;
-  gap: var(--skt-spacing-16, 16px);
+  gap: var(--semantic/space-8, 16px);
   position: relative;
   flex-shrink: 0;
   width: 100%;
@@ -47,11 +47,11 @@
 .title {
   flex: 1 0 0;
   min-width: 0;
-  font-size: var(--skt-typography-style-16semi-font-size, var(--skt-typography-font-size-700, 16px));
-  font-weight: var(--skt-typography-style-16semi-font-weight, var(--skt-typography-font-weight-semibold, 600));
-  line-height: var(--skt-typography-style-16semi-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-16semi-letter-spacing, var(--skt-typography-letter-spacing-dense, -0.05em));
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/16semi/font-size, var(--typography/font-size/16, 16px));
+  font-weight: var(--typography/style/16semi/font-weight, var(--typography/font-weight/semibold, 600));
+  line-height: var(--typography/style/16semi/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/16semi/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
+  color: var(--text/neutral/primary, #060c1f);
   margin: 0;
   word-break: break-word;
 }

@@ -5,11 +5,11 @@
   display: flex;
   align-items: stretch;
   width: 100%;
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", sans-serif);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
 }
 
 .twoButtons {
-  gap: var(--skt-spacing-8, 8px);
+  gap: var(--semantic/space-4, 8px);
 }
 
 .oneButton {

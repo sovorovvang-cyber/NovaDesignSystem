@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./IconGraphic.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .IconItem/Graphic (node 51561:34948)
-// anatomy: root[ svg[ variant-specific paths ] ]
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .IconItem/Graphic (node 51561:34948)
 
 export type IconGraphicVariant =
   | "Family"

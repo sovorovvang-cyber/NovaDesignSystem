@@ -9,9 +9,9 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  padding: var(--skt-spacing-2, 2px) var(--skt-spacing-20, 20px);
+  padding: var(--semantic/space-1, 2px) var(--semantic/space-10, 20px);
   width: 100%;
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", sans-serif);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
   box-sizing: border-box;
 }
 
@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--skt-spacing-12, 12px);
+  gap: var(--component/banner/gap/2, 12px);
   width: 100%;
 }
 
@@ -29,7 +29,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  border: 1px solid var(--skt-color-palette-white-alpha-500, rgba(255, 255, 255, 0.5));
+  border: 1px solid var(--white-alpha/500, rgba(255, 255, 255, 0.5));
   cursor: pointer;
   background: transparent;
   padding: 0;
@@ -39,22 +39,22 @@
 }
 
 .card:focus-visible {
-  outline: 2px solid var(--skt-color-fill-brand-primary, #3617ce);
+  outline: 2px solid var(--fill/brand/default, #3617ce);
   outline-offset: 2px;
 }
 
 /* Small variant — 72 px, radius-20 */
 .cardSmall {
   height: 72px;
-  border-radius: var(--skt-radius-20, 20px);
-  background-color: transparent;
+  border-radius: var(--radius-8, 20px);
+  background-color: var(--white-alpha/200, rgba(255, 255, 255, 0.2));
 }
 
 /* Medium variant — 112 px, radius-28, frosted-glass fill */
 .cardMedium {
   height: 112px;
-  border-radius: var(--skt-radius-28, 28px);
-  background-color: var(--skt-color-fill-inverse-primary, rgba(255, 255, 255, 0.2));
+  border-radius: var(--radius-10, 28px);
+  background-color: var(--fill/inverse/primary, rgba(255, 255, 255, 0.2));
 }
 
 /* ── image area ───────────────────────────────────────────────────────── */
@@ -70,7 +70,7 @@
   height: 40px;
   right: 28px;
   top: 16px;
-  border-radius: var(--skt-radius-20, 20px);
+  border-radius: var(--radius-8, 20px);
 }
 
 .imageAreaMedium {
@@ -106,68 +106,68 @@
 }
 
 .textGroupSmall {
-  top: 15px;
-  left: 27px;
-  gap: var(--skt-spacing-4, 4px);
+  top: 50%;
+  transform: translateY(-50%);
+  left: var(--component/banner/padding/x-1, 27px);
+  gap: var(--component/banner/gap/1, 4px);
 }
 
 .textGroupMedium {
-  top: 0;
-  left: 0;
-  bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  left: var(--component/banner/padding/x-1, 27px);
   width: 209px;
-  padding: 26px var(--skt-spacing-28, 28px);
-  gap: var(--skt-spacing-2, 2px);
+  gap: var(--component/banner/gap/1, 4px);
   white-space: normal;
 }
 
 /* ── title text ───────────────────────────────────────────────────────── */
 .title {
   margin: 0;
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  color: var(--text/neutral/primary, #060c1f);
 }
 
 .titleSmall {
-  font-size: var(--skt-typography-style-14semi-font-size, var(--skt-typography-font-size-500, 14px));
-  font-weight: var(--skt-typography-style-14semi-font-weight, var(--skt-typography-font-weight-semibold, 600));
-  line-height: var(--skt-typography-style-14semi-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-14semi-letter-spacing, var(--skt-typography-letter-spacing-dense, -0.05em));
+  font-size: var(--typography/font-size/16, 16px);
+  font-weight: var(--typography/font-weight/semibold, 600);
+  line-height: var(--typography/line-height/130, 130%);
+  letter-spacing: var(--typography/letter-spacing/normal, -0.04em);
 }
 
 .titleMedium {
-  font-size: var(--skt-typography-style-16semi-font-size, var(--skt-typography-font-size-700, 16px));
-  font-weight: var(--skt-typography-style-16semi-font-weight, var(--skt-typography-font-weight-semibold, 600));
-  line-height: var(--skt-typography-style-16semi-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-16semi-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
+  font-size: var(--typography/style/16semi/font-size, var(--typography/font-size/16, 16px));
+  font-weight: var(--typography/style/16semi/font-weight, var(--typography/font-weight/semibold, 600));
+  line-height: var(--typography/style/16semi/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/16semi/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
 }
 
 /* ── sub-text ─────────────────────────────────────────────────────────── */
 .subText {
   margin: 0;
-  font-size: var(--skt-typography-style-12med-font-size, var(--skt-typography-font-size-300, 12px));
-  font-weight: var(--skt-typography-style-12med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-12med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-12med-letter-spacing, -0.48px);
-  color: var(--skt-color-text-neutral-tertiary, rgba(6, 12, 31, 0.4));
+  font-size: var(--typography/style/12med/font-size, var(--typography/font-size/12, 12px));
+  font-weight: var(--typography/style/12med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/12med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/12med/letter-spacing, -0.48px);
+  color: var(--text/neutral/tertiary, rgba(6, 12, 31, 0.4));
 }
 
 /* ── dot indicator ────────────────────────────────────────────────────── */
 .indicator {
   display: flex;
   align-items: center;
-  gap: var(--skt-spacing-8, 8px);
-  padding: 0 var(--skt-spacing-2, 2px);
+  gap: var(--component/indicator/gap/1, 8px);
+  padding: 0 var(--component/indicator/padding/x-1, 2px);
 }
 
 .dot {
   display: inline-block;
   width: 4px;
   height: 4px;
-  border-radius: var(--skt-radius-full, 9999px);
-  background-color: var(--skt-color-palette-gray-alpha-200, rgba(6, 12, 31, 0.2));
+  border-radius: var(--radius-r-full, 9999px);
+  background-color: var(--fill/neutral/primary, rgba(6, 12, 31, 0.2));
   flex-shrink: 0;
 }
 
 .dotActive {
-  background-color: var(--skt-color-fill-neutral-strong, #060c1f);
+  background-color: var(--fill/neutral/strong, #060c1f);
 }

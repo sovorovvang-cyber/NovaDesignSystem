@@ -1,23 +1,13 @@
 import React from "react";
 import styles from "./IconLink.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .IconItem/Nomal/Link (node 51578:64876)
-// anatomy: root(svg) [ link-glyph(g) [ left-ring-path, right-ring-path ] ] — chain-link / hyperlink symbol
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .IconItem/Nomal/Link (node 51561:33514)
 
 interface Props {
-  /** Icon size in px — matches the 24px Figma grid */
   size?: number;
-  /** Icon color; defaults to currentColor for theme inheritance */
   color?: string;
-  /** Additional class names */
   className?: string;
 }
 
-/**
- * Chain-link / hyperlink glyph extracted from Figma (node 51578:64876).
- * Natural SVG size: 19.2 × 10.8 px, placed in a 24×24 frame.
- * Figma insets: left=10%, right=10%, top=27.5%, bottom=27.5%
- *   → translate(2.4, 6.6) positions the 19.2×10.8 glyph inside the 24px canvas.
- */
 export function IconLink({ size = 24, color = "currentColor", className }: Props) {
   const rootClass = [styles.root, className].filter(Boolean).join(" ");
 

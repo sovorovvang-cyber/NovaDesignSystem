@@ -1,24 +1,18 @@
 import React from "react";
 import styles from "./IconCategory.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .IconItem/Nomal/Category (node 51578:64794)
-// anatomy: root(svg) [ four rounded squares arranged in a 2×2 grid ]
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .IconItem/Nomal/Category (node 51561:33508)
 
 interface Props {
-  /** Natural icon size from Figma (24px grid) */
   size?: number;
-  /** Icon color — defaults to currentColor so it inherits text color */
   color?: string;
-  /** Additional class names */
   className?: string;
 }
 
-export function IconCategory({
-  size = 24,
-  color = "currentColor",
-  className,
-}: Props) {
-  const rootClass = [styles.root, className].filter(Boolean).join(" ");
+const CATEGORY_PATH =
+  "M5.09961 8.40039C5.92804 8.40039 6.59961 9.07196 6.59961 9.90039V13.5C6.59961 14.3284 5.92804 15 5.09961 15H1.5C0.671573 15 0 14.3284 0 13.5V9.90039C0 9.07196 0.671573 8.40039 1.5 8.40039H5.09961ZM13.5 8.40039C14.3284 8.40044 15 9.072 15 9.90039V13.5C15 14.3284 14.3284 14.9999 13.5 15H9.89941C9.07121 14.9997 8.40039 14.3283 8.40039 13.5V9.90039C8.40039 9.07196 9.07196 8.40039 9.90039 8.40039H13.5ZM5.09961 0C5.92804 0 6.59961 0.671573 6.59961 1.5V5.09961C6.59961 5.92804 5.92804 6.59961 5.09961 6.59961H1.5C0.671573 6.59961 0 5.92804 0 5.09961V1.5C0 0.671573 0.671573 6.55968e-08 1.5 0H5.09961ZM13.5 0C14.3284 5.20417e-05 15 0.671605 15 1.5V5.09961C15 5.928 14.3284 6.59956 13.5 6.59961H9.89941C9.07121 6.59935 8.40039 5.92787 8.40039 5.09961V1.5C8.40039 0.671573 9.07196 0 9.90039 0H13.5Z";
 
+export function IconCategory({ size = 24, color = "currentColor", className }: Props) {
+  const rootClass = [styles.root, className].filter(Boolean).join(" ");
   return (
     <svg
       data-cx-component="IconCategory"
@@ -31,12 +25,12 @@ export function IconCategory({
       aria-hidden="true"
       focusable="false"
     >
-      {/* Four rounded squares (category grid) — glyph is 15×15 centered in 24px frame (4.5px offset each side) */}
       <path
+        d={CATEGORY_PATH}
+        transform="translate(4.5 4.5)"
+        fill={color}
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M9.59961 12.9004C10.428 12.9004 11.0996 13.572 11.0996 14.4004V18.0C11.0996 18.8284 10.428 19.5 9.59961 19.5H6.0C5.17157 19.5 4.5 18.8284 4.5 18.0V14.4004C4.5 13.572 5.17157 12.9004 6.0 12.9004H9.59961ZM18.0 12.9004C18.8284 12.9004 19.5 13.572 19.5 14.4004V18.0C19.5 18.8284 18.8284 19.4999 18.0 19.5H14.3994C13.5712 19.4997 12.9004 18.8283 12.9004 18.0V14.4004C12.9004 13.572 13.572 12.9004 14.4004 12.9004H18.0ZM9.59961 4.5C10.428 4.5 11.0996 5.17157 11.0996 6.0V9.59961C11.0996 10.428 10.428 11.0996 9.59961 11.0996H6.0C5.17157 11.0996 4.5 10.428 4.5 9.59961V6.0C4.5 5.17157 5.17157 4.5 6.0 4.5H9.59961ZM18.0 4.5C18.8284 4.5 19.5 5.17161 19.5 6.0V9.59961C19.5 10.428 18.8284 11.0996 18.0 11.0996H14.3994C13.5712 11.0994 12.9004 10.4279 12.9004 9.59961V6.0C12.9004 5.17157 13.572 4.5 14.4004 4.5H18.0Z"
-        fill={color}
       />
     </svg>
   );

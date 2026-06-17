@@ -10,11 +10,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: var(--skt-spacing-8, 8px);
-  padding: 0 var(--skt-spacing-20, 20px);
+  gap: var(--semantic/space-4, 8px);
+  padding: 0 var(--semantic/space-10, 20px);
   width: 393px;
   box-sizing: border-box;
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", sans-serif);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
 }
 
 /* ── Shared pill surface ── */
@@ -25,8 +25,8 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-color: var(--skt-color-palette-white-alpha-500, rgba(255, 255, 255, 0.5));
-  box-shadow: 0 0 20px 0 var(--skt-color-palette-gray-alpha-50, rgba(6, 12, 31, 0.05));
+  background-color: var(--white-alpha/500, rgba(255, 255, 255, 0.5));
+  box-shadow: 0 0 20px 0 var(--fill/neutral/tertiary, rgba(6, 12, 31, 0.05));
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -36,10 +36,10 @@
   flex: 1 0 0;
   min-width: 0;
   height: 52px;
-  padding-left: var(--skt-spacing-20, 20px);
+  padding-left: var(--semantic/space-10, 20px);
   padding-right: 12px;
   border-radius: 26px;
-  gap: var(--skt-spacing-8, 8px);
+  gap: var(--semantic/space-4, 8px);
 }
 
 /* ── AI Button: collapsed (icon-only pill) ── */
@@ -56,7 +56,7 @@
   display: flex;
   flex: 1 0 0;
   min-width: 0;
-  gap: var(--skt-spacing-8, 8px);
+  gap: var(--semantic/space-4, 8px);
   align-items: center;
 }
 
@@ -77,11 +77,11 @@
 
 .aiPlaceholder {
   margin: 0;
-  font-size: var(--skt-typography-style-16med-font-size, var(--skt-typography-font-size-700, 16px));
-  font-weight: var(--skt-typography-style-16med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-16med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-16med-letter-spacing, -0.04em);
-  color: var(--skt-color-text-brand-primary, #3617ce);
+  font-size: var(--typography/style/16med/font-size, var(--typography/font-size/16, 16px));
+  font-weight: var(--typography/style/16med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/16med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/16med/letter-spacing, -0.04em);
+  color: var(--text/brand/primary, #3617ce);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -95,7 +95,7 @@
   flex-shrink: 0;
   width: 32px;
   height: 32px;
-  border-radius: var(--skt-radius-full, 9999px);
+  border-radius: var(--radius-r-full, 9999px);
   border: none;
   background: transparent;
   cursor: pointer;
@@ -124,9 +124,9 @@
 .menuBtnExpanded {
   flex: 1 0 0;
   min-width: 0;
-  padding: var(--skt-spacing-4, 4px);
-  border-radius: var(--skt-radius-full, 9999px);
-  gap: var(--skt-spacing-2, 2px);
+  padding: var(--semantic/space-2, 4px);
+  border-radius: var(--radius-r-full, 9999px);
+  gap: var(--semantic/space-1, 2px);
 }
 
 /* ── Menu Button: collapsed (single icon pill) ── */
@@ -134,8 +134,8 @@
   flex-shrink: 0;
   width: 52px;
   height: 52px;
-  padding: var(--skt-spacing-4, 4px);
-  border-radius: var(--skt-radius-full, 9999px);
+  padding: var(--semantic/space-2, 4px);
+  border-radius: var(--radius-r-full, 9999px);
   justify-content: center;
 }
 
@@ -149,10 +149,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--skt-spacing-2, 2px);
+  gap: var(--semantic/space-1, 2px);
   height: 52px;
   overflow: hidden;
-  border-radius: var(--skt-radius-full, 9999px);
+  border-radius: var(--radius-r-full, 9999px);
   padding: 5px 35px;
   box-sizing: border-box;
   cursor: pointer;
@@ -162,7 +162,7 @@
 
 /* Selected tab pill (highlighted background) */
 .tabSelected {
-  background-color: var(--skt-color-palette-gray-200, #e2e6f1);
+  background-color: var(--border/neutral/primary, #e2e6f1);
 }
 
 /* Unselected tab (transparent) */
@@ -178,7 +178,7 @@
   flex-shrink: 0;
   width: 44px;
   height: 44px;
-  border-radius: var(--skt-radius-full, 9999px);
+  border-radius: var(--radius-r-full, 9999px);
   cursor: pointer;
   outline: none;
 }
@@ -193,10 +193,10 @@
 }
 
 .tabLabel {
-  font-size: var(--skt-typography-style-12med-font-size, var(--skt-typography-font-size-300, 12px));
-  font-weight: var(--skt-typography-style-12med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-12med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-12med-letter-spacing, -0.04em);
+  font-size: var(--typography/style/12med/font-size, var(--typography/font-size/12, 12px));
+  font-weight: var(--typography/style/12med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/12med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/12med/letter-spacing, -0.04em);
   text-align: center;
   min-width: 100%;
   white-space: nowrap;
@@ -204,9 +204,9 @@
 }
 
 .tabLabelActive {
-  color: var(--skt-color-text-brand-primary, #3617ce);
+  color: var(--text/brand/primary, #3617ce);
 }
 
 .tabLabelInactive {
-  color: var(--skt-color-text-neutral-tertiary, rgba(6, 12, 31, 0.4));
+  color: var(--text/neutral/tertiary, rgba(6, 12, 31, 0.4));
 }

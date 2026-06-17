@@ -8,12 +8,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: var(--skt-spacing-8, 8px);
-  padding-top: var(--skt-spacing-4, 4px);
-  padding-bottom: var(--skt-spacing-4, 4px);
+  gap: var(--semantic/space-4, 8px);
+  padding-top: var(--semantic/space-2, 4px);
+  padding-bottom: var(--semantic/space-2, 4px);
   width: 100%;
   box-sizing: border-box;
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", sans-serif);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
 }
 
 /* ─── Label cell ───────────────────────────────────────────────────────────── */
@@ -40,10 +40,10 @@
 
 .labelText {
   margin: 0;
-  font-weight: var(--skt-typography-font-weight-regular, 400);
+  font-weight: var(--typography/font-weight/regular, 400);
   font-style: normal;
-  color: var(--skt-color-text-neutral-primary, #060c1f);
-  line-height: var(--skt-typography-line-height-200, 130%);
+  color: var(--text/neutral/primary, #060c1f);
+  line-height: var(--typography/line-height/130, 130%);
   word-break: break-word;
   white-space: nowrap;
 }
@@ -66,10 +66,10 @@
 
 .valueText {
   margin: 0;
-  font-weight: var(--skt-typography-font-weight-regular, 400);
+  font-weight: var(--typography/font-weight/regular, 400);
   font-style: normal;
-  color: var(--skt-color-text-neutral-primary, #060c1f);
-  line-height: var(--skt-typography-line-height-200, 130%);
+  color: var(--text/neutral/primary, #060c1f);
+  line-height: var(--typography/line-height/130, 130%);
   word-break: break-word;
   flex: 1 0 0;
   min-width: 1px;
@@ -78,7 +78,7 @@
 /* ─── Text size modifiers ──────────────────────────────────────────────────── */
 .textSize--13 .labelText,
 .textSize--13 .valueText {
-  font-size: var(--skt-typography-font-size-400, 13px);
+  font-size: var(--typography/font-size/13, 13px);
   letter-spacing: -0.52px; /* -0.04em × 13 */
 }
 
@@ -88,6 +88,6 @@
 
 .textSize--14 .labelText,
 .textSize--14 .valueText {
-  font-size: var(--skt-typography-font-size-500, 14px);
+  font-size: var(--typography/font-size/14, 14px);
   letter-spacing: -0.56px; /* -0.04em × 14 */
 }

@@ -6,8 +6,8 @@
   display: flex;
   align-items: flex-start;
   width: 100%;
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", -apple-system, sans-serif);
-  background-color: var(--skt-color-bg-layer-default, #ffffff);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", -apple-system, sans-serif);
+  background-color: var(--bg/layer/primary, #ffffff);
 }
 
 /* Each tab cell — equal-flex so all tabs share width */
@@ -18,14 +18,14 @@
   flex: 1 0 0;
   min-width: 1px;
   height: 60px;
-  padding-top: var(--skt-spacing-24, 24px);
+  padding-top: var(--semantic/space-12, 24px);
   box-sizing: border-box;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
 
 .item:focus-visible {
-  outline: 2px solid var(--skt-color-border-brand-primary, #3617ce);
+  outline: 2px solid var(--border/brand/primary, #3617ce);
   outline-offset: -2px;
 }
 
@@ -42,11 +42,11 @@
 
 /* Unselected label */
 .labelDefault {
-  font-size: var(--skt-typography-style-16med-font-size, var(--skt-typography-font-size-700, 16px));
-  font-weight: var(--skt-typography-style-16med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-16med-line-height, var(--skt-typography-line-height-200, 1.3));
-  letter-spacing: var(--skt-typography-style-16med-letter-spacing, var(--skt-typography-letter-spacing-dense, -0.04em));
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography/style/16med/font-size, var(--typography/font-size/16, 16px));
+  font-weight: var(--typography/style/16med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/16med/line-height, var(--typography/line-height/130, 1.3));
+  letter-spacing: var(--typography/style/16med/letter-spacing, var(--typography/letter-spacing/dense, -0.04em));
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   text-align: center;
   white-space: nowrap;
   flex-shrink: 0;
@@ -54,11 +54,11 @@
 
 /* Selected (active) label */
 .labelSelected {
-  font-size: var(--skt-typography-style-16semi-font-size, var(--skt-typography-font-size-700, 16px));
-  font-weight: var(--skt-typography-style-16semi-font-weight, var(--skt-typography-font-weight-semibold, 600));
-  line-height: var(--skt-typography-style-16semi-line-height, var(--skt-typography-line-height-200, 1.3));
-  letter-spacing: var(--skt-typography-style-16semi-letter-spacing, var(--skt-typography-letter-spacing-dense, -0.04em));
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/16semi/font-size, var(--typography/font-size/16, 16px));
+  font-weight: var(--typography/style/16semi/font-weight, var(--typography/font-weight/semibold, 600));
+  line-height: var(--typography/style/16semi/line-height, var(--typography/line-height/130, 1.3));
+  letter-spacing: var(--typography/style/16semi/letter-spacing, var(--typography/letter-spacing/dense, -0.04em));
+  color: var(--text/neutral/primary, #060c1f);
   text-align: center;
   white-space: nowrap;
   flex-shrink: 0;
@@ -78,6 +78,6 @@
 .indicator {
   width: 100%;
   height: 2px;
-  background-color: var(--skt-color-fill-neutral-strong, #060c1f);
+  background-color: var(--fill/neutral/strong, #060c1f);
   flex-shrink: 0;
 }

@@ -5,7 +5,7 @@
   display: inline-block;
   width: 1px;
   height: 20px;
-  border-radius: var(--skt-radius-full, var(--radius-semantic-full, 999px));
-  background-color: var(--skt-color-fill-brand-primary, var(--fill-brand-default, #3617ce));
+  border-radius: var(--radius-r-full, var(--radius-semantic-full, 999px));
+  background-color: var(--fill/brand/default, var(--fill-brand-default, #3617ce));
   flex-shrink: 0;
 }

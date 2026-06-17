@@ -1,42 +1,38 @@
-/* BadgeIconItem — Figma node 50943:30627 */
-/* anatomy: root[ main[ iconWrap[ icon|iconPlaceholder ], text ], subText? ] */
-/* Variants: compact (no subText) | withSubText (subText visible, full width) */
+/* BadgeIconItem — Figma SSOT: SKT-Next_UI-Draft_3.3 (node 54182:34717) */
 
 .root {
   display: inline-flex;
   align-items: center;
   overflow: hidden;
-  padding-top: var(--skt-spacing-6, 6px);
-  padding-bottom: var(--skt-spacing-6, 6px);
-  padding-left: var(--skt-spacing-8, 8px);
-  padding-right: 10px;
-  border-radius: var(--skt-radius-6, 6px);
-  background-color: var(--skt-color-bg-layer-floating, #ffffff);
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", sans-serif);
+  padding-top: var(--component\/badge\/padding\/y-3, 6px);
+  padding-bottom: var(--component\/badge\/padding\/y-3, 6px);
+  padding-left: var(--component\/badge\/padding\/x-2, 8px);
+  padding-right: var(--component\/badge\/padding\/x-3, 10px);
+  border-radius: var(--radius-3, 8px);
+  background-color: var(--fill\/inverse\/primary, #ffffff);
+  font-family: var(--typography\/font-family\/base, "Pretendard Variable", sans-serif);
   box-sizing: border-box;
 }
 
-/* compact variant — no subText, icon + truncated label only */
 .compact {
   justify-content: flex-start;
 }
 
-/* withSubText variant — stretches to fill available width, label left / subText right */
 .withSubText {
   justify-content: space-between;
   width: 274px;
 }
 
-/* ── Main row (icon + primary text) ──────────────────── */
+/* ── Main row ──────────────────────────────────────── */
 .main {
   display: flex;
   align-items: center;
-  gap: var(--skt-spacing-4, 4px);
+  gap: var(--component\/badge\/gap\/1, 4px);
   flex-shrink: 0;
   position: relative;
 }
 
-/* ── Icon container ───────────────────────────────────── */
+/* ── Icon container ────────────────────────────────── */
 .iconWrap {
   display: flex;
   align-items: center;
@@ -53,44 +49,42 @@
   object-fit: contain;
 }
 
-/* Placeholder for when no iconSrc is provided — renders a colored square */
 .iconPlaceholder {
   width: 16px;
   height: 16px;
-  border-radius: var(--skt-radius-4, 4px);
-  background-color: var(--skt-color-fill-brand-primary, #3617ce);
+  border-radius: var(--radius-1, 4px);
+  background-color: var(--fill\/brand\/default, #3617ce);
   flex-shrink: 0;
 }
 
-/* ── Primary text ─────────────────────────────────────── */
+/* ── Primary text ──────────────────────────────────── */
 .text {
   margin: 0;
-  font-size: var(--skt-typography-style-12med-font-size, var(--skt-typography-font-size-300, 12px));
-  font-weight: var(--skt-typography-style-12med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-12med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-12med-letter-spacing, var(--skt-typography-letter-spacing-dense, -0.05em));
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography\/font-size\/12, 12px);
+  font-weight: var(--typography\/font-weight\/medium, 500);
+  line-height: var(--typography\/line-height\/130, 130%);
+  letter-spacing: var(--typography\/letter-spacing\/dense, -0.05em);
+  color: var(--text\/neutral\/secondary, rgba(12, 27, 65, 0.67));
   white-space: nowrap;
   word-break: break-word;
   flex-shrink: 0;
   position: relative;
 }
 
-/* In compact mode the label is width-capped and truncated with ellipsis */
 .compact .text {
   max-width: 160px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-/* ── SubText (right-aligned, visible only in withSubText variant) ── */
+/* ── SubText ───────────────────────────────────────── */
 .subText {
   margin: 0;
-  font-size: var(--skt-typography-style-12med-font-size, var(--skt-typography-font-size-300, 12px));
-  font-weight: var(--skt-typography-style-12med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-12med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-12med-letter-spacing, var(--skt-typography-letter-spacing-dense, -0.05em));
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography\/font-size\/12, 12px);
+  font-weight: var(--typography\/font-weight\/medium, 500);
+  line-height: var(--typography\/line-height\/130, 130%);
+  letter-spacing: var(--typography\/letter-spacing\/dense, -0.05em);
+  color: var(--text\/neutral\/secondary, rgba(12, 27, 65, 0.67));
   white-space: nowrap;
   word-break: break-word;
   flex-shrink: 0;

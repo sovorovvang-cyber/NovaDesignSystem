@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./IconNavigate.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .IconItem/Navigate (node 51561:35049)
-// anatomy: root[ svg[ path ] ] — inline SVG icon, 6 navigation glyph variants
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .IconItem/Navigate (node 51561:35049)
 
 export type IconNavigateVariant =
   | "Dummy"

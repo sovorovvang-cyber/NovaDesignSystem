@@ -1,57 +1,20 @@
 import React from "react";
 import styles from "./IconDropdown.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .IconItem/Nomal/Dropdown (node 51578:64728)
-// anatomy: root(svg) [ caret-triangle ] — two directional variants: down (DropdownDown) | up (DropdownUp)
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .IconItem/Nomal/Dropdown (node 51578:64728)
 
 interface Props {
-  /** Natural icon size from Figma (24px grid) */
   size?: number;
-  /** Icon color — defaults to currentColor so it inherits text color */
   color?: string;
-  /** Additional class names */
   className?: string;
-  /**
-   * Direction variant.
-   * - "DropdownDown" → small filled caret pointing downward  (Figma node 51561:33446)
-   * - "DropdownUp"   → small filled caret pointing upward    (Figma node 51567:65057)
-   */
   variant?: "DropdownDown" | "DropdownUp";
 }
 
-export function IconDropdown({
-  size = 24,
-  color = "currentColor",
-  className,
-  variant = "DropdownDown",
-}: Props) {
+const DROPDOWN_DOWN_PATH =
+  "M4.85959 6.45116C5.25299 6.85999 5.90735 6.85999 6.30075 6.45115L10.8789 1.69337C11.4902 1.05807 11.04 0 10.1583 0H1.00199C0.120333 0 -0.329904 1.05807 0.281417 1.69338L4.85959 6.45116Z";
+
+export function IconDropdown({ size = 24, color = "currentColor", className, variant = "DropdownDown" }: Props) {
   const rootClass = [styles.root, className].filter(Boolean).join(" ");
-
-  if (variant === "DropdownUp") {
-    // Caret pointing upward — Figma node 51567:65057
-    return (
-      <svg
-        data-cx-component="IconDropdown"
-        className={rootClass}
-        width={size}
-        height={size}
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-        focusable="false"
-      >
-        {/* Small solid upward caret — apex at top-center, base at bottom */}
-        <path
-          d="M6.42 14.88 L12 9.6 L17.58 14.88 Z"
-          fill={color}
-          fillRule="evenodd"
-          clipRule="evenodd"
-        />
-      </svg>
-    );
-  }
-
-  // Caret pointing downward (default) — Figma node 51561:33446
+  const isUp = variant === "DropdownUp";
   return (
     <svg
       data-cx-component="IconDropdown"
@@ -64,9 +27,9 @@ export function IconDropdown({
       aria-hidden="true"
       focusable="false"
     >
-      {/* Small solid downward caret — apex at bottom-center, base at top */}
       <path
-        d="M6.42 9.6 L17.58 9.6 L12 14.88 Z"
+        d={DROPDOWN_DOWN_PATH}
+        transform={isUp ? "translate(6.42 9.6) rotate(180 5.58 3.38)" : "translate(6.42 9.6)"}
         fill={color}
         fillRule="evenodd"
         clipRule="evenodd"

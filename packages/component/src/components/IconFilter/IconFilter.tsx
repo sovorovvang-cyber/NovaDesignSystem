@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./IconFilter.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .IconItem/Nomal/Filter (node 51578:64734)
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .IconItem/Nomal/Filter (node 51578:64734)
 // anatomy: root(svg) [ top-slider-line + top-circle-toggle + bottom-slider-line + bottom-circle-toggle ]
 
 interface Props {

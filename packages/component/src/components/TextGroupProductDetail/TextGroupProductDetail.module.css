@@ -7,14 +7,14 @@
   align-items: flex-start;
   justify-content: space-between;
   width: 353px;
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", sans-serif);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
 }
 
 /* Left column: sub label + title */
 .textProduct {
   display: flex;
   flex-direction: column;
-  gap: var(--skt-spacing-4, 4px);
+  gap: var(--semantic/space-2, 4px);
   align-items: flex-start;
   flex: 1;
   min-width: 0;
@@ -29,11 +29,11 @@
 }
 
 .subText {
-  font-size: var(--skt-typography-style-12med-font-size, var(--skt-typography-font-size-300, 12px));
-  font-weight: var(--skt-typography-style-12med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-12med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-12med-letter-spacing, -0.04em);
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/12med/font-size, var(--typography/font-size/12, 12px));
+  font-weight: var(--typography/style/12med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/12med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/12med/letter-spacing, -0.04em);
+  color: var(--text/neutral/primary, #060c1f);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -41,11 +41,11 @@
 
 /* Main product title */
 .titleText {
-  font-size: var(--skt-typography-style-16med-font-size, var(--skt-typography-font-size-700, 16px));
-  font-weight: var(--skt-typography-style-16med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-16med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-16med-letter-spacing, -0.04em);
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/16med/font-size, var(--typography/font-size/16, 16px));
+  font-weight: var(--typography/style/16med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/16med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/16med/letter-spacing, -0.04em);
+  color: var(--text/neutral/primary, #060c1f);
   margin: 0;
   word-break: keep-all;
   overflow-wrap: break-word;

@@ -9,17 +9,17 @@
   align-items: center;
   width: 393px;
   height: 32px;
-  padding-top: var(--skt-spacing-12, 12px);
-  padding-left: var(--skt-spacing-32, 32px);
-  padding-right: var(--skt-spacing-32, 32px);
+  padding-top: var(--semantic/space-6, 12px);
+  padding-left: var(--semantic/space-16, 32px);
+  padding-right: var(--semantic/space-16, 32px);
   box-sizing: border-box;
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", sans-serif);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
 }
 
 .handle {
   width: 44px;
   height: 3px;
   border-radius: 2px;
-  background-color: var(--skt-color-border-neutral-secondary, #ebeef6);
+  background-color: var(--border/neutral/secondary, #ebeef6);
   flex-shrink: 0;
 }

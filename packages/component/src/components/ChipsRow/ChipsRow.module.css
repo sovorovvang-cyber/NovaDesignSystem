@@ -4,12 +4,12 @@
 .root {
   display: flex;
   flex-direction: column;
-  gap: var(--skt-spacing-6, 6px);
+  gap: var(--semantic/space-3, 6px);
   align-items: flex-start;
-  padding-top: var(--skt-spacing-8, 8px);
-  padding-bottom: var(--skt-spacing-8, 8px);
+  padding-top: var(--semantic/space-4, 8px);
+  padding-bottom: var(--semantic/space-4, 8px);
   /* paddingLeft is set inline from props (default 20px) */
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", sans-serif);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
   box-sizing: border-box;
 }
 
@@ -17,7 +17,7 @@
 .row {
   display: flex;
   flex-direction: row;
-  gap: var(--skt-spacing-6, 6px);
+  gap: var(--semantic/space-3, 6px);
   align-items: center;
   overflow-x: auto;
   overflow-y: hidden;
@@ -36,10 +36,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: var(--skt-spacing-8, 8px);
-  padding: var(--skt-spacing-4, 4px) var(--skt-spacing-12, 12px) var(--skt-spacing-4, 4px) var(--skt-spacing-4, 4px);
+  gap: var(--semantic/space-4, 8px);
+  padding: var(--semantic/space-2, 4px) var(--semantic/space-6, 12px) var(--semantic/space-2, 4px) var(--semantic/space-2, 4px);
   border-radius: 100px;
-  background-color: var(--skt-color-palette-white-alpha-500, rgba(255, 255, 255, 0.5));
+  background-color: var(--white-alpha/500, rgba(255, 255, 255, 0.5));
   flex-shrink: 0;
   cursor: pointer;
   outline: none;
@@ -47,7 +47,7 @@
 }
 
 .quicklinkChip:focus-visible {
-  outline: 2px solid var(--skt-color-fill-brand-primary, #3617ce);
+  outline: 2px solid var(--fill/brand/default, #3617ce);
   outline-offset: 2px;
 }
 
@@ -55,8 +55,8 @@
 .iconWrap {
   width: 32px;
   height: 32px;
-  border-radius: var(--skt-radius-full, 9999px);
-  background-color: var(--skt-color-bg-layer-default, #ffffff);
+  border-radius: var(--radius-r-full, 9999px);
+  background-color: var(--bg/layer/primary, #ffffff);
   overflow: hidden;
   flex-shrink: 0;
   display: flex;
@@ -67,7 +67,7 @@
 .iconBg {
   width: 32px;
   height: 32px;
-  background-color: var(--skt-color-bg-layer-default, #ffffff);
+  background-color: var(--bg/layer/primary, #ffffff);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,16 +92,16 @@
 .iconPlaceholder {
   width: 20px;
   height: 20px;
-  border-radius: var(--skt-radius-4, 4px);
-  background-color: var(--skt-color-palette-gray-alpha-200, rgba(6, 12, 31, 0.2));
+  border-radius: var(--radius-1, 4px);
+  background-color: var(--fill/neutral/primary, rgba(6, 12, 31, 0.2));
 }
 
 .quicklinkLabel {
-  font-size: var(--skt-typography-style-14med-font-size, var(--skt-typography-font-size-500, 14px));
-  font-weight: var(--skt-typography-style-14med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-14med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-14med-letter-spacing, -0.04em);
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/14med/font-size, var(--typography/font-size/14, 14px));
+  font-weight: var(--typography/style/14med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/14med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/14med/letter-spacing, -0.04em);
+  color: var(--text/neutral/primary, #060c1f);
   white-space: nowrap;
 }
 
@@ -109,8 +109,8 @@
 .chip {
   display: flex;
   align-items: center;
-  padding: var(--skt-spacing-10, 10px) var(--skt-spacing-12, 12px);
-  border-radius: var(--skt-radius-full, 9999px);
+  padding: var(--semantic/space-5, 10px) var(--semantic/space-6, 12px);
+  border-radius: var(--radius-r-full, 9999px);
   flex-shrink: 0;
   cursor: pointer;
   outline: none;
@@ -118,32 +118,32 @@
 }
 
 .chip:focus-visible {
-  outline: 2px solid var(--skt-color-fill-brand-primary, #3617ce);
+  outline: 2px solid var(--fill/brand/default, #3617ce);
   outline-offset: 2px;
 }
 
 .chipSelected {
-  background-color: var(--skt-color-fill-neutral-strong, #060c1f);
+  background-color: var(--fill/neutral/strong, #060c1f);
 }
 
 .chipUnselected {
-  background-color: var(--skt-color-palette-gray-50, #f4f5fa);
+  background-color: var(--bg/layer/secondary, #f4f5fa);
 }
 
 .chipLabelSelected {
-  font-size: var(--skt-typography-style-13semi-font-size, var(--skt-typography-font-size-400, 13px));
-  font-weight: var(--skt-typography-style-13semi-font-weight, var(--skt-typography-font-weight-semibold, 600));
-  line-height: var(--skt-typography-style-13semi-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-13semi-letter-spacing, -0.04em);
-  color: var(--skt-color-text-inverse-primary, #ffffff);
+  font-size: var(--typography/style/13semi/font-size, var(--typography/font-size/13, 13px));
+  font-weight: var(--typography/style/13semi/font-weight, var(--typography/font-weight/semibold, 600));
+  line-height: var(--typography/style/13semi/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/13semi/letter-spacing, -0.04em);
+  color: var(--text/inverse/primary, #ffffff);
   white-space: nowrap;
 }
 
 .chipLabelUnselected {
-  font-size: var(--skt-typography-style-13med-font-size, var(--skt-typography-font-size-400, 13px));
-  font-weight: var(--skt-typography-style-13med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-13med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-13med-letter-spacing, -0.04em);
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography/style/13med/font-size, var(--typography/font-size/13, 13px));
+  font-weight: var(--typography/style/13med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/13med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/13med/letter-spacing, -0.04em);
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   white-space: nowrap;
 }

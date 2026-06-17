@@ -1,6 +1,5 @@
 import styles from "./IconItem.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .IconItem (node 51561:60021)
-// anatomy: root<svg>[ path(corner-brackets) ] — size-variant icon placeholder showing four corner-bracket handles
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .IconItem (node 51561:60021)
 
 type IconVariant = "40" | "32" | "24" | "20" | "16" | "12" | "10";
 

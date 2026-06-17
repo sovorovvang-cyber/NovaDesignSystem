@@ -8,7 +8,7 @@
   width: 100%;
   height: 48px;
   position: relative;
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", sans-serif);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
 }
 
 .textField {
@@ -18,40 +18,40 @@
   width: 100%;
   min-height: 1px;
   box-sizing: border-box;
-  padding: var(--skt-component-input-padding-y-1, 12px) var(--skt-component-input-padding-x-1, 20px);
-  border-radius: var(--skt-radius-r-6, var(--skt-radius-14, 14px));
+  padding: var(--component/input/padding/y-1, 12px) var(--component/input/padding/x-1, 20px);
+  border-radius: var(--radius-2, var(--radius-6, 14px));
   border: 1px solid transparent;
 }
 
 .default {
-  gap: var(--skt-component-input-gap-2, 0);
-  background-color: var(--skt-color-fill-inverse-primary, var(--fill-inverse-primary, #ffffff));
-  border-color: var(--skt-color-border-neutral-primary, var(--border-neutral-primary, rgba(5, 42, 142, 0.08)));
+  gap: var(--component/input/gap/2, 0);
+  background-color: var(--fill/inverse/primary, var(--fill-inverse-primary, #ffffff));
+  border-color: var(--border/neutral/primary, var(--border-neutral-primary, rgba(5, 42, 142, 0.08)));
 }
 
 .focused {
-  gap: var(--skt-component-input-gap-2, 0);
-  background-color: var(--skt-color-fill-inverse-primary, var(--fill-inverse-primary, #ffffff));
-  border-color: var(--skt-color-border-neutral-strong, var(--border-neutral-strong, #060c1f));
+  gap: var(--component/input/gap/2, 0);
+  background-color: var(--fill/inverse/primary, var(--fill-inverse-primary, #ffffff));
+  border-color: var(--border/neutral/strong, var(--border-neutral-strong, #060c1f));
 }
 
 .typing {
-  gap: var(--skt-component-input-gap-2, 16px);
+  gap: var(--component/input/gap/2, 16px);
 }
 
 .danger {
-  gap: var(--skt-component-input-gap-2, 0);
-  background-color: var(--skt-color-fill-inverse-primary, var(--fill-inverse-primary, #ffffff));
-  border-color: var(--skt-color-border-danger-primary, var(--border-danger-primary, #e7313d));
+  gap: var(--component/input/gap/2, 0);
+  background-color: var(--fill/inverse/primary, var(--fill-inverse-primary, #ffffff));
+  border-color: var(--border/danger/primary, var(--border-danger-primary, #e7313d));
 }
 
 .danger.typing {
-  gap: var(--skt-component-input-gap-2, 16px);
+  gap: var(--component/input/gap/2, 16px);
 }
 
 .disabled {
-  gap: var(--skt-component-input-gap-2, 0);
-  background-color: var(--skt-color-fill-disabled-default, var(--fill-disabled-default, rgba(35, 55, 155, 0.05)));
+  gap: var(--component/input/gap/2, 0);
+  background-color: var(--fill/disabled/default, var(--fill-disabled-default, rgba(35, 55, 155, 0.05)));
   border-color: transparent;
 }
 
@@ -68,10 +68,10 @@
   flex: 0 1 auto;
   min-width: 1px;
   max-width: 100%;
-  font-size: var(--skt-typography-style-15med-font-size, var(--skt-typography-font-size-600, 15px));
-  font-weight: var(--skt-typography-style-15med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-15med-line-height, var(--skt-typography-line-height-700, 160%));
-  letter-spacing: var(--skt-typography-style-15med-letter-spacing, var(--skt-typography-letter-spacing-dense, -0.05em));
+  font-size: var(--typography/style/15med/font-size, var(--typography/font-size/15, 15px));
+  font-weight: var(--typography/style/15med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/15med/line-height, var(--typography/line-height/160, 160%));
+  letter-spacing: var(--typography/style/15med/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -79,15 +79,15 @@
 }
 
 .textPlaceholder {
-  color: var(--skt-color-text-neutral-tertiary, var(--text-neutral-tertiary, rgba(12, 34, 91, 0.42)));
+  color: var(--text/neutral/tertiary, var(--text-neutral-tertiary, rgba(12, 34, 91, 0.42)));
 }
 
 .textPrimary {
-  color: var(--skt-color-text-neutral-primary, var(--text-neutral-primary, #060c1f));
+  color: var(--text/neutral/primary, var(--text-neutral-primary, #060c1f));
 }
 
 .textDisabled {
-  color: var(--skt-color-text-disabled-default, var(--text-disabled-default, rgba(11, 44, 127, 0.18)));
+  color: var(--text/disabled/default, var(--text-disabled-default, rgba(11, 44, 127, 0.18)));
 }
 
 .caretLeading {

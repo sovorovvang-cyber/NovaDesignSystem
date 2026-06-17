@@ -1,7 +1,5 @@
 import styles from "./BadgeItem.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .BadgeItem (node 50943:27966)
-// anatomy: root[ label ]
-// Variants: size(Small|Large) × color(Neutral|Strong|Brand|Inverse) = 8 combinations
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .BadgeItem (node 50943:27966)
 
 interface Props {
   /** Visual color scheme of the badge */

@@ -14,24 +14,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: var(--skt-spacing-16, 16px);
-  padding-bottom: var(--skt-spacing-32, 32px);
+  gap: var(--component/bottomgroup/gap/4, 16px);
+  padding-top: var(--component/bottomgroup/padding/y-1, 16px);
+  padding-bottom: var(--component/bottomgroup/padding/y-2, 32px);
+  padding-left: var(--component/bottomgroup/padding/x-1, 20px);
+  padding-right: var(--component/bottomgroup/padding/x-1, 20px);
   width: 100%;
   box-sizing: border-box;
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", sans-serif);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
 }
 
 /* ── Ai variant ── */
 .wrapAi {
-  background-color: var(--skt-color-palette-white-alpha-800, rgba(255, 255, 255, 0.8));
-  border-radius: var(--skt-radius-28, 28px) var(--skt-radius-28, 28px) 0 0;
-  box-shadow: 0px -5px 60px 0px var(--skt-color-palette-gray-alpha-50, rgba(6, 12, 31, 0.05));
+  background-color: var(--white-alpha/800, rgba(255, 255, 255, 0.8));
+  border-radius: var(--radius-10, 28px) var(--radius-10, 28px) 0 0;
+  box-shadow: 0px -5px 60px 0px var(--fill/neutral/tertiary, rgba(6, 12, 31, 0.05));
 }
 
 /* ── Default variant ── */
 .wrapDefault {
-  background-color: var(--skt-color-bg-layer-floating, #ffffff);
-  border-top: 1px solid var(--skt-color-border-neutral-secondary, #f4f5fa);
+  background-color: var(--bg/layer/floating, #ffffff);
+  border-top: 1px solid var(--border/neutral/secondary, rgba(35, 55, 155, 0.05));
 }
 
 /* ── AI label row ── */
@@ -39,8 +42,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: var(--skt-spacing-4, 4px);
-  padding: 0 var(--skt-spacing-24, 24px) var(--skt-spacing-16, 16px);
+  gap: var(--semantic/space-2, 4px);
+  padding: 0 var(--semantic/space-12, 24px) var(--semantic/space-8, 16px);
   width: 100%;
   box-sizing: border-box;
 }
@@ -57,20 +60,20 @@
 
 .aiLabelText {
   flex-shrink: 0;
-  font-size: var(--skt-typography-style-14med-font-size, var(--skt-typography-font-size-500, 14px));
-  font-weight: var(--skt-typography-style-14med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-14med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-14med-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
+  font-size: var(--typography/style/14med/font-size, var(--typography/font-size/14, 14px));
+  font-weight: var(--typography/style/14med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/14med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/14med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
   white-space: nowrap;
   background: linear-gradient(
     to right,
-    var(--skt-color-palette-blue-800, #3617ce),
-    var(--skt-color-palette-blue-600, #5f6afd)
+    var(--fill/brand/default, #3617ce),
+    var(--text/brand/secondary, #5f6afd)
   );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: var(--skt-color-palette-blue-800, #3617ce); /* fallback */
+  color: var(--fill/brand/default, #3617ce); /* fallback */
 }
 
 .upperItem {

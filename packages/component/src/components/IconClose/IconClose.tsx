@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./IconClose.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .IconItem/Nomal/Close (node 51578:64959)
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .IconItem/Nomal/Close (node 51578:64959)
 // anatomy: root(svg) [ close-path ] — single X glyph for dismissal / closing actions
 
 /**

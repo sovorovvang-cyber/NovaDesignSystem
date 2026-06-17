@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./IconBarcode.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .IconItem/Nomal/Barcode (node 51578:64958)
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .IconItem/Nomal/Barcode (node 51578:64958)
 // anatomy: root(svg) [ barcode-path ] — barcode / QR-corner scanner frame glyph
 
 /**

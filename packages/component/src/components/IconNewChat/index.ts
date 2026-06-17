@@ -1,0 +1,1 @@
+export { IconNewChat } from "./IconNewChat";

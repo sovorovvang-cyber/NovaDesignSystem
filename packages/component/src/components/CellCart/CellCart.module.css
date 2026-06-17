@@ -4,12 +4,12 @@
 .wrap {
   display: flex;
   flex-direction: column;
-  gap: var(--skt-spacing-12, 12px);
+  gap: var(--semantic/space-6, 12px);
   align-items: stretch;
-  padding-top: var(--skt-spacing-8, 8px);
-  padding-bottom: var(--skt-spacing-8, 8px);
+  padding-top: var(--semantic/space-4, 8px);
+  padding-bottom: var(--semantic/space-4, 8px);
   width: 100%;
-  font-family: var(--skt-typography-font-family-base, "Pretendard Variable", -apple-system, sans-serif);
+  font-family: var(--typography/font-family/base, "Pretendard Variable", -apple-system, sans-serif);
 }
 
 /* ── Title row ── */
@@ -17,19 +17,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: var(--skt-spacing-4, 4px);
-  padding-bottom: var(--skt-spacing-4, 4px);
+  padding-top: var(--semantic/space-2, 4px);
+  padding-bottom: var(--semantic/space-2, 4px);
   width: 100%;
 }
 
 .titleText {
   flex: 1 0 0;
   min-width: 0;
-  font-size: var(--skt-typography-style-14semi-font-size, var(--skt-typography-font-size-500, 14px));
-  font-weight: var(--skt-typography-style-14semi-font-weight, var(--skt-typography-font-weight-semibold, 600));
-  line-height: var(--skt-typography-style-14semi-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-14semi-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/14semi/font-size, var(--typography/font-size/14, 14px));
+  font-weight: var(--typography/style/14semi/font-weight, var(--typography/font-weight/semibold, 600));
+  line-height: var(--typography/style/14semi/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/14semi/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/primary, #060c1f);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -41,8 +41,8 @@
   justify-content: center;
   width: 18px;
   height: 18px;
-  border-radius: var(--skt-radius-full, 9999px);
-  background-color: var(--skt-color-border-neutral-secondary, #ebeef6);
+  border-radius: var(--radius-r-full, 9999px);
+  background-color: var(--border/neutral/secondary, #ebeef6);
   border: none;
   cursor: pointer;
   padding: 0;
@@ -65,7 +65,7 @@
   left: 50%;
   width: 8px;
   height: 1.2px;
-  background-color: var(--skt-color-text-neutral-primary, #060c1f);
+  background-color: var(--text/neutral/primary, #060c1f);
   border-radius: 1px;
 }
 
@@ -80,7 +80,7 @@
 /* ── Product row ── */
 .productRow {
   display: flex;
-  gap: var(--skt-spacing-12, 12px);
+  gap: var(--semantic/space-6, 12px);
   align-items: flex-start;
   width: 100%;
 }
@@ -89,9 +89,9 @@
   flex-shrink: 0;
   width: 48px;
   height: 48px;
-  border-radius: var(--skt-radius-10, 10px);
+  border-radius: var(--radius-4, 10px);
   overflow: hidden;
-  background-color: var(--skt-color-border-neutral-secondary, #ebeef6);
+  background-color: var(--border/neutral/secondary, #ebeef6);
 }
 
 .thumbnailImg {
@@ -118,16 +118,16 @@
 .textGroup {
   display: flex;
   flex-direction: column;
-  gap: var(--skt-spacing-2, 2px);
+  gap: var(--semantic/space-1, 2px);
   width: 100%;
 }
 
 .brandName {
-  font-size: var(--skt-typography-style-13med-font-size, var(--skt-typography-font-size-400, 13px));
-  font-weight: var(--skt-typography-style-13med-font-weight, var(--skt-typography-font-weight-medium, 500));
-  line-height: var(--skt-typography-style-13med-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-13med-letter-spacing, var(--skt-typography-letter-spacing-dense, -0.05em));
-  color: var(--skt-color-text-neutral-tertiary, rgba(6, 12, 31, 0.4));
+  font-size: var(--typography/style/13med/font-size, var(--typography/font-size/13, 13px));
+  font-weight: var(--typography/style/13med/font-weight, var(--typography/font-weight/medium, 500));
+  line-height: var(--typography/style/13med/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/13med/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
+  color: var(--text/neutral/tertiary, rgba(6, 12, 31, 0.4));
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -135,11 +135,11 @@
 }
 
 .productName {
-  font-size: var(--skt-typography-style-14semi-font-size, var(--skt-typography-font-size-500, 14px));
-  font-weight: var(--skt-typography-style-14semi-font-weight, var(--skt-typography-font-weight-semibold, 600));
-  line-height: var(--skt-typography-style-14semi-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-14semi-letter-spacing, var(--skt-typography-letter-spacing-dense, -0.05em));
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/14semi/font-size, var(--typography/font-size/14, 14px));
+  font-weight: var(--typography/style/14semi/font-weight, var(--typography/font-weight/semibold, 600));
+  line-height: var(--typography/style/14semi/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/14semi/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
+  color: var(--text/neutral/primary, #060c1f);
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -152,9 +152,9 @@
 .adultNotice {
   display: flex;
   align-items: center;
-  gap: var(--skt-spacing-4, 4px);
-  padding-top: var(--skt-spacing-4, 4px);
-  padding-bottom: var(--skt-spacing-4, 4px);
+  gap: var(--semantic/space-2, 4px);
+  padding-top: var(--semantic/space-2, 4px);
+  padding-bottom: var(--semantic/space-2, 4px);
   width: 100%;
 }
 
@@ -164,7 +164,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 1px solid var(--skt-color-text-danger-primary, #e7313d);
+  border: 1px solid var(--text/danger/primary, #e7313d);
   position: relative;
 }
 
@@ -177,17 +177,17 @@
   transform: translate(-50%, -50%);
   font-size: 8px;
   font-style: italic;
-  font-weight: var(--skt-typography-font-weight-bold, 700);
+  font-weight: var(--typography/font-weight/bold, 700);
   line-height: 1;
-  color: var(--skt-color-text-danger-primary, #e7313d);
+  color: var(--text/danger/primary, #e7313d);
 }
 
 .adultNoticeText {
-  font-size: var(--skt-typography-style-11reg-font-size, var(--skt-typography-font-size-200, 11px));
-  font-weight: var(--skt-typography-style-11reg-font-weight, var(--skt-typography-font-weight-regular, 400));
-  line-height: var(--skt-typography-style-11reg-line-height, var(--skt-typography-line-height-400, 150%));
-  letter-spacing: var(--skt-typography-style-11reg-letter-spacing, var(--skt-typography-letter-spacing-dense, -0.05em));
-  color: var(--skt-color-text-danger-primary, #e7313d);
+  font-size: var(--typography/style/11reg/font-size, var(--typography/font-size/11, 11px));
+  font-weight: var(--typography/style/11reg/font-weight, var(--typography/font-weight/regular, 400));
+  line-height: var(--typography/style/11reg/line-height, var(--typography/line-height/150, 150%));
+  letter-spacing: var(--typography/style/11reg/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
+  color: var(--text/danger/primary, #e7313d);
   margin: 0;
   white-space: nowrap;
   word-break: break-word;
@@ -198,9 +198,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: var(--skt-color-bg-layer-basement, #f4f5fa);
-  border-radius: var(--skt-radius-16, 16px);
-  padding: var(--skt-spacing-12, 12px) var(--skt-spacing-16, 16px);
+  background-color: var(--bg/layer/secondary, #f4f5fa);
+  border-radius: var(--radius-7, 16px);
+  padding: var(--semantic/space-6, 12px) var(--semantic/space-8, 16px);
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
@@ -208,31 +208,31 @@
 
 .summaryTableRow {
   display: flex;
-  gap: var(--skt-spacing-16, 16px);
+  gap: var(--semantic/space-8, 16px);
   align-items: center;
-  padding-top: var(--skt-spacing-4, 4px);
-  padding-bottom: var(--skt-spacing-4, 4px);
+  padding-top: var(--semantic/space-2, 4px);
+  padding-bottom: var(--semantic/space-2, 4px);
   width: 100%;
 }
 
 .summaryLabel {
   flex-shrink: 0;
-  font-size: var(--skt-typography-style-14reg-font-size, var(--skt-typography-font-size-500, 14px));
-  font-weight: var(--skt-typography-style-14reg-font-weight, var(--skt-typography-font-weight-regular, 400));
-  line-height: var(--skt-typography-style-14reg-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-14reg-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography/style/14reg/font-size, var(--typography/font-size/14, 14px));
+  font-weight: var(--typography/style/14reg/font-weight, var(--typography/font-weight/regular, 400));
+  line-height: var(--typography/style/14reg/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/14reg/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   white-space: nowrap;
 }
 
 .summaryValue {
   flex: 1 0 0;
   min-width: 0;
-  font-size: var(--skt-typography-style-14reg-font-size, var(--skt-typography-font-size-500, 14px));
-  font-weight: var(--skt-typography-style-14reg-font-weight, var(--skt-typography-font-weight-regular, 400));
-  line-height: var(--skt-typography-style-14reg-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-14reg-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography/style/14reg/font-size, var(--typography/font-size/14, 14px));
+  font-weight: var(--typography/style/14reg/font-weight, var(--typography/font-weight/regular, 400));
+  line-height: var(--typography/style/14reg/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/14reg/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   text-align: right;
 }
 
@@ -241,24 +241,24 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: var(--skt-spacing-8, 8px);
-  padding-bottom: var(--skt-spacing-8, 8px);
+  padding-top: var(--semantic/space-4, 8px);
+  padding-bottom: var(--semantic/space-4, 8px);
   width: 100%;
 }
 
 .divider {
   width: 100%;
   height: 1px;
-  background-color: var(--skt-color-border-neutral-secondary, #ebeef6);
+  background-color: var(--border/neutral/secondary, #ebeef6);
 }
 
 /* Total row — semibold labels */
 .summaryTotalRow {
   display: flex;
-  gap: var(--skt-spacing-16, 16px);
+  gap: var(--semantic/space-8, 16px);
   align-items: center;
-  padding-top: var(--skt-spacing-4, 4px);
-  padding-bottom: var(--skt-spacing-4, 4px);
+  padding-top: var(--semantic/space-2, 4px);
+  padding-bottom: var(--semantic/space-2, 4px);
   width: 100%;
 }
 
@@ -267,22 +267,22 @@
   height: 20px;
   display: flex;
   align-items: center;
-  font-size: var(--skt-typography-style-14semi-font-size, var(--skt-typography-font-size-500, 14px));
-  font-weight: var(--skt-typography-style-14semi-font-weight, var(--skt-typography-font-weight-semibold, 600));
-  line-height: var(--skt-typography-style-14semi-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-14semi-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/14semi/font-size, var(--typography/font-size/14, 14px));
+  font-weight: var(--typography/style/14semi/font-weight, var(--typography/font-weight/semibold, 600));
+  line-height: var(--typography/style/14semi/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/14semi/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/primary, #060c1f);
   white-space: nowrap;
 }
 
 .summaryTotalValue {
   flex: 1 0 0;
   min-width: 0;
-  font-size: var(--skt-typography-style-14semi-font-size, var(--skt-typography-font-size-500, 14px));
-  font-weight: var(--skt-typography-style-14semi-font-weight, var(--skt-typography-font-weight-semibold, 600));
-  line-height: var(--skt-typography-style-14semi-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-14semi-letter-spacing, var(--skt-typography-letter-spacing-normal, -0.04em));
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  font-size: var(--typography/style/14semi/font-size, var(--typography/font-size/14, 14px));
+  font-weight: var(--typography/style/14semi/font-weight, var(--typography/font-weight/semibold, 600));
+  line-height: var(--typography/style/14semi/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/14semi/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  color: var(--text/neutral/primary, #060c1f);
   text-align: right;
 }
 
@@ -301,11 +301,11 @@
   border: none;
   padding: 0;
   cursor: pointer;
-  font-size: var(--skt-typography-style-13reg-font-size, var(--skt-typography-font-size-400, 13px));
-  font-weight: var(--skt-typography-style-13reg-font-weight, var(--skt-typography-font-weight-regular, 400));
-  line-height: var(--skt-typography-style-13reg-line-height, var(--skt-typography-line-height-200, 130%));
-  letter-spacing: var(--skt-typography-style-13reg-letter-spacing, var(--skt-typography-letter-spacing-dense, -0.05em));
-  color: var(--skt-color-text-neutral-secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography/style/13reg/font-size, var(--typography/font-size/13, 13px));
+  font-weight: var(--typography/style/13reg/font-weight, var(--typography/font-weight/regular, 400));
+  line-height: var(--typography/style/13reg/line-height, var(--typography/line-height/130, 130%));
+  letter-spacing: var(--typography/style/13reg/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
+  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
   text-decoration: underline;
   text-decoration-skip-ink: none;
   text-underline-position: from-font;
@@ -313,5 +313,5 @@
 }
 
 .changeButton:hover {
-  color: var(--skt-color-text-neutral-primary, #060c1f);
+  color: var(--text/neutral/primary, #060c1f);
 }

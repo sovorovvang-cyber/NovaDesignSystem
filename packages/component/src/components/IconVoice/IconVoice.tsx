@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./IconVoice.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .IconItem/Nomal/Voice (node 51578:64955)
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .IconItem/Nomal/Voice (node 51578:64955)
 // anatomy: root(svg) [ voice-bars-path ] — audio waveform with four vertical bars of varying heights
 
 interface Props {

@@ -1,7 +1,5 @@
 import styles from "./BadgeIconItem.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .BadgeIconItem (node 50943:30627)
-// anatomy: root[ main[ icon, text ], subText? ]
-// Variants: subtext(false|true) — when true, a right-aligned subText label is shown and the root stretches to full width
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .BadgeIconItem (node 54182:34717)
 
 interface Props {
   /** Main label text shown next to the icon */
