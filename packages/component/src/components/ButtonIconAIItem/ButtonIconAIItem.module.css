@@ -1,0 +1,40 @@
+/* ButtonIconAIItem — Figma node 55216:179427 (3.3)
+   anatomy: root[ iconWrapper[ icon ] ]
+   44×44px pill, white-alpha/400 bg, full shadow
+*/
+
+.root {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: var(--radius-r-full, 9999px);
+  background-color: var(--white-alpha/400, rgba(255, 255, 255, 0.4));
+  box-shadow: 0px 0px 20px 0px var(--gray-alpha/gray-alpha-50, rgba(35, 55, 155, 0.05));
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.root:not(:disabled):active {
+  opacity: 0.7;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.icon {
+  display: block;
+  color: var(--icon/neutral/primary, #060c1f);
+  flex-shrink: 0;
+}

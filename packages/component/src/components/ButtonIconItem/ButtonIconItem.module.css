@@ -1,8 +1,8 @@
-/* ButtonIconItem — Figma node 51081:61398 */
-/* anatomy: root(button) [ iconWrapper(span) [ icon(svg) ] ] */
-/* sizes: Small=18px · Medium=24px · Large=32px */
-/* fill=true → neutral-secondary bg; fill=false → transparent */
-/* state=Disabled → disabled-default bg + dimmed icon */
+/* ButtonIconItem — Figma node 54449:42899 (3.3)
+   anatomy: root(button) [ iconWrapper(span) [ icon ] ]
+   sizes: Small=12px · Medium=16px · Large=24px
+   fill=true → neutral-secondary bg; fill=false → transparent
+   state=Disabled → disabled-default bg + dimmed icon */
 
 .root {
   position: relative;
@@ -19,21 +19,21 @@
 }
 
 .size-Small {
-  width: 18px;
-  height: 18px;
+  width: 12px;
+  height: 12px;
   border-radius: var(--radius-r-full, 9999px);
 }
 
 .size-Medium {
-  width: 24px;
-  height: 24px;
-  border-radius: 15.6px;
+  width: 16px;
+  height: 16px;
+  border-radius: var(--radius-r-full, 9999px);
 }
 
 .size-Large {
-  width: 32px;
-  height: 32px;
-  border-radius: 20.8px;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-r-full, 9999px);
 }
 
 .filled.default {
@@ -69,18 +69,18 @@
 }
 
 .size-Small .icon {
-  width: 10px;
-  height: 10px;
-}
-
-.size-Medium .icon {
   width: 12px;
   height: 12px;
 }
 
-.size-Large .icon {
+.size-Medium .icon {
   width: 16px;
   height: 16px;
+}
+
+.size-Large .icon {
+  width: 24px;
+  height: 24px;
 }
 
 .disabled .icon {
