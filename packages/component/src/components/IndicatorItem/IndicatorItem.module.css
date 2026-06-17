@@ -5,8 +5,8 @@
   display: inline-flex;
   flex-direction: row;
   align-items: center;
-  gap: var(--semantic/space-4, 8px);
-  padding: 0 var(--semantic/space-1, 2px);
+  gap: var(--component\/indicator\/gap\/1, 8px);
+  padding: 0 var(--component\/indicator\/padding\/x-1, 2px);
 }
 
 .dot {

@@ -1,5 +1,5 @@
 import styles from "./IndicatorDotItem.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .IndicatorDotItem (node 51715:81772)
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .IndicatorDotItem (node 51715:81772)
 // anatomy: root[ dot ]
 
 interface Props {

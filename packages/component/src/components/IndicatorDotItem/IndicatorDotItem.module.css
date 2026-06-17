@@ -12,7 +12,7 @@
 }
 
 .selected {
-  background-color: var(--fill/brand/default, #3617ce);
+  background-color: var(--fill\/neutral\/strong, #060c1f);
 }
 
 .unselected {

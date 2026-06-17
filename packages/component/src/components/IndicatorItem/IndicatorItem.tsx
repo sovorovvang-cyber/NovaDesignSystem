@@ -1,5 +1,5 @@
 import styles from "./IndicatorItem.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .IndicatorItem (node 50946:57015)
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .IndicatorItem (node 50946:57015)
 // anatomy: root[ dot× count ] — horizontal row of IndicatorDotItem-sized circles; one active dot, rest inactive
 
 interface Props {
