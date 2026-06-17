@@ -1,0 +1,55 @@
+/* SelectItem — Figma node 54678:33424 */
+/* anatomy: root[ text, chevronIcon ] */
+/* States: Default | Completed */
+
+.root {
+  display: flex;
+  align-items: center;
+  gap: var(--component\/dropdown\/gap\/1, 16px);
+  height: 48px;
+  padding: 0 var(--component\/dropdown\/padding\/x-1, 20px);
+  border-radius: var(--radius-5, 12px);
+  border: 1px solid var(--border\/neutral\/primary, rgba(5, 42, 142, 0.08));
+  background-color: var(--fill\/inverse\/primary, #ffffff);
+  width: 100%;
+  box-sizing: border-box;
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
+  cursor: pointer;
+  user-select: none;
+}
+
+.root:focus-visible {
+  outline: 2px solid var(--border\/brand\/primary, #3617ce);
+  outline-offset: 2px;
+}
+
+.text {
+  flex: 1 0 0;
+  min-width: 0;
+  margin: 0;
+  font-size: var(--typography\/font-size\/16, 16px);
+  font-weight: var(--typography\/font-weight\/medium, 500);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.textDefault {
+  color: var(--text\/neutral\/tertiary, rgba(12, 34, 91, 0.42));
+}
+
+.textCompleted {
+  color: var(--text\/neutral\/primary, #060c1f);
+}
+
+.chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  color: var(--icon\/neutral\/secondary, rgba(12, 27, 65, 0.67));
+}
