@@ -1,11 +1,12 @@
 /* Search — Figma node 50943:30637 */
-/* anatomy: wrap > searchBar[ textField[ caret?, placeholder|inputText ], rightSlot[ clearBtn?, searchIconBtn > SearchIcon ] ] */
+/* anatomy: wrap > searchBar[ textField[ text, caret?, clearBtn? ], searchIcon ] */
+/* States: Default | Focused | Typing | Completed | Disabled */
 
 .wrap {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: var(--semantic/space-4, 8px) var(--semantic/space-10, 20px);
+  padding: var(--component\/search\/padding\/y-1, 8px) var(--component\/search\/padding\/x-2, 20px);
   font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
   width: 100%;
   box-sizing: border-box;
@@ -20,61 +21,79 @@
   display: flex;
   flex: 1 0 0;
   align-items: center;
-  gap: var(--semantic/space-6, 12px);
-  padding: var(--semantic/space-6, 12px) var(--semantic/space-8, 16px) var(--semantic/space-6, 12px) var(--semantic/space-10, 20px);
-  border-radius: var(--radius-r-full, 9999px);
-  background-color: var(--bg/layer/secondary, #f4f5fa);
+  padding: var(--component\/search\/padding\/y-2, 12px) var(--component\/search\/padding\/x-1, 16px) var(--component\/search\/padding\/y-2, 12px) var(--component\/search\/padding\/x-2, 20px);
+  border-radius: var(--radius-6, 16px);
+  background-color: var(--fill\/neutral\/primary, rgba(35, 55, 155, 0.05));
   min-width: 0;
 }
 
-.searchBarDisabled {
-  background-color: var(--fill/disabled/default, rgba(6, 12, 31, 0.05));
+/* gap/2 when no clear button (Default, Focused, Disabled) */
+.searchBarWide {
+  gap: var(--component\/search\/gap\/2, 16px);
 }
 
-/* text area — grows to fill available width */
+/* gap/1 when clear button is present (Typing, Completed) */
+.searchBarNarrow {
+  gap: var(--component\/search\/gap\/1, 12px);
+}
+
+.searchBarDisabled {
+  background-color: var(--fill\/disabled\/default, rgba(35, 55, 155, 0.05));
+}
+
+/* left text area — grows to fill available width */
 .textField {
   display: flex;
   flex: 1 0 0;
-  align-items: flex-end;
-  gap: 0;
+  align-items: center;
+  gap: var(--component\/search\/gap\/2, 16px);
   min-width: 0;
   overflow: hidden;
 }
 
-/* placeholder text (Default / Focused / Disabled) */
+/* inner content: text + optional caret */
+.inputContent {
+  display: flex;
+  flex: 1 0 0;
+  align-items: center;
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* placeholder text */
 .placeholder {
-  font-size: var(--typography/style/15med/font-size, var(--typography/font-size/15, 15px));
-  font-weight: var(--typography/style/15med/font-weight, var(--typography/font-weight/medium, 500));
-  line-height: var(--typography/style/15med/line-height, var(--typography/line-height/160, 160%));
-  letter-spacing: var(--typography/style/15med/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
-  color: var(--text/neutral/tertiary, rgba(6, 12, 31, 0.4));
+  font-size: var(--typography\/font-size\/16, 16px);
+  font-weight: var(--typography\/font-weight\/medium, 500);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.04em;
+  color: var(--text\/neutral\/tertiary, rgba(12, 34, 91, 0.42));
   white-space: nowrap;
   flex-shrink: 0;
 }
 
 .placeholderDisabled {
-  color: var(--text/disabled/default, rgba(6, 12, 31, 0.2));
+  color: var(--text\/disabled\/default, rgba(11, 44, 127, 0.18));
 }
 
 /* typed / completed value text */
 .inputText {
-  font-size: var(--typography/style/15med/font-size, var(--typography/font-size/15, 15px));
-  font-weight: var(--typography/style/15med/font-weight, var(--typography/font-weight/medium, 500));
-  line-height: var(--typography/style/15med/line-height, var(--typography/line-height/160, 160%));
-  letter-spacing: var(--typography/style/15med/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
-  color: var(--text/neutral/primary, #060c1f);
+  font-size: var(--typography\/font-size\/16, 16px);
+  font-weight: var(--typography\/font-weight\/medium, 500);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.04em;
+  color: var(--text\/neutral\/primary, #060c1f);
   white-space: nowrap;
   flex-shrink: 1;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-/* blinking brand-blue caret cursor */
+/* blinking caret cursor — neutral/strong */
 .caret {
   display: inline-block;
   width: 1px;
   height: 20px;
-  background-color: var(--fill/brand/default, #3617ce);
+  background-color: var(--fill\/neutral\/strong, #060c1f);
   border-radius: var(--radius-r-full, 9999px);
   flex-shrink: 0;
   animation: caretBlink 1s step-end infinite;
@@ -85,14 +104,6 @@
   50%       { opacity: 0; }
 }
 
-/* right-side slot: clear button + search icon */
-.rightSlot {
-  display: flex;
-  align-items: center;
-  gap: var(--semantic/space-4, 8px);
-  flex-shrink: 0;
-}
-
 /* circular clear (×) button */
 .clearBtn {
   display: flex;
@@ -101,17 +112,17 @@
   width: 18px;
   height: 18px;
   border-radius: var(--radius-r-full, 9999px);
-  background-color: var(--border/neutral/primary, #e2e6f1);
+  background-color: var(--fill\/neutral\/tertiary, rgba(13, 47, 138, 0.12));
   border: none;
   padding: 0;
   cursor: pointer;
   flex-shrink: 0;
-  color: var(--text/neutral/primary, #060c1f);
+  color: var(--icon\/neutral\/secondary, rgba(12, 27, 65, 0.67));
   line-height: 0;
 }
 
 .clearBtn:hover {
-  background-color: var(--border/neutral/strong, #d2d9eb);
+  opacity: 0.8;
 }
 
 /* wrapper for the search SVG icon (20 × 20) */
@@ -122,11 +133,11 @@
   width: 20px;
   height: 20px;
   flex-shrink: 0;
-  color: var(--text/neutral/primary, #060c1f);
+  color: var(--icon\/neutral\/secondary, rgba(12, 27, 65, 0.67));
 }
 
 .iconDimmed {
-  color: var(--text/disabled/default, rgba(6, 12, 31, 0.2));
+  color: var(--text\/disabled\/default, rgba(11, 44, 127, 0.18));
 }
 
 /* ghost button wrapping the search icon */

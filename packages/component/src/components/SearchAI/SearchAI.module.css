@@ -1,0 +1,118 @@
+/* SearchAI — Figma node 54379:99008 */
+/* anatomy: root[ inputRow[ aiIcon, textField(flex-1) ], actions[ voiceBtn, sendBtn? ] ] */
+/* States: Default | Focused | Typing | Completed */
+
+.root {
+  display: flex;
+  align-items: center;
+  gap: var(--component\/aisearchfield\/gap\/2, 16px);
+  height: 52px;
+  padding-left: var(--component\/aisearchfield\/padding\/x-2, 20px);
+  padding-right: var(--component\/aisearchfield\/padding\/x-1, 16px);
+  border-radius: var(--radius-r-full, 9999px);
+  background-color: var(--white-alpha\/500, rgba(255, 255, 255, 0.5));
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
+}
+
+/* left input row: ai icon + text */
+.inputRow {
+  display: flex;
+  flex: 1 0 0;
+  align-items: center;
+  gap: var(--component\/aisearchfield\/gap\/1, 8px);
+  min-width: 0;
+}
+
+/* AI spark icon (16×16) */
+.aiIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+/* text field container */
+.textField {
+  display: flex;
+  flex: 1 0 0;
+  align-items: center;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.placeholder {
+  flex: 1 0 0;
+  min-width: 0;
+  margin: 0;
+  font-size: var(--typography\/font-size\/16, 16px);
+  font-weight: var(--typography\/font-weight\/medium, 500);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.04em;
+  color: var(--text\/brand\/primary, #3617ce);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.inputText {
+  flex-shrink: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: var(--typography\/font-size\/16, 16px);
+  font-weight: var(--typography\/font-weight\/medium, 500);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.04em;
+  color: var(--text\/neutral\/primary, #060c1f);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* blinking caret */
+.caret {
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  background-color: var(--fill\/neutral\/strong, #060c1f);
+  border-radius: var(--radius-r-full, 9999px);
+  flex-shrink: 0;
+  animation: caretBlink 1s step-end infinite;
+}
+
+@keyframes caretBlink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* right action buttons */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--component\/search\/gap\/1, 12px);
+  flex-shrink: 0;
+}
+
+.iconBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  flex-shrink: 0;
+  color: var(--icon\/neutral\/secondary, rgba(12, 27, 65, 0.67));
+  line-height: 0;
+}
+
+.iconBtnBrand {
+  color: var(--text\/brand\/primary, #3617ce);
+}
