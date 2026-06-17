@@ -61,6 +61,7 @@ export { TooltipItem } from "./components/TooltipItem";
 export { Accordion } from "./components/Accordion";
 export { Alert } from "./components/Alert";
 export { Appbar } from "./components/Appbar";
+export { AppbarAI } from "./components/AppbarAI";
 export { Banner } from "./components/Banner";
 export { BottomGroup } from "./components/BottomGroup";
 export { Bottomsheet } from "./components/Bottomsheet";
