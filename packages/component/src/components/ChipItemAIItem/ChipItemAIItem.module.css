@@ -8,8 +8,8 @@
 .root {
   display: inline-flex;
   align-items: center;
-  gap: var(--semantic/space-2, 4px);
-  padding: var(--semantic/space-6, 12px) var(--semantic/space-10, 20px) var(--semantic/space-6, 12px) var(--semantic/space-9, 18px);
+  gap: var(--component/chip/gap/1, 4px);
+  padding: var(--component/chip/padding/y-4, 12px) var(--component/chip/padding/x-4, 20px) var(--component/chip/padding/y-4, 12px) var(--component/chip/padding/x-3, 18px);
   background-color: var(--white-alpha/400, rgba(255, 255, 255, 0.4));
   border-radius: var(--radius-r-full, 9999px);
   overflow: hidden;

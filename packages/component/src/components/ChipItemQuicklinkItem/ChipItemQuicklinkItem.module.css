@@ -6,8 +6,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--semantic/space-4, 8px);
-  padding: var(--semantic/space-2, 4px) var(--semantic/space-6, 12px) var(--semantic/space-2, 4px) var(--semantic/space-2, 4px);
+  gap: var(--component/chip/gap/3, 8px);
+  padding: var(--component/chip/padding/y-1, 4px) var(--component/chip/padding/x-2, 12px) var(--component/chip/padding/y-1, 4px) var(--component/chip/padding/x-1, 4px);
   background-color: var(--white-alpha/500, rgba(255, 255, 255, 0.5));
   border-radius: var(--radius-r-full, 9999px);
   cursor: pointer;
@@ -74,7 +74,7 @@
   font-size: var(--typography/style/14med/font-size, var(--typography/font-size/14, 14px));
   font-weight: var(--typography/style/14med/font-weight, var(--typography/font-weight/medium, 500));
   line-height: var(--typography/style/14med/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/14med/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
+  letter-spacing: -0.04em;
   color: var(--text/neutral/primary, #060c1f);
   white-space: nowrap;
   flex-shrink: 0;
