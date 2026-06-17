@@ -352,6 +352,11 @@
   --component/dialog/padding/x-1: 28px;
   --component/dialog/padding/y-1: 28px;
 
+  /* FilterBar */
+  --component/filterbar/gap/1: 0px;
+  --component/filterbar/padding/x-1: 20px;
+  --component/filterbar/padding/y-1: 16px;
+
   /* CarouselItem */
   --component/carouselitem/padding/1: 4px;
   --component/carouselitem/padding/2: 8px;

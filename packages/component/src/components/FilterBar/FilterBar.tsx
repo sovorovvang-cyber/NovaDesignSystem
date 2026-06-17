@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./FilterBar.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .FilterBar (node 51157:52598)
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .FilterBar (node 51157:52598)
 // anatomy: root[ filter[ con[ countText, rightItems? ] ], divider? ]
 //   rightItems variants:
 //     None   — count label only
@@ -12,39 +12,39 @@ function IconFilter({ className }: { className?: string }) {
   return (
     <svg
       className={className}
-      width="16"
-      height="16"
-      viewBox="0 0 16 16"
+      width="12"
+      height="12"
+      viewBox="0 0 12 12"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
     >
       <path
-        d="M2 3.5h12M4.5 7.5h7M7 11.5h2"
+        d="M1.5 2.5h9M3.5 6h5M5 9.5h2"
         stroke="currentColor"
-        strokeWidth="1.5"
+        strokeWidth="1.2"
         strokeLinecap="round"
       />
     </svg>
   );
 }
 
-/** SVG icon: chevron down (matches Figma asset imgShape1) */
+/** SVG icon: chevron down */
 function IconChevronDown({ className }: { className?: string }) {
   return (
     <svg
       className={className}
-      width="16"
-      height="16"
-      viewBox="0 0 16 16"
+      width="12"
+      height="12"
+      viewBox="0 0 12 12"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
     >
       <path
-        d="M4 6l4 4 4-4"
+        d="M3 4.5l3 3 3-3"
         stroke="currentColor"
-        strokeWidth="1.5"
+        strokeWidth="1.2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

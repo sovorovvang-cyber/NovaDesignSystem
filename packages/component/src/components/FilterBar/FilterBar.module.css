@@ -1,39 +1,38 @@
 /* FilterBar — Figma node 51157:52598
-   anatomy: root[ divider?, filter[ con[ countText, btnGroup?[ buttonItem+, btnDivider ] ] ] ]
+   anatomy: root[ divider(top)?, filter[ con[ countText, btnGroup?[ btn+, btnDivider ] ] ] ]
    variants: rightItem = "None" | "1Item" | "2Item"
-   height: 52px; padding: 16px 20px; full-width layout */
+*/
 
 .root {
   position: relative;
   width: 100%;
-  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
-  background-color: var(--bg/layer/primary, #ffffff);
+  font-family: var(--typography\/font-family\/base, "Pretendard Variable", sans-serif);
+  background-color: var(--bg\/layer\/primary, #ffffff);
 }
 
-/* Bottom divider line — 1px, rendered at top of the container (matches Figma placement) */
+/* Top divider line */
 .divider {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: var(--border/neutral/secondary, #ebeef6);
+  background-color: var(--border\/neutral\/secondary, rgba(35, 55, 155, 0.05));
 }
 
-/* Inner filter row — full width, 52px tall, horizontal padding 20px */
+/* Inner filter row */
 .filter {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   width: 100%;
-  height: 52px;
-  padding: var(--semantic/space-8, 16px) var(--semantic/space-10, 20px);
+  padding: var(--component\/filterbar\/padding\/y-1, 16px) var(--component\/filterbar\/padding\/x-1, 20px);
+  gap: var(--component\/filterbar\/gap\/1, 0px);
   box-sizing: border-box;
   overflow: hidden;
 }
 
-/* Row that holds count text on the left and action buttons on the right */
 .con {
   display: flex;
   align-items: center;
@@ -42,70 +41,69 @@
   flex-shrink: 0;
 }
 
-/* Count label: "전체 256 개" — medium 14px, secondary text color */
+/* Count label: "전체 256개" — 13px Medium, secondary */
 .countText {
   display: flex;
   align-items: flex-start;
-  gap: 0;
-  font-size: var(--typography/style/14med/font-size, var(--typography/font-size/14, 14px));
-  font-weight: var(--typography/style/14med/font-weight, var(--typography/font-weight/medium, 500));
-  line-height: var(--typography/style/14med/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/14med/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography\/font-size\/13, 13px);
+  font-weight: var(--typography\/font-weight\/medium, 500);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.04em;
+  color: var(--text\/neutral\/secondary, rgba(12, 27, 65, 0.67));
   white-space: nowrap;
   flex-shrink: 0;
 }
 
-/* Right-side button group (2Item variant) */
+/* Right-side button group */
 .btnGroup {
   display: flex;
   align-items: center;
-  gap: var(--semantic/space-5, 10px);
+  gap: 10px;
   flex-shrink: 0;
 }
 
-/* Vertical separator between sort and filter buttons (2Item variant) */
+/* Vertical separator between sort and filter buttons */
 .btnDivider {
   width: 1px;
   height: 12px;
-  background-color: var(--border/neutral/secondary, #ebeef6);
+  background-color: var(--border\/neutral\/primary, rgba(5, 42, 142, 0.08));
   flex-shrink: 0;
 }
 
-/* Individual action button (sort or filter) */
+/* Individual action button */
 .buttonItem {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--semantic/space-1, 2px);
+  gap: 0;
   flex-shrink: 0;
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  color: var(--text\/neutral\/secondary, rgba(12, 27, 65, 0.67));
 }
 
 .buttonItem:focus-visible {
-  outline: 2px solid var(--border/brand/primary, #3617ce);
+  outline: 2px solid var(--border\/brand\/primary, #3617ce);
   outline-offset: 2px;
   border-radius: var(--radius-1, 4px);
 }
 
-/* Button label text — regular 14px */
+/* Button label — 13px Medium, secondary */
 .buttonText {
-  font-size: var(--typography/style/14reg/font-size, var(--typography/font-size/14, 14px));
-  font-weight: var(--typography/style/14reg/font-weight, var(--typography/font-weight/regular, 400));
-  line-height: var(--typography/style/14reg/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/14reg/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
+  font-size: var(--typography\/font-size\/13, 13px);
+  font-weight: var(--typography\/font-weight\/medium, 500);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.04em;
   white-space: nowrap;
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  color: var(--text\/neutral\/secondary, rgba(12, 27, 65, 0.67));
 }
 
-/* 16×16 icon inside action buttons */
+/* 12×12 icon inside action buttons */
 .buttonIcon {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   flex-shrink: 0;
-  color: var(--icon/neutral/secondary, rgba(6, 12, 31, 0.6));
+  color: var(--icon\/neutral\/secondary, rgba(12, 27, 65, 0.67));
 }
