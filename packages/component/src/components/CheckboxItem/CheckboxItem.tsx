@@ -1,8 +1,11 @@
 import styles from "./CheckboxItem.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .CheckboxItem (node 50943:30840)
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .CheckboxItem (node 50943:30840)
 // anatomy: root[ checkbox[ checkIcon? ], label? ]
+// variant: Circle (round) | Line (rounded square)
 
 interface Props {
+  /** Visual shape variant */
+  variant?: "Circle" | "Line";
   /** Whether the checkbox is in a checked/selected state */
   checked?: boolean;
   /** Whether the checkbox is disabled */
@@ -17,6 +20,7 @@ interface Props {
 }
 
 export function CheckboxItem({
+  variant = "Circle",
   checked = false,
   disabled = false,
   label = "항목",
@@ -40,6 +44,7 @@ export function CheckboxItem({
 
   const checkboxClass = [
     styles.checkbox,
+    variant === "Circle" ? styles.checkboxCircle : null,
     checked ? styles.checkboxChecked : styles.checkboxUnchecked,
     disabled ? styles.checkboxDisabled : "",
   ]
@@ -68,13 +73,13 @@ export function CheckboxItem({
         {checked && (
           <svg
             className={styles.checkIcon}
-            width="12"
-            height="9"
-            viewBox="0 0 12 9"
+            width="13"
+            height="10"
+            viewBox="0 0 13 10"
             fill="none"
           >
             <path
-              d="M1.5 4.5L4.5 7.5L10.5 1.5"
+              d="M1.5 5L5 8.5L11.5 1.5"
               stroke="currentColor"
               strokeWidth="1.6"
               strokeLinecap="round"

@@ -1,11 +1,11 @@
-/* CheckboxItem — Figma node 50943:30840 */
-/* anatomy: root[ checkbox[ checkIcon? ], label? ] */
-/* Variants: checked(true|false) × disabled(true|false) = 4 combinations */
+/* CheckboxItem — Figma node 50943:30840 (3.3)
+   anatomy: root[ checkbox[ checkIcon? ], label? ]
+   Variants: variant(Circle|Line) × checked × disabled */
 
 .root {
   display: inline-flex;
   align-items: center;
-  gap: var(--semantic/space-4, 8px);
+  gap: var(--component/checkbox/gap/1, 8px);
   cursor: pointer;
   user-select: none;
   font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
@@ -18,18 +18,22 @@
   pointer-events: none;
 }
 
-/* ── Checkbox control (18×18 px) ───────────────────────── */
+/* ── Checkbox control (20×20 px) ───────────────────────── */
 .checkbox {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 18px;
-  height: 18px;
-  border-radius: var(--radius-1, 4px);
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-1, 4px); /* Line default; Circle overrides below */
   flex-shrink: 0;
   position: relative;
   box-sizing: border-box;
   transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.checkboxCircle {
+  border-radius: var(--radius-r-full, 9999px);
 }
 
 /* Unchecked — outlined with neutral border */
@@ -66,10 +70,10 @@
 
 /* ── Label text ────────────────────────────────────────── */
 .label {
-  font-size: var(--typography/style/14reg/font-size, var(--typography/font-size/14, 14px));
-  font-weight: var(--typography/style/14reg/font-weight, var(--typography/font-weight/regular, 400));
-  line-height: var(--typography/style/14reg/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/14reg/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
+  font-size: var(--typography/font-size/16, 16px);
+  font-weight: var(--typography/font-weight/regular, 400);
+  line-height: var(--typography/line-height/130, 130%);
+  letter-spacing: -0.04em;
   color: var(--text/neutral/primary, #060c1f);
   word-break: break-word;
 }

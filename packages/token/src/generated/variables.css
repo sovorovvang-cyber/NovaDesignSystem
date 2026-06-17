@@ -332,6 +332,8 @@
   --component/bottomgroup/padding/y-1: 16px;
   --component/bottomgroup/padding/y-2: 32px;
 
+  --component/checkbox/gap/1: 8px;
+
   /* ════════════════════════════════════════════════
      LEGACY ALIASES  (--skt-*)
      Deprecated — migrate component CSS to new tokens.

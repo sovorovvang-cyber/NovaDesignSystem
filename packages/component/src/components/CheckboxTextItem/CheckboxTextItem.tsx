@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./CheckboxTextItem.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .CheckboxTextItem (node 50943:27986)
-// anatomy: root[ checkboxWrap[ checkboxIcon(img) ], label(p) ]
-// Variants: selection=Off|On × disabled=Off|On → 4 states
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .CheckboxLeftTextItem (node 50943:27987)
+// anatomy: root[ checkboxWrap[ checkboxIcon ], label(p) ]
+// Variants: variant(Circle|Line) × selection × disabled
 
 interface Props {
   /** Whether the checkbox is checked/selected */
@@ -28,16 +28,16 @@ function CheckboxIcon({ selection, disabled }: { selection: boolean; disabled: b
     return (
       <svg
         className={styles.checkboxIcon}
-        width="18"
-        height="18"
-        viewBox="0 0 18 18"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
       >
-        <circle cx="9" cy="9" r="9" fill="var(--skt-color-fill-brand-primary, #3617ce)" opacity="0.2" />
+        <circle cx="10" cy="10" r="10" fill="var(--skt-color-fill-brand-primary, #3617ce)" opacity="0.2" />
         <path
-          d="M5.5 9l2.5 2.5 4.5-5"
+          d="M6 10l2.5 2.5 5-5.5"
           stroke="var(--skt-color-text-inverse-primary, #ffffff)"
           strokeWidth="1.5"
           strokeLinecap="round"
@@ -53,16 +53,16 @@ function CheckboxIcon({ selection, disabled }: { selection: boolean; disabled: b
     return (
       <svg
         className={styles.checkboxIcon}
-        width="18"
-        height="18"
-        viewBox="0 0 18 18"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
       >
-        <circle cx="9" cy="9" r="9" fill="var(--skt-color-fill-brand-primary, #3617ce)" />
+        <circle cx="10" cy="10" r="10" fill="var(--skt-color-fill-brand-primary, #3617ce)" />
         <path
-          d="M5.5 9l2.5 2.5 4.5-5"
+          d="M6 10l2.5 2.5 5-5.5"
           stroke="var(--skt-color-text-inverse-primary, #ffffff)"
           strokeWidth="1.5"
           strokeLinecap="round"
@@ -77,17 +77,17 @@ function CheckboxIcon({ selection, disabled }: { selection: boolean; disabled: b
     return (
       <svg
         className={styles.checkboxIcon}
-        width="18"
-        height="18"
-        viewBox="0 0 18 18"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
       >
         <circle
-          cx="9"
-          cy="9"
-          r="8"
+          cx="10"
+          cy="10"
+          r="9"
           stroke="var(--skt-color-text-disabled-default, rgba(6,12,31,0.2))"
           strokeWidth="1.5"
         />
