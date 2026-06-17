@@ -9,7 +9,7 @@
   overflow: hidden;
   position: relative;
   background-color: var(--white-alpha/500, rgba(255, 255, 255, 0.5));
-  box-shadow: 0px 0px 20px 0px var(--fill/neutral/tertiary, rgba(6, 12, 31, 0.05));
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
   cursor: pointer;
   user-select: none;

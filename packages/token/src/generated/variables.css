@@ -77,6 +77,7 @@
   --gray-alpha/gray-alpha-200: rgba(5, 42, 142, 0.16);
 
   --gray/gray-100: #ebeef6;
+  --gray/gray-200: #e2e6f1;
 
   --white-alpha/50:  rgba(255, 255, 255, 0.05);
   --white-alpha/100: rgba(255, 255, 255, 0.1);
@@ -370,6 +371,16 @@
   --component/filterbar/gap/1: 0px;
   --component/filterbar/padding/x-1: 20px;
   --component/filterbar/padding/y-1: 16px;
+
+  /* NavigationBar */
+  --component/navigationbar/gap/1:       2px;
+  --component/navigationbar/gap/2:       8px;
+  --component/navigationbar/padding/x-3: 20px;
+
+  /* AISearchField */
+  --component/aisearchfield/gap/2:       16px;
+  --component/aisearchfield/padding/x-1: 16px;
+  --component/aisearchfield/padding/x-2: 20px;
 
   /* CarouselItem */
   --component/carouselitem/padding/1: 4px;

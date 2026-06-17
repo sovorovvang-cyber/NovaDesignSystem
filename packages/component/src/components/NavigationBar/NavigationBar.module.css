@@ -10,8 +10,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: var(--semantic/space-4, 8px);
-  padding: 0 var(--semantic/space-10, 20px);
+  gap: var(--component\/navigationbar\/gap\/2, 8px);
+  padding: 0 var(--component\/navigationbar\/padding\/x-3, 20px);
   width: 393px;
   box-sizing: border-box;
   font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
@@ -26,7 +26,7 @@
   align-items: center;
   overflow: hidden;
   background-color: var(--white-alpha/500, rgba(255, 255, 255, 0.5));
-  box-shadow: 0 0 20px 0 var(--fill/neutral/tertiary, rgba(6, 12, 31, 0.05));
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -36,10 +36,10 @@
   flex: 1 0 0;
   min-width: 0;
   height: 52px;
-  padding-left: var(--semantic/space-10, 20px);
-  padding-right: 12px;
+  padding-left: var(--component\/aisearchfield\/padding\/x-2, 20px);
+  padding-right: var(--component\/aisearchfield\/padding\/x-1, 16px);
   border-radius: 26px;
-  gap: var(--semantic/space-4, 8px);
+  gap: var(--component\/aisearchfield\/gap\/2, 16px);
 }
 
 /* ── AI Button: collapsed (icon-only pill) ── */
@@ -162,7 +162,7 @@
 
 /* Selected tab pill (highlighted background) */
 .tabSelected {
-  background-color: var(--border/neutral/primary, #e2e6f1);
+  background-color: var(--gray\/gray-200, #e2e6f1);
 }
 
 /* Unselected tab (transparent) */
