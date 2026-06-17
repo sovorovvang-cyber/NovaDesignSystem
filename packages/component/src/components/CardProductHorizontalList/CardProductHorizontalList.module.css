@@ -54,11 +54,11 @@
 
 .category {
   margin: 0;
-  font-size: var(--typography/style/12med/font-size, var(--typography/font-size/12, 12px));
-  font-weight: var(--typography/style/12med/font-weight, var(--typography/font-weight/medium, 500));
-  line-height: var(--typography/style/12med/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/12med/letter-spacing, -0.48px);
-  color: var(--text/neutral/primary, #060c1f);
+  font-size: var(--typography/font-size/14, 14px);
+  font-weight: var(--typography/font-weight/medium, 500);
+  line-height: var(--typography/line-height/130, 130%);
+  letter-spacing: -0.04em;
+  color: var(--text/neutral/secondary, rgba(12, 27, 65, 0.67));
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -67,10 +67,10 @@
 
 .name {
   margin: 0;
-  font-size: var(--typography/style/16med/font-size, var(--typography/font-size/16, 16px));
-  font-weight: var(--typography/style/16med/font-weight, var(--typography/font-weight/medium, 500));
-  line-height: var(--typography/style/16med/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/16med/letter-spacing, -0.64px);
+  font-size: var(--typography/font-size/18, 18px);
+  font-weight: var(--typography/font-weight/semibold, 600);
+  line-height: var(--typography/line-height/130, 130%);
+  letter-spacing: -0.05em;
   color: var(--text/neutral/primary, #060c1f);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -80,11 +80,11 @@
 
 .benefit {
   margin: 0;
-  font-size: var(--typography/style/12med/font-size, var(--typography/font-size/12, 12px));
-  font-weight: var(--typography/style/12med/font-weight, var(--typography/font-weight/medium, 500));
-  line-height: var(--typography/style/12med/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/12med/letter-spacing, -0.48px);
-  color: var(--text/neutral/tertiary, rgba(6, 12, 31, 0.4));
+  font-size: var(--typography/font-size/13, 13px);
+  font-weight: var(--typography/font-weight/medium, 500);
+  line-height: var(--typography/line-height/130, 130%);
+  letter-spacing: -0.04em;
+  color: var(--text/neutral/tertiary, rgba(12, 34, 91, 0.42));
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -110,7 +110,7 @@
 .thumbnailPlaceholder {
   width: 100%;
   height: 100%;
-  background-color: var(--fill/neutral/secondary, rgba(6, 12, 31, 0.1));
+  background-color: var(--fill/neutral/secondary, rgba(5, 42, 142, 0.08));
 }
 
 /* ── Sub info area ── */
@@ -135,15 +135,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2px var(--semantic/space-3, 6px);
-  height: 17px;
-  background-color: var(--fill/neutral/secondary, rgba(6, 12, 31, 0.1));
+  padding: var(--component/badge/padding/y-1, 2px) var(--component/badge/padding/x-1, 6px);
+  background-color: var(--fill/neutral/secondary, rgba(5, 42, 142, 0.08));
   border-radius: var(--radius-1, 4px);
-  font-size: var(--typography/style/10med/font-size, var(--typography/font-size/10, 10px));
-  font-weight: var(--typography/style/10med/font-weight, var(--typography/font-weight/medium, 500));
-  line-height: var(--typography/style/10med/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/10med/letter-spacing, -0.4px);
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography/font-size/10, 10px);
+  font-weight: var(--typography/font-weight/medium, 500);
+  line-height: var(--typography/line-height/130, 130%);
+  letter-spacing: -0.04em;
+  color: var(--text/neutral/secondary, rgba(12, 27, 65, 0.67));
   white-space: nowrap;
   mix-blend-mode: multiply;
   box-sizing: border-box;
@@ -161,10 +160,10 @@
 .iconBadgeItem {
   display: flex;
   align-items: center;
-  gap: var(--semantic/space-2, 4px);
-  padding: var(--semantic/space-3, 6px) 10px var(--semantic/space-3, 6px) var(--semantic/space-4, 8px);
+  gap: var(--component/badge/gap/1, 4px);
+  padding: var(--component/badge/padding/y-3, 6px) var(--component/badge/padding/x-3, 10px) var(--component/badge/padding/y-3, 6px) var(--component/badge/padding/x-2, 8px);
   background-color: var(--bg/layer/primary, #ffffff);
-  border-radius: var(--radius-4, 10px);
+  border-radius: var(--radius-3, 8px);
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -195,11 +194,11 @@
 }
 
 .iconBadgeText {
-  font-size: var(--typography/style/12med/font-size, var(--typography/font-size/12, 12px));
-  font-weight: var(--typography/style/12med/font-weight, var(--typography/font-weight/medium, 500));
-  line-height: var(--typography/style/12med/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/12med/letter-spacing, -0.48px);
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography/font-size/12, 12px);
+  font-weight: var(--typography/font-weight/medium, 500);
+  line-height: var(--typography/line-height/130, 130%);
+  letter-spacing: -0.04em;
+  color: var(--text/neutral/secondary, rgba(12, 27, 65, 0.67));
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
