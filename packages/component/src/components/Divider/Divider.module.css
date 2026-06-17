@@ -1,9 +1,9 @@
 /* Divider — Figma node 50943:27999
-   anatomy: root[ line ]
-   variants: contents (1px) | section (4px)
-   token: border/neutral/secondary → --bg/layer/secondary (var(--bg/layer/secondary, #f4f5fa))
+   Horizontal variants: inset (1px) | section / full-width (4px)
+   Vertical variant: contents (1px, full-height)
 */
 
+/* ── Horizontal ─────────────────────────────────────────── */
 .root {
   display: flex;
   flex-direction: column;
@@ -13,16 +13,34 @@
 
 .line {
   width: 100%;
-  background-color: var(--bg/layer/secondary, #f4f5fa);
+  background-color: var(--border\/neutral\/secondary, rgba(35, 55, 155, 0.05));
   flex-shrink: 0;
 }
 
-/* Contents variant — thin 1px rule */
+/* Inset — thin 1px content separator */
+.inset .line,
 .contents .line {
   height: 1px;
 }
 
-/* Section variant — thick 4px rule */
-.section .line {
-  height: var(--semantic/space-2, 4px);
+/* Section / Full-width — thick 4px section separator */
+.section .line,
+.fullWidth .line {
+  height: 4px;
+}
+
+/* ── Vertical ───────────────────────────────────────────── */
+.vertical {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: auto;
+  height: 100%;
+}
+
+.vertical .line {
+  width: 1px;
+  height: 100%;
+  min-height: 1px;
+  background-color: var(--border\/neutral\/primary, rgba(5, 42, 142, 0.08));
 }

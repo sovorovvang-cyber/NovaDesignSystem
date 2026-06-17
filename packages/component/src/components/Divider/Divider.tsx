@@ -1,22 +1,33 @@
 import styles from "./Divider.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .Divider (node 50943:27999)
-// anatomy: root[ line ]
-// variants: Contents (1px thin rule) | Section (4px thick rule)
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .Divider (node 50943:27999)
+// variants: inset (1px H) | section/full-width (4px H) | vertical (1px V)
+
+type DividerVariant = "inset" | "contents" | "section" | "full-width" | "vertical";
 
 interface Props {
-  /** Visual weight of the divider line. "contents" = 1px, "section" = 4px. */
-  variant?: "contents" | "section";
-  /** Additional class for layout overrides from the consumer */
+  /** "inset"=1px horizontal, "section"/"full-width"=4px horizontal, "vertical"=1px vertical */
+  variant?: DividerVariant;
   className?: string;
 }
 
-export function Divider({ variant = "contents", className }: Props) {
+export function Divider({ variant = "inset", className }: Props) {
+  const isVertical = variant === "vertical";
+
+  let containerClass: string;
+  if (isVertical) {
+    containerClass = styles.vertical;
+  } else if (variant === "section" || variant === "full-width") {
+    containerClass = `${styles.root} ${styles.section}`;
+  } else {
+    containerClass = `${styles.root} ${styles.inset}`;
+  }
+
   return (
     <div
-      className={[styles.root, styles[variant], className].filter(Boolean).join(" ")}
+      className={[containerClass, className].filter(Boolean).join(" ")}
       data-cx-component="Divider"
       role="separator"
-      aria-orientation="horizontal"
+      aria-orientation={isVertical ? "vertical" : "horizontal"}
     >
       <div className={styles.line} />
     </div>
