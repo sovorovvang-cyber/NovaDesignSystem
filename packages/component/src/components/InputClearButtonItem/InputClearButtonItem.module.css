@@ -13,7 +13,7 @@
   border: none;
   border-radius: 100px;
   background-color: var(--fill/neutral/tertiary, var(--fill-neutral-tertiary, rgba(13, 47, 138, 0.12)));
-  color: var(--icon/neutral/secondary, var(--icon-neutral-secondary, rgba(6, 12, 31, 0.6)));
+  color: var(--icon\/neutral\/secondary, rgba(12, 27, 65, 0.67));
   cursor: pointer;
   flex-shrink: 0;
 }
