@@ -50,6 +50,7 @@ export { InputItem } from "./components/InputItem";
 export { Loader } from "./components/Loader";
 export { NavigationButtonItem } from "./components/NavigationButtonItem";
 export { NavigationTabItem } from "./components/NavigationTabItem";
+export { ProgressStepper } from "./components/ProgressStepper";
 export { RadioItem } from "./components/RadioItem";
 export { RadioTextItem } from "./components/RadioTextItem";
 export { TabFixedItem } from "./components/TabFixedItem";

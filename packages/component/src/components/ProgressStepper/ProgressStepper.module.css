@@ -1,0 +1,24 @@
+/* ProgressStepper — Figma node 54842:36033 */
+/* anatomy: root[ current, slash, total ] */
+
+.root {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
+  font-size: var(--typography\/font-size\/14, 14px);
+  font-weight: var(--typography\/font-weight\/semibold, 600);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.04em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.current {
+  color: var(--text\/neutral\/primary, #060c1f);
+}
+
+.separator,
+.total {
+  color: var(--text\/neutral\/tertiary, rgba(12, 34, 91, 0.42));
+}
