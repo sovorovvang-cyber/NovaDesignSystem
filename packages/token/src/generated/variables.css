@@ -352,6 +352,15 @@
   --component/dialog/padding/x-1: 28px;
   --component/dialog/padding/y-1: 28px;
 
+  /* Footer */
+  --component/footer/gap/0: 0px;
+  --component/footer/gap/1: 4px;
+  --component/footer/gap/2: 8px;
+  --component/footer/gap/3: 20px;
+  --component/footer/gap/4: 32px;
+  --component/footer/padding/x-1: 20px;
+  --component/footer/padding/y-1: 32px;
+
   /* FilterBar */
   --component/filterbar/gap/1: 0px;
   --component/filterbar/padding/x-1: 20px;

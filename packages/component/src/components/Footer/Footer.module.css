@@ -1,6 +1,7 @@
 /* Footer — Figma node 50943:30545
-   anatomy (Main):  root > legalLinks [ legalBtn | divider ] + infoGroup [ infoRow [ infoText | infoDivider ] ] + copyright
-   anatomy (Product): root > disclaimerGroup [ disclaimerSection [ disclaimerTitle + disclaimerBody ] ]
+   anatomy (Default): root > infoGroup[ buttonTextGroup, bizInfoGroup, copyright ] + safeArea
+   anatomy (Product): root > disclaimerGroup[ section[ title, body ]× 3 ] + safeArea
+   anatomy (SafeArea): 140px spacer only
 */
 
 /* ── Root ── */
@@ -9,107 +10,108 @@
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  background-color: var(--bg/layer/secondary, #f4f5fa);
-  padding-top: var(--semantic/space-16, 32px);
-  padding-left: var(--semantic/space-10, 20px);
-  padding-right: var(--semantic/space-10, 20px);
-  font-family: var(--typography/font-family/base, "Pretendard Variable", -apple-system, sans-serif);
+  background-color: var(--fill\/neutral\/primary, rgba(35, 55, 155, 0.05));
+  padding-top: var(--component\/footer\/padding\/y-1, 32px);
+  padding-left: var(--component\/footer\/padding\/x-1, 20px);
+  padding-right: var(--component\/footer\/padding\/x-1, 20px);
+  gap: var(--component\/footer\/gap\/0, 0px);
+  font-family: var(--typography\/font-family\/base, "Pretendard Variable", -apple-system, sans-serif);
   box-sizing: border-box;
 }
 
-.rootMain {
-  gap: 30px;
-  padding-bottom: 120px;
+/* ── SafeArea spacer ── */
+.safeArea {
+  height: 140px;
+  width: 100%;
+  flex-shrink: 0;
 }
 
-.rootProduct {
-  padding-bottom: 120px;
+/* ── Outer info group (Default) — gap/4 between legal / bizInfo / copyright ── */
+.infoGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--component\/footer\/gap\/4, 32px);
+  width: 100%;
+  flex-shrink: 0;
 }
 
-/* ── Legal links ── */
-.legalLinks {
+/* ── Legal links row ── */
+.buttonTextGroup {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: var(--semantic/space-4, 8px);
-  flex-shrink: 0;
+  gap: var(--component\/footer\/gap\/2, 8px);
   width: 100%;
+  flex-shrink: 0;
 }
 
 .legalBtn {
   all: unset;
   cursor: pointer;
-  font-size: var(--typography/style/14semi/font-size, var(--typography/font-size/14, 14px));
-  font-weight: var(--typography/style/14semi/font-weight, var(--typography/font-weight/semibold, 600));
-  line-height: var(--typography/style/14semi/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/14semi/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography\/font-size\/13, 13px);
+  font-weight: var(--typography\/font-weight\/medium, 500);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.04em;
+  color: var(--text\/neutral\/secondary, rgba(12, 27, 65, 0.67));
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
   white-space: nowrap;
   flex-shrink: 0;
 }
 
 .legalBtn:focus-visible {
-  outline: 2px solid var(--fill/brand/default, #3617ce);
+  outline: 2px solid var(--fill\/brand\/default, #3617ce);
   outline-offset: 2px;
   border-radius: 2px;
 }
 
-/* vertical rule between legal links */
+/* vertical rule between legal links / between inline info items */
 .divider {
   display: inline-block;
   width: 1px;
   height: 10px;
-  background-color: var(--fill/neutral/primary, rgba(6, 12, 31, 0.2));
+  background-color: var(--border\/neutral\/primary, rgba(5, 42, 142, 0.08));
   flex-shrink: 0;
 }
 
-/* ── Info group (Main) ── */
-.infoGroup {
+/* ── Business info group (Default) ── */
+.bizInfoGroup {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--semantic/space-2, 4px);
-  flex-shrink: 0;
+  gap: var(--component\/footer\/gap\/1, 4px);
   width: 100%;
+  flex-shrink: 0;
 }
 
 .infoRow {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: var(--component\/footer\/gap\/2, 8px);
   flex-shrink: 0;
 }
 
 .infoText {
-  font-size: var(--typography/style/14med/font-size, var(--typography/font-size/14, 14px));
-  font-weight: var(--typography/style/14med/font-weight, var(--typography/font-weight/medium, 500));
-  line-height: var(--typography/style/14med/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/14med/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography\/font-size\/14, 14px);
+  font-weight: var(--typography\/font-weight\/medium, 500);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.04em;
+  color: var(--text\/neutral\/secondary, rgba(12, 27, 65, 0.67));
   white-space: nowrap;
   word-break: break-word;
-}
-
-/* vertical rule between infoText items in same row */
-.infoDivider {
-  display: inline-block;
-  width: 1px;
-  height: 10px;
-  background-color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
-  flex-shrink: 0;
-  margin: 0 var(--semantic/space-4, 8px);
 }
 
 /* ── Copyright ── */
 .copyright {
   margin: 0;
-  font-size: var(--typography/style/14med/font-size, var(--typography/font-size/14, 14px));
-  font-weight: var(--typography/style/14med/font-weight, var(--typography/font-weight/medium, 500));
-  line-height: var(--typography/style/14med/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/14med/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography\/font-size\/14, 14px);
+  font-weight: var(--typography\/font-weight\/medium, 500);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.04em;
+  color: var(--text\/neutral\/secondary, rgba(12, 27, 65, 0.67));
   white-space: nowrap;
-  word-break: break-word;
   flex-shrink: 0;
 }
 
@@ -118,37 +120,37 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--semantic/space-10, 20px);
+  gap: var(--component\/footer\/gap\/3, 20px);
   width: 100%;
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  flex-shrink: 0;
 }
 
 .disclaimerSection {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--semantic/space-2, 4px);
+  gap: var(--component\/footer\/gap\/1, 4px);
   width: 100%;
   flex-shrink: 0;
 }
 
 .disclaimerTitle {
   margin: 0;
-  font-size: var(--typography/style/14semi/font-size, var(--typography/font-size/14, 14px));
-  font-weight: var(--typography/style/14semi/font-weight, var(--typography/font-weight/semibold, 600));
-  line-height: var(--typography/style/14semi/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/14semi/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography\/font-size\/14, 14px);
+  font-weight: var(--typography\/font-weight\/semibold, 600);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.04em;
+  color: var(--text\/neutral\/secondary, rgba(12, 27, 65, 0.67));
   white-space: nowrap;
 }
 
 .disclaimerBody {
   margin: 0;
-  font-size: var(--typography/style/13med/font-size, var(--typography/font-size/13, 13px));
-  font-weight: var(--typography/style/13med/font-weight, var(--typography/font-weight/medium, 500));
-  line-height: var(--typography/style/13med/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/13med/letter-spacing, -0.04em);
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography\/font-size\/13, 13px);
+  font-weight: var(--typography\/font-weight\/medium, 500);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.04em;
+  color: var(--text\/neutral\/secondary, rgba(12, 27, 65, 0.67));
   width: 100%;
   word-break: break-word;
 }
