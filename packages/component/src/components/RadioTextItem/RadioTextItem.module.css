@@ -5,7 +5,7 @@
 .root {
   display: inline-flex;
   align-items: flex-start;
-  gap: var(--semantic/space-4, 8px);
+  gap: var(--component\/radio\/gap\/1, 8px);
   cursor: pointer;
   user-select: none;
   font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
@@ -28,8 +28,8 @@
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   /* offset to align with the label's first line (line-height 1.3 × 14px ≈ 18.2px) */
   margin-top: 0;
 }
@@ -39,8 +39,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   border-radius: var(--radius-r-full, 9999px);
   flex-shrink: 0;
   box-sizing: border-box;
@@ -90,10 +90,10 @@
   flex: 1 0 0;
   min-width: 1px;
   margin: 0;
-  font-size: var(--typography/style/14med/font-size, var(--typography/font-size/14, 14px));
-  font-weight: var(--typography/style/14med/font-weight, var(--typography/font-weight/medium, 500));
-  line-height: var(--typography/style/14med/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/14med/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
+  font-size: var(--typography\/font-size\/16, 16px);
+  font-weight: var(--typography\/font-weight\/regular, 400);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.04em;
   color: var(--text/neutral/primary, #060c1f);
   overflow: hidden;
   text-overflow: ellipsis;

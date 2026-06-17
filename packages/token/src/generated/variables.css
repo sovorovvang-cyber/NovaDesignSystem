@@ -372,6 +372,9 @@
   --component/filterbar/padding/x-1: 20px;
   --component/filterbar/padding/y-1: 16px;
 
+  /* Radio */
+  --component/radio/gap/1: 8px;
+
   /* NavigationBar */
   --component/navigationbar/gap/1:       2px;
   --component/navigationbar/gap/2:       8px;
