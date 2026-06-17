@@ -1,62 +1,61 @@
 /* Dialog — Figma node 50982:21648
-   anatomy: wrap[ titleRow[ title ], subText[ subTextContent ], slot[ children ], DialogActionButtonItem ]
-   width: 353px, padding: 28px, gap between sections implicit via padding/margin
+   anatomy: wrap[ contents[ textGroup[ title, subText? ], slot? ], DialogActionButtonItem ]
+   width: 353px
 */
 
 .wrap {
   display: flex;
   flex-direction: column;
+  gap: var(--component\/dialog\/gap\/3, 20px);
   align-items: flex-start;
   width: 353px;
-  padding: var(--semantic/space-14, 28px);
-  background-color: var(--bg/layer/primary, #ffffff);
+  padding: var(--component\/dialog\/padding\/y-1, 28px) var(--component\/dialog\/padding\/x-1, 28px);
+  background-color: var(--bg\/layer\/floating, #ffffff);
   border-radius: var(--radius-10, 28px);
-  font-family: var(--typography/font-family/base, "Pretendard Variable", -apple-system, sans-serif);
+  font-family: var(--typography\/font-family\/base, "Pretendard Variable", -apple-system, sans-serif);
   box-sizing: border-box;
 }
 
-/* Title row */
-.titleRow {
+.contents {
   display: flex;
-  align-items: center;
-  gap: var(--semantic/space-8, 16px);
+  flex-direction: column;
+  gap: var(--component\/dialog\/gap\/2, 16px);
+  align-items: flex-start;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.textGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--component\/dialog\/gap\/1, 8px);
+  align-items: flex-start;
   width: 100%;
   flex-shrink: 0;
 }
 
 .title {
-  flex: 1 0 0;
-  font-size: var(--typography/style/20med/font-size, var(--typography/font-size/20, 20px));
-  font-weight: var(--typography/style/20med/font-weight, var(--typography/font-weight/medium, 500));
-  line-height: var(--typography/style/20med/line-height, var(--typography/line-height/130, 1.3));
-  letter-spacing: var(--typography/style/20med/letter-spacing, var(--typography/letter-spacing/dense, -0.05em));
-  color: var(--text/neutral/primary, #060c1f);
+  font-size: var(--typography\/font-size\/20, 20px);
+  font-weight: var(--typography\/font-weight\/semibold, 600);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.05em;
+  color: var(--text\/neutral\/primary, #060c1f);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-/* Sub text section */
 .subText {
-  display: flex;
-  align-items: flex-start;
-  padding-top: var(--semantic/space-8, 16px);
-  padding-bottom: var(--semantic/space-8, 16px);
-  width: 100%;
-  flex-shrink: 0;
-}
-
-.subTextContent {
-  font-size: var(--typography/style/16med/font-size, var(--typography/font-size/16, 16px));
-  font-weight: var(--typography/style/16med/font-weight, var(--typography/font-weight/medium, 500));
-  line-height: var(--typography/style/16med/line-height, var(--typography/line-height/130, 1.3));
-  letter-spacing: var(--typography/style/16med/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography\/font-size\/16, 16px);
+  font-weight: var(--typography\/font-weight\/medium, 500);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.04em;
+  color: var(--text\/neutral\/secondary, rgba(12, 27, 65, 0.67));
   margin: 0;
   word-break: break-word;
+  width: 100%;
 }
 
-/* Slot (content area) */
 .slot {
   height: 100px;
   width: 100%;

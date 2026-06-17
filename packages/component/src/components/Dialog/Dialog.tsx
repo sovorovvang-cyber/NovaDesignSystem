@@ -38,19 +38,13 @@ export function Dialog({
 }: Props) {
   return (
     <div className={styles.wrap} data-cx-component="Dialog">
-      <div className={styles.titleRow}>
-        <span className={styles.title}>{title}</span>
-      </div>
-
-      {showSubText && (
-        <div className={styles.subText}>
-          <p className={styles.subTextContent}>{subText}</p>
+      <div className={styles.contents}>
+        <div className={styles.textGroup}>
+          <span className={styles.title}>{title}</span>
+          {showSubText && <p className={styles.subText}>{subText}</p>}
         </div>
-      )}
-
-      {showContents && (
-        <div className={styles.slot}>{children}</div>
-      )}
+        {showContents && <div className={styles.slot}>{children}</div>}
+      </div>
 
       <DialogActionButtonItem
         options="2Button"

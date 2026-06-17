@@ -345,6 +345,13 @@
   --component/chip/padding/y-3: 10px;
   --component/chip/padding/y-4: 12px;
 
+  /* Dialog */
+  --component/dialog/gap/1: 8px;
+  --component/dialog/gap/2: 16px;
+  --component/dialog/gap/3: 20px;
+  --component/dialog/padding/x-1: 28px;
+  --component/dialog/padding/y-1: 28px;
+
   /* CarouselItem */
   --component/carouselitem/padding/1: 4px;
   --component/carouselitem/padding/2: 8px;

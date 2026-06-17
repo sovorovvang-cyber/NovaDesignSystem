@@ -9,7 +9,7 @@
 }
 
 .twoButtons {
-  gap: var(--semantic/space-4, 8px);
+  gap: var(--component\/dialog\/gap\/1, 8px);
 }
 
 .oneButton {
