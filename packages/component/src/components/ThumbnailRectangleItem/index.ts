@@ -1,1 +1,0 @@
-export { ThumbnailRectangleItem } from "./ThumbnailRectangleItem";

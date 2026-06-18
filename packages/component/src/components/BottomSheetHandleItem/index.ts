@@ -1,1 +1,0 @@
-export { BottomSheetHandleItem } from "./BottomSheetHandleItem";

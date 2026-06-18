@@ -1,1 +1,0 @@
-export { TabScrollItem } from "./TabScrollItem";

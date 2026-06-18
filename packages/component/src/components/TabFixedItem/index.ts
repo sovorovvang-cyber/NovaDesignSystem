@@ -1,1 +1,0 @@
-export { TabFixedItem } from "./TabFixedItem";

@@ -1,1 +1,0 @@
-export { ThumbnailSquareItem } from "./ThumbnailSquareItem";

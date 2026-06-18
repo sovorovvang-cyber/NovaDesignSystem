@@ -1,1 +1,0 @@
-export { ChipItemAIItem } from "./ChipItemAIItem";

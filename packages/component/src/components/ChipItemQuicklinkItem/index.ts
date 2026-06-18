@@ -1,1 +1,0 @@
-export { ChipItemQuicklinkItem } from "./ChipItemQuicklinkItem";

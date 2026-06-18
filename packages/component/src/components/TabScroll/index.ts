@@ -1,1 +1,0 @@
-export { TabScroll } from "./TabScroll";

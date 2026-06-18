@@ -1,1 +1,0 @@
-export { CardProductHorizontalList } from "./CardProductHorizontalList";
