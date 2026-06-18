@@ -38,7 +38,7 @@
 .dimMultiply {
   position: absolute;
   inset: 0;
-  background-color: var(--fill/neutral/tertiary, rgba(6, 12, 31, 0.05));
+  background-color: var(--fill\/neutral\/primary, rgba(35, 55, 155, 0.05));
   mix-blend-mode: multiply;
   pointer-events: none;
 }
