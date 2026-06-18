@@ -1,0 +1,12 @@
+/* Section — Figma node 50943:28865
+   anatomy: root[ SectionTitleItem?, SectionItem ]
+*/
+
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--semantic\/space-8, 16px);
+  padding: 32px 20px;
+  width: 100%;
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
+}

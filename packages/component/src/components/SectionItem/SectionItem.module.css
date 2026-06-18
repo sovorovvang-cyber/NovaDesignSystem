@@ -1,0 +1,31 @@
+/* SectionItem — Figma nodes 50985:53834 (Filled), 50943:30345 (Line)
+   anatomy: root[ slot ]
+   Filled — solid background card
+   Line   — white background, border outline
+*/
+
+.root {
+  width: 100%;
+  border-radius: var(--radius-8, 20px);
+  overflow: hidden;
+}
+
+/* ─── Filled variant ─── */
+.variantFilled {
+  background-color: var(--bg\/layer\/secondary, #f4f5fa);
+  padding: 24px;
+}
+
+/* ─── Line variant ─── */
+.variantLine {
+  background-color: var(--fill\/inverse\/primary, #ffffff);
+  padding: 24px;
+  border: 1.5px solid var(--border\/neutral\/primary, rgba(5, 42, 142, 0.08));
+}
+
+/* ─── inner slot ─── */
+.slot {
+  width: 100%;
+  border-radius: var(--radius-5, 12px);
+  overflow: hidden;
+}

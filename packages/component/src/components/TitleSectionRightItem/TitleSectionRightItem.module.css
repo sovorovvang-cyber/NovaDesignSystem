@@ -117,11 +117,11 @@
   padding: 0;
   cursor: pointer;
   font-family: var(--typography/font-family/base, "Pretendard Variable", -apple-system, sans-serif);
-  font-size: var(--typography/style/13reg/font-size, var(--typography/font-size/13, 13px));
-  font-weight: var(--typography/style/13reg/font-weight, var(--typography/font-weight/regular, 400));
-  line-height: var(--typography/style/13reg/line-height, var(--typography/line-height/130, 130%));
-  letter-spacing: var(--typography/style/13reg/letter-spacing, var(--typography/letter-spacing/normal, -0.04em));
-  color: var(--text/neutral/secondary, rgba(6, 12, 31, 0.6));
+  font-size: var(--typography/font-size/16, 16px);
+  font-weight: var(--typography/font-weight/regular, 400);
+  line-height: var(--typography/line-height/130, 130%);
+  letter-spacing: -0.04em;
+  color: var(--text\/neutral\/secondary, rgba(12, 27, 65, 0.67));
   text-decoration: underline;
   text-decoration-skip-ink: none;
   white-space: nowrap;

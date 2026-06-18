@@ -1,0 +1,56 @@
+/* SectionTitleItem — Figma node 51098:40895
+   anatomy: root[ titleText(flex-1)[ titleRow[ title, ?infoIcon ], ?subtitle ], ?SectionTitleRightItem ]
+*/
+
+.root {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--component\/titlegroup\/gap\/4, 16px);
+  width: 100%;
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
+}
+
+.titleText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--component\/titlegroup\/gap\/1, 2px);
+  flex: 1;
+  min-width: 0;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: var(--component\/titlegroup\/gap\/1, 2px);
+}
+
+.title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: var(--typography\/font-weight\/semibold, 600);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.05em;
+  color: var(--text\/neutral\/primary, #060c1f);
+  flex: 1;
+  min-width: 0;
+}
+
+.infoIcon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  color: var(--icon\/neutral\/tertiary, rgba(12, 34, 91, 0.42));
+}
+
+.subtitle {
+  margin: 0;
+  font-size: var(--typography\/font-size\/14, 14px);
+  font-weight: var(--typography\/font-weight\/medium, 500);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.04em;
+  color: var(--text\/neutral\/secondary, rgba(12, 27, 65, 0.67));
+}
+
+.rightItem {
+  flex-shrink: 0;
+}

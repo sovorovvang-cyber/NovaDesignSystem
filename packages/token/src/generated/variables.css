@@ -375,6 +375,10 @@
   /* Radio */
   --component/radio/gap/1: 8px;
 
+  /* TitleGroup / Section */
+  --component/titlegroup/gap/1: 2px;
+  --component/titlegroup/gap/4: 16px;
+
   /* Dropdown / Select */
   --component/dropdown/gap/1:       16px;
   --component/dropdown/padding/x-1: 20px;
