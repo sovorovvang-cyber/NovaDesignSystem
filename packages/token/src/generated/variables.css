@@ -67,7 +67,8 @@
   /* ════════════════════════════════════════════════
      SHADOW
   ════════════════════════════════════════════════ */
-  --shadow/default: rgba(6, 12, 31, 0.2);
+  --shadow/default:  rgba(6, 12, 31, 0.2);
+  --shadow/primary:  rgba(13, 47, 138, 0.12);
 
   /* ════════════════════════════════════════════════
      ALPHA PALETTE (overlay / dim use only)
@@ -388,6 +389,10 @@
   /* Toggle */
   --component/toggle/padding/x-1: 4px;
   --component/toggle/padding/y-1: 4px;
+
+  /* Tooltip */
+  --component/tooltip/padding/x-1: 12px;
+  --component/tooltip/padding/y-1: 6px;
 
   /* Dropdown / Select */
   --component/dropdown/gap/1:       16px;
