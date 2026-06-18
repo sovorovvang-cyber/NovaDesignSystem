@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./TooltipItem.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .TooltipItem (node 50943:28013)
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .TooltipItem (node 54182:44251)
 // anatomy: root[ bubble[ text ], tail[ union ] ]
 // tail position depends on direction: Bottom* = tail below bubble, Top* = tail above bubble, Left/Right = tail on side
 

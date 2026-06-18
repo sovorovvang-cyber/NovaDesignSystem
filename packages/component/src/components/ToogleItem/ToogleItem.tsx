@@ -1,5 +1,5 @@
 import styles from "./ToogleItem.module.css";
-// Figma SSOT: SKT-Next_UI-Draft_3.2--Token-Test- .ToogleItem (node 51486:46290)
+// Figma SSOT: SKT-Next_UI-Draft_3.3 .ToogleItem (node 54182:44147)
 // anatomy: root[ iconItem[ heartOff | heartOn ], label? ]
 
 import React from "react";
