@@ -412,10 +412,17 @@
   --component/carouselitem/padding/2: 8px;
 
   /* TextProductGroup */
-  --component/textproductgroup/gap/1: 2px;
-  --component/textproductgroup/gap/2: 4px;
-  --component/textproductgroup/gap/3: 6px;
+  --component/textproductgroup/gap/1:       2px;
+  --component/textproductgroup/gap/2:       4px;
+  --component/textproductgroup/gap/3:       6px;
+  --component/textproductgroup/gap/4:       16px;
   --component/textproductgroup/padding/y-1: 12px;
+
+  /* BrandDetail */
+  --component/branddetail/gap/3:       8px;
+  --component/branddetail/gap/4:       12px;
+  --component/branddetail/padding/x-1: 20px;
+  --component/branddetail/padding/y-1: 24px;
 
   /* ════════════════════════════════════════════════
      LEGACY ALIASES  (--skt-*)

@@ -1,0 +1,1 @@
+export { TextGroupBrandDetail } from "./TextGroupBrandDetail";
