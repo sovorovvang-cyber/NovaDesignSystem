@@ -385,6 +385,10 @@
   --component/tabgroup/padding/y-1: 12px;
   --component/tabgroup/padding/y-2: 24px;
 
+  /* Toggle */
+  --component/toggle/padding/x-1: 4px;
+  --component/toggle/padding/y-1: 4px;
+
   /* Dropdown / Select */
   --component/dropdown/gap/1:       16px;
   --component/dropdown/padding/x-1: 20px;

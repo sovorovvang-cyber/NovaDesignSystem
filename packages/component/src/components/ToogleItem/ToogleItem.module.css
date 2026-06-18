@@ -26,7 +26,7 @@
 
 /* Variant: None — icon only, 4px padding around icon */
 .variantNone {
-  padding: var(--semantic/space-2, 4px);
+  padding: var(--component\/toggle\/padding\/y-1, 4px) var(--component\/toggle\/padding\/x-1, 4px);
 }
 
 /* Variant: Text — icon + label stacked, no extra padding */
@@ -48,7 +48,7 @@
 /* Unselected heart — tertiary (40% opacity dark) */
 .unselected .heartOff,
 .unselected .heartOn {
-  color: var(--icon/neutral/tertiary, rgba(6, 12, 31, 0.4));
+  color: var(--icon\/neutral\/tertiary, rgba(12, 34, 91, 0.42));
 }
 
 /* Selected heart — primary (full dark) */
@@ -67,10 +67,10 @@
   letter-spacing: var(--typography/style/13med/letter-spacing, -0.04em);
   white-space: nowrap;
   word-break: keep-all;
-  color: var(--text/neutral/tertiary, rgba(6, 12, 31, 0.4));
+  color: var(--text\/neutral\/tertiary, rgba(12, 34, 91, 0.42));
 }
 
 /* Selected label inherits same color (design shows same tertiary for count) */
 .selected .label {
-  color: var(--text/neutral/tertiary, rgba(6, 12, 31, 0.4));
+  color: var(--text\/neutral\/tertiary, rgba(12, 34, 91, 0.42));
 }
