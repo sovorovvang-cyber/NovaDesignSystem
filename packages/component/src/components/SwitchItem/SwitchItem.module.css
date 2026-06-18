@@ -1,0 +1,48 @@
+/* SwitchItem — Figma node 53886:56816
+   anatomy: track[ thumb ]
+   Variants: selection(Off|On) × state(Default|Disabled)
+   Track: 40×24px, border-radius full
+   Thumb: 20×20px white circle, 2px inset
+*/
+
+.track {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 24px;
+  border-radius: var(--radius-r-full, 9999px);
+  padding: 2px;
+  background-color: var(--fill\/neutral\/secondary, rgba(35, 55, 155, 0.15));
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+/* On state */
+.trackOn {
+  background-color: var(--fill\/neutral\/strong, #060c1f);
+  justify-content: flex-end;
+}
+
+/* Off state */
+.trackOff {
+  background-color: var(--fill\/neutral\/secondary, rgba(35, 55, 155, 0.15));
+  justify-content: flex-start;
+}
+
+/* Disabled */
+.trackDisabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-r-full, 9999px);
+  background-color: var(--fill\/inverse\/primary, #ffffff);
+  flex-shrink: 0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}

@@ -68,6 +68,7 @@ export { ThumbnailRectangleItem } from "./components/ThumbnailRectangleItem";
 export { ThumbnailRoundItem } from "./components/ThumbnailRoundItem";
 export { ThumbnailSquareItem } from "./components/ThumbnailSquareItem";
 export { Section } from "./components/Section";
+export { SwitchItem } from "./components/SwitchItem";
 export { SectionItem } from "./components/SectionItem";
 export type { SectionItemVariant } from "./components/SectionItem";
 export { SectionTitleItem } from "./components/SectionTitleItem";
