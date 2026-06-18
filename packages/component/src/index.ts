@@ -74,6 +74,7 @@ export { SwitchItem } from "./components/SwitchItem";
 export { SectionItem } from "./components/SectionItem";
 export type { SectionItemVariant } from "./components/SectionItem";
 export { SectionTitleItem } from "./components/SectionTitleItem";
+export { TitleGroupSection } from "./components/TitleGroupSection";
 export { TitleSectionItem } from "./components/TitleSectionItem";
 export { TitleSectionRightItem } from "./components/TitleSectionRightItem";
 export { TitleTextItem } from "./components/TitleTextItem";

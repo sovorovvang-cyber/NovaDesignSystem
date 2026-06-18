@@ -1,0 +1,63 @@
+/* TitleGroupSection — Figma node 50943:30595
+   anatomy: root[ titleText[ ?titleSubText, title ], ?subText ]
+   Used for section headings with optional eyebrow label and body description.
+*/
+
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  width: 100%;
+  font-family: var(--typography/font-family/base, "Pretendard Variable", sans-serif);
+}
+
+/* ── TitleText group ── */
+.titleText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Optional eyebrow label above the title */
+.titleSubText {
+  font-size: var(--typography\/font-size\/13, 13px);
+  font-weight: var(--typography\/font-weight\/medium, 500);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.04em;
+  color: var(--text\/neutral\/secondary, rgba(12, 27, 65, 0.67));
+  white-space: nowrap;
+  margin: 0;
+}
+
+/* Main section title — 24px Medium, tighter line-height */
+.title {
+  font-size: 24px;
+  font-weight: var(--typography\/font-weight\/medium, 500);
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  color: var(--text\/neutral\/primary, #060c1f);
+  margin: 0;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* ── SubText row ── */
+.subText {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.subTextLabel {
+  font-size: var(--typography\/font-size\/16, 16px);
+  font-weight: var(--typography\/font-weight\/medium, 500);
+  line-height: var(--typography\/line-height\/130, 1.3);
+  letter-spacing: -0.04em;
+  color: var(--text\/neutral\/secondary, rgba(12, 27, 65, 0.67));
+  white-space: nowrap;
+  margin: 0;
+}
